@@ -13,6 +13,7 @@
 		34BEF47F1F8D65F1009C9F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BEF47E1F8D65F1009C9F7D /* Assets.xcassets */; };
 		34BEF4821F8D65F1009C9F7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34BEF4801F8D65F1009C9F7D /* LaunchScreen.storyboard */; };
 		34BEF48D1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEF48C1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift */; };
+		CC4B99611F99535800E6C7B1 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4B99601F99535800E6C7B1 /* ViewControllerTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		34BEF4881F8D65F1009C9F7D /* fucntionalMedicineDraftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fucntionalMedicineDraftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BEF48C1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fucntionalMedicineDraftTests.swift; sourceTree = "<group>"; };
 		34BEF48E1F8D65F1009C9F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC4B99601F99535800E6C7B1 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				34BEF4771F8D65F1009C9F7D /* AppDelegate.swift */,
 				34BEF4791F8D65F1009C9F7D /* ViewController.swift */,
+				CC4B99601F99535800E6C7B1 /* ViewControllerTwo.swift */,
 				34BEF47B1F8D65F1009C9F7D /* Main.storyboard */,
 				34BEF47E1F8D65F1009C9F7D /* Assets.xcassets */,
 				34BEF4801F8D65F1009C9F7D /* LaunchScreen.storyboard */,
@@ -201,6 +204,7 @@
 			files = (
 				34BEF47A1F8D65F1009C9F7D /* ViewController.swift in Sources */,
 				34BEF4781F8D65F1009C9F7D /* AppDelegate.swift in Sources */,
+				CC4B99611F99535800E6C7B1 /* ViewControllerTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
