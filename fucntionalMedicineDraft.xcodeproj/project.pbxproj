@@ -6,6 +6,15 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		34BEF4781F8D65F1009C9F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEF4771F8D65F1009C9F7D /* AppDelegate.swift */; };
+		34BEF47A1F8D65F1009C9F7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEF4791F8D65F1009C9F7D /* ViewController.swift */; };
+		34BEF47D1F8D65F1009C9F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34BEF47B1F8D65F1009C9F7D /* Main.storyboard */; };
+		34BEF47F1F8D65F1009C9F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BEF47E1F8D65F1009C9F7D /* Assets.xcassets */; };
+		34BEF4821F8D65F1009C9F7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34BEF4801F8D65F1009C9F7D /* LaunchScreen.storyboard */; };
+		34BEF48D1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEF48C1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		34BEF4891F8D65F1009C9F7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -17,10 +26,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2262F4F91F9A841200BF694A /* fucntionalMedicineDraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = fucntionalMedicineDraft.app; path = "/Users/zaklintz/Personal Projects/anitaborg/build/Debug-iphoneos/fucntionalMedicineDraft.app"; sourceTree = "<absolute>"; };
-		2262F4FA1F9A841200BF694A /* fucntionalMedicineDraftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = fucntionalMedicineDraftTests.xctest; path = "/Users/zaklintz/Personal Projects/anitaborg/build/Debug-iphoneos/fucntionalMedicineDraftTests.xctest"; sourceTree = "<absolute>"; };
-		2262F4FE1F9A845400BF694A /* fucntionalMedicineDraft */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fucntionalMedicineDraft; sourceTree = "<group>"; };
-		2262F4FF1F9A847E00BF694A /* fucntionalMedicineDraftTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fucntionalMedicineDraftTests; sourceTree = "<group>"; };
+		34BEF4741F8D65F1009C9F7D /* fucntionalMedicineDraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fucntionalMedicineDraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34BEF4771F8D65F1009C9F7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34BEF4791F8D65F1009C9F7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34BEF47C1F8D65F1009C9F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34BEF47E1F8D65F1009C9F7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34BEF4811F8D65F1009C9F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34BEF4831F8D65F1009C9F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34BEF4881F8D65F1009C9F7D /* fucntionalMedicineDraftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fucntionalMedicineDraftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34BEF48C1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fucntionalMedicineDraftTests.swift; sourceTree = "<group>"; };
+		34BEF48E1F8D65F1009C9F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +59,41 @@
 		34BEF46B1F8D65F1009C9F7D = {
 			isa = PBXGroup;
 			children = (
-				2262F4FF1F9A847E00BF694A /* fucntionalMedicineDraftTests */,
-				2262F4FE1F9A845400BF694A /* fucntionalMedicineDraft */,
+				34BEF4761F8D65F1009C9F7D /* fucntionalMedicineDraft */,
+				34BEF48B1F8D65F1009C9F7D /* fucntionalMedicineDraftTests */,
+				34BEF4751F8D65F1009C9F7D /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		34BEF4751F8D65F1009C9F7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34BEF4741F8D65F1009C9F7D /* fucntionalMedicineDraft.app */,
+				34BEF4881F8D65F1009C9F7D /* fucntionalMedicineDraftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34BEF4761F8D65F1009C9F7D /* fucntionalMedicineDraft */ = {
+			isa = PBXGroup;
+			children = (
+				34BEF4771F8D65F1009C9F7D /* AppDelegate.swift */,
+				34BEF4791F8D65F1009C9F7D /* ViewController.swift */,
+				34BEF47B1F8D65F1009C9F7D /* Main.storyboard */,
+				34BEF47E1F8D65F1009C9F7D /* Assets.xcassets */,
+				34BEF4801F8D65F1009C9F7D /* LaunchScreen.storyboard */,
+				34BEF4831F8D65F1009C9F7D /* Info.plist */,
+			);
+			path = fucntionalMedicineDraft;
+			sourceTree = "<group>";
+		};
+		34BEF48B1F8D65F1009C9F7D /* fucntionalMedicineDraftTests */ = {
+			isa = PBXGroup;
+			children = (
+				34BEF48C1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift */,
+				34BEF48E1F8D65F1009C9F7D /* Info.plist */,
+			);
+			path = fucntionalMedicineDraftTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -66,7 +113,7 @@
 			);
 			name = fucntionalMedicineDraft;
 			productName = fucntionalMedicineDraft;
-			productReference = 2262F4F91F9A841200BF694A /* fucntionalMedicineDraft.app */;
+			productReference = 34BEF4741F8D65F1009C9F7D /* fucntionalMedicineDraft.app */;
 			productType = "com.apple.product-type.application";
 		};
 		34BEF4871F8D65F1009C9F7D /* fucntionalMedicineDraftTests */ = {
@@ -84,7 +131,7 @@
 			);
 			name = fucntionalMedicineDraftTests;
 			productName = fucntionalMedicineDraftTests;
-			productReference = 2262F4FA1F9A841200BF694A /* fucntionalMedicineDraftTests.xctest */;
+			productReference = 34BEF4881F8D65F1009C9F7D /* fucntionalMedicineDraftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +164,7 @@
 				Base,
 			);
 			mainGroup = 34BEF46B1F8D65F1009C9F7D;
-			productRefGroup = 34BEF46B1F8D65F1009C9F7D;
+			productRefGroup = 34BEF4751F8D65F1009C9F7D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -132,6 +179,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34BEF4821F8D65F1009C9F7D /* LaunchScreen.storyboard in Resources */,
+				34BEF47F1F8D65F1009C9F7D /* Assets.xcassets in Resources */,
+				34BEF47D1F8D65F1009C9F7D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34BEF47A1F8D65F1009C9F7D /* ViewController.swift in Sources */,
+				34BEF4781F8D65F1009C9F7D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34BEF48D1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +221,25 @@
 			targetProxy = 34BEF4891F8D65F1009C9F7D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34BEF47B1F8D65F1009C9F7D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34BEF47C1F8D65F1009C9F7D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34BEF4801F8D65F1009C9F7D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34BEF4811F8D65F1009C9F7D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		34BEF48F1F8D65F1009C9F7D /* Debug */ = {
@@ -308,6 +380,7 @@
 		34BEF4951F8D65F1009C9F7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = fucntionalMedicineDraftTests/Info.plist;
@@ -323,6 +396,7 @@
 		34BEF4961F8D65F1009C9F7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = fucntionalMedicineDraftTests/Info.plist;
