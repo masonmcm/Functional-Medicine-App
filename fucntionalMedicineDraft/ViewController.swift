@@ -10,6 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: Outlet
+    @IBOutlet weak var enterTextField: UITextField!
+    
+    @IBOutlet weak var label: UILabel!
+    
+    //MARK: Action
+    @IBAction func enter(_ sender: Any) {
+        if enterTextField.text != ""{
+            performSegue(withIdentifier: "segueOne", sender: self)
+        }
+    }
+
+    // ! operator means force unwrap
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let secondController = segue.destination as! ViewControllerTwo
+        secondController.myString = enterTextField.text!
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

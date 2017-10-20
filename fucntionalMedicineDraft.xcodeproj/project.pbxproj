@@ -6,6 +6,19 @@
 	objectVersion = 48;
 	objects = {
 
+<<<<<<< HEAD
+=======
+/* Begin PBXBuildFile section */
+		34BEF4781F8D65F1009C9F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEF4771F8D65F1009C9F7D /* AppDelegate.swift */; };
+		34BEF47A1F8D65F1009C9F7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEF4791F8D65F1009C9F7D /* ViewController.swift */; };
+		34BEF47D1F8D65F1009C9F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34BEF47B1F8D65F1009C9F7D /* Main.storyboard */; };
+		34BEF47F1F8D65F1009C9F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BEF47E1F8D65F1009C9F7D /* Assets.xcassets */; };
+		34BEF4821F8D65F1009C9F7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34BEF4801F8D65F1009C9F7D /* LaunchScreen.storyboard */; };
+		34BEF48D1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEF48C1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift */; };
+		CC4B99611F99535800E6C7B1 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4B99601F99535800E6C7B1 /* ViewControllerTwo.swift */; };
+/* End PBXBuildFile section */
+
+>>>>>>> 21f95b681e03c8a3e824a53586d6fc9d95fc5733
 /* Begin PBXContainerItemProxy section */
 		34BEF4891F8D65F1009C9F7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -17,10 +30,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		2262F4F91F9A841200BF694A /* fucntionalMedicineDraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = fucntionalMedicineDraft.app; path = "/Users/zaklintz/Personal Projects/anitaborg/build/Debug-iphoneos/fucntionalMedicineDraft.app"; sourceTree = "<absolute>"; };
 		2262F4FA1F9A841200BF694A /* fucntionalMedicineDraftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = fucntionalMedicineDraftTests.xctest; path = "/Users/zaklintz/Personal Projects/anitaborg/build/Debug-iphoneos/fucntionalMedicineDraftTests.xctest"; sourceTree = "<absolute>"; };
 		2262F4FE1F9A845400BF694A /* fucntionalMedicineDraft */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fucntionalMedicineDraft; sourceTree = "<group>"; };
 		2262F4FF1F9A847E00BF694A /* fucntionalMedicineDraftTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fucntionalMedicineDraftTests; sourceTree = "<group>"; };
+=======
+		34BEF4741F8D65F1009C9F7D /* fucntionalMedicineDraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fucntionalMedicineDraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34BEF4771F8D65F1009C9F7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34BEF4791F8D65F1009C9F7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34BEF47C1F8D65F1009C9F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34BEF47E1F8D65F1009C9F7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34BEF4811F8D65F1009C9F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34BEF4831F8D65F1009C9F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34BEF4881F8D65F1009C9F7D /* fucntionalMedicineDraftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fucntionalMedicineDraftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34BEF48C1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fucntionalMedicineDraftTests.swift; sourceTree = "<group>"; };
+		34BEF48E1F8D65F1009C9F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC4B99601F99535800E6C7B1 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
+>>>>>>> 21f95b681e03c8a3e824a53586d6fc9d95fc5733
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +76,41 @@
 			);
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
+		34BEF4751F8D65F1009C9F7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34BEF4741F8D65F1009C9F7D /* fucntionalMedicineDraft.app */,
+				34BEF4881F8D65F1009C9F7D /* fucntionalMedicineDraftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34BEF4761F8D65F1009C9F7D /* fucntionalMedicineDraft */ = {
+			isa = PBXGroup;
+			children = (
+				34BEF4771F8D65F1009C9F7D /* AppDelegate.swift */,
+				34BEF4791F8D65F1009C9F7D /* ViewController.swift */,
+				CC4B99601F99535800E6C7B1 /* ViewControllerTwo.swift */,
+				34BEF47B1F8D65F1009C9F7D /* Main.storyboard */,
+				34BEF47E1F8D65F1009C9F7D /* Assets.xcassets */,
+				34BEF4801F8D65F1009C9F7D /* LaunchScreen.storyboard */,
+				34BEF4831F8D65F1009C9F7D /* Info.plist */,
+			);
+			path = fucntionalMedicineDraft;
+			sourceTree = "<group>";
+		};
+		34BEF48B1F8D65F1009C9F7D /* fucntionalMedicineDraftTests */ = {
+			isa = PBXGroup;
+			children = (
+				34BEF48C1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift */,
+				34BEF48E1F8D65F1009C9F7D /* Info.plist */,
+			);
+			path = fucntionalMedicineDraftTests;
+			sourceTree = "<group>";
+		};
+>>>>>>> 21f95b681e03c8a3e824a53586d6fc9d95fc5733
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+=======
+				34BEF47A1F8D65F1009C9F7D /* ViewController.swift in Sources */,
+				34BEF4781F8D65F1009C9F7D /* AppDelegate.swift in Sources */,
+				CC4B99611F99535800E6C7B1 /* ViewControllerTwo.swift in Sources */,
+>>>>>>> 21f95b681e03c8a3e824a53586d6fc9d95fc5733
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
