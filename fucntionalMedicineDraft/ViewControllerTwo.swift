@@ -12,12 +12,14 @@ class ViewControllerTwo: UIViewController {
     
     //MARK: Actions
     @IBAction func backButton(_ sender: Any) {
+        //reset all text fields and make invisible if back button is hit
         TFLessThan20.isHidden = true
         TFGreaterThan50.isHidden = true
         TFAverage.isHidden = true
         dismiss(animated: true, completion: nil)
     }
     
+    //hook up three UITextViews (one for each potential result)
     @IBOutlet weak var TFLessThan20: UITextView!
     @IBOutlet weak var TFGreaterThan50: UITextView!
     @IBOutlet weak var TFAverage: UITextView!
@@ -27,16 +29,19 @@ class ViewControllerTwo: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //make all of the texts fields invisible to start
         TFLessThan20.isHidden = true
         TFGreaterThan50.isHidden = true
         TFAverage.isHidden = true
+       
+        //make user input into an Int
         let myStringToNum = Int(myString);
+        //figure out which range the input is in
         if(myStringToNum! < 20) {
-            //add text here for < 20 here
+            //make Text fields visible based off range number is in
             TFLessThan20.isHidden = false
         }
         else if(myStringToNum! > 50) {
-            //add text here for > 50 here
             TFGreaterThan50.isHidden = false
         }
         else {
