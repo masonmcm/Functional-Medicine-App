@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +20,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iFD-GL-yKJ">
                                 <rect key="frame" x="112.5" y="293" width="150" height="80.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEr-Cu-5cT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitamin D Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEr-Cu-5cT">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -34,7 +34,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ki7-vK-3eA">
                                         <rect key="frame" x="0.0" y="50.5" width="150" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Get My Results"/>
                                         <connections>
                                             <action selector="enter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rgj-r6-nrh"/>
                                             <segue destination="cOI-ht-GKS" kind="show" identifier="segueOne" id="xf7-8J-8Jm"/>
@@ -70,37 +70,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAz-to-AE7">
-                                <rect key="frame" x="166" y="202" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChA-La-web">
-                                <rect key="frame" x="45" y="602" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="51" y="602" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="backButton:" destination="cOI-ht-GKS" eventType="touchUpInside" id="3kA-Jv-ANm"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="backSegue" id="Fv8-ee-ToS"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RLv-sX-umd">
+                                <rect key="frame" x="67" y="101" width="240" height="376"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Your Vitamin D levels are low, you can do these things to increase your Vitamin D levels:
+
+Eat these foods:
+Fatty Fish              
+Pasteurized Egg Yolks 
+
+Increase UV Exposure (15 minutes to 2 hours depending on skin type) 
+Use tanning beds, but proceed with caution 
+
+Supplements: 
+Talk to your physician about prescribing a vitamin D supplement 
+Retest in 2-3 month to check levels 
+Adjust after discussing when doctor"</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Your Vitamin D levels are within healthy range!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bow-qi-ur2">
+                                <rect key="frame" x="67" y="101" width="240" height="376"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t4N-bl-pD6">
+                                <rect key="frame" x="67" y="101" width="240" height="376"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Your Vitamin D levels are high, here are ways to decrease your Vitamin D levels:
+
+Stop excessive intake
+Drink more fluids
+Talk to your doctor about medications </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ChA-La-web" firstAttribute="centerY" secondItem="Uea-LW-uJJ" secondAttribute="centerY" constant="283.5" id="Hm3-Im-Rnk"/>
-                            <constraint firstItem="BAz-to-AE7" firstAttribute="centerY" secondItem="Uea-LW-uJJ" secondAttribute="centerY" constant="-121" id="QAh-c2-YlI"/>
-                            <constraint firstItem="BAz-to-AE7" firstAttribute="centerX" secondItem="Uea-LW-uJJ" secondAttribute="centerX" id="l0R-7C-30b"/>
                             <constraint firstItem="ChA-La-web" firstAttribute="centerX" secondItem="Uea-LW-uJJ" secondAttribute="centerX" constant="-119.5" id="xch-zI-Zel"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mEp-pN-8oO"/>
                     </view>
                     <connections>
-                        <outlet property="recievingLabel" destination="BAz-to-AE7" id="Eyw-oE-wgT"/>
+                        <outlet property="TFAverage" destination="Bow-qi-ur2" id="KxV-kD-0em"/>
+                        <outlet property="TFGreaterThan50" destination="t4N-bl-pD6" id="iXR-1p-Dxs"/>
+                        <outlet property="TFLessThan20" destination="RLv-sX-umd" id="JAi-Gr-7QJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQq-RA-cYX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="807" y="-253"/>
+            <point key="canvasLocation" x="805.60000000000002" y="-253.2233883058471"/>
         </scene>
     </scenes>
 </document>

@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     //MARK: Action
-    //added random comment so I could commit again after my errors
     @IBAction func enter(_ sender: Any) {
         if enterTextField.text != ""{
             performSegue(withIdentifier: "segueOne", sender: self)

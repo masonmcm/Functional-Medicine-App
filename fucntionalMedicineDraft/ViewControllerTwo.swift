@@ -10,21 +10,38 @@ import UIKit
 
 class ViewControllerTwo: UIViewController {
     
-    //MARK: Outlets
-    @IBOutlet weak var recievingLabel: UILabel!
-    
-    
     //MARK: Actions
     @IBAction func backButton(_ sender: Any) {
-           dismiss(animated: true, completion: nil)
+        TFLessThan20.isHidden = true
+        TFGreaterThan50.isHidden = true
+        TFAverage.isHidden = true
+        dismiss(animated: true, completion: nil)
     }
-
-    var myString = String()
     
+    @IBOutlet weak var TFLessThan20: UITextView!
+    @IBOutlet weak var TFGreaterThan50: UITextView!
+    @IBOutlet weak var TFAverage: UITextView!
+    
+    
+    var myString = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        recievingLabel.text = myString;
+        TFLessThan20.isHidden = true
+        TFGreaterThan50.isHidden = true
+        TFAverage.isHidden = true
+        let myStringToNum = Int(myString);
+        if(myStringToNum! < 20) {
+            //add text here for < 20 here
+            TFLessThan20.isHidden = false
+        }
+        else if(myStringToNum! > 50) {
+            //add text here for > 50 here
+            TFGreaterThan50.isHidden = false
+        }
+        else {
+           TFAverage.isHidden = false
+        }
         // Do any additional setup after loading the view.
     }
 
