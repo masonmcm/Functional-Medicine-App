@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TX3-Yb-b9d">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,77 +9,210 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Controller Main-->
+        <scene sceneID="yac-9n-Gbf">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="TX3-Yb-b9d" customClass="ViewControllerMain" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LWy-1x-tJR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iFD-GL-yKJ">
-                                <rect key="frame" x="112.5" y="293" width="150" height="80.5"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khk-x9-kCa">
+                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitamin D Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEr-Cu-5cT">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9iY-lf-OLG">
-                                        <rect key="frame" x="0.0" y="20.5" width="150" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ki7-vK-3eA">
-                                        <rect key="frame" x="0.0" y="50.5" width="150" height="30"/>
-                                        <state key="normal" title="Get My Results"/>
-                                        <connections>
-                                            <action selector="enter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rgj-r6-nrh"/>
-                                            <segue destination="cOI-ht-GKS" kind="show" identifier="segueOne" id="xf7-8J-8Jm"/>
-                                        </connections>
-                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHE-Yq-WLX">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNa-oL-3GF">
+                                                <rect key="frame" x="0.0" y="53" width="286" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Vitamin D"/>
+                                                <connections>
+                                                    <action selector="segueVitaminD:" destination="TX3-Yb-b9d" eventType="touchUpInside" id="M0J-gT-JZN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGP-4t-wc7">
+                                                <rect key="frame" x="0.0" y="193" width="286" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Magnesium"/>
+                                                <connections>
+                                                    <action selector="segueMagnesium:" destination="TX3-Yb-b9d" eventType="touchUpInside" id="xh4-gX-snc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHO-Ju-x61">
+                                                <rect key="frame" x="0.0" y="372" width="286" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Vitamin A"/>
+                                                <connections>
+                                                    <action selector="segueVitaminA:" destination="TX3-Yb-b9d" eventType="touchUpInside" id="yqb-vn-4Ky"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cM7-4o-nlO">
+                                                <rect key="frame" x="0.0" y="555" width="286" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Vitamin K2"/>
+                                                <connections>
+                                                    <action selector="segueVitaminK2:" destination="TX3-Yb-b9d" eventType="touchUpInside" id="SfR-6V-1fS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bym-0R-YGE">
+                                                <rect key="frame" x="0.0" y="744" width="286" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Vitamin C"/>
+                                                <connections>
+                                                    <action selector="segueVitaminC:" destination="TX3-Yb-b9d" eventType="touchUpInside" id="fTg-yv-8IH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="7FM-wL-ZWP"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="TGJ-6x-vOK"/>
+                                    <constraint firstAttribute="bottom" secondItem="lHE-Yq-WLX" secondAttribute="bottom" id="8or-0f-X7Y"/>
+                                    <constraint firstItem="lHE-Yq-WLX" firstAttribute="top" secondItem="Khk-x9-kCa" secondAttribute="top" id="F4l-M5-LxU"/>
+                                    <constraint firstAttribute="trailing" secondItem="lHE-Yq-WLX" secondAttribute="trailing" id="ZJG-dw-Kh2"/>
+                                    <constraint firstItem="lHE-Yq-WLX" firstAttribute="leading" secondItem="Khk-x9-kCa" secondAttribute="leading" id="gxB-QL-gLq"/>
                                 </constraints>
-                            </stackView>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iFD-GL-yKJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IUT-VP-0Nb"/>
-                            <constraint firstItem="iFD-GL-yKJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="apW-vb-LGf"/>
+                            <constraint firstItem="Khk-x9-kCa" firstAttribute="trailing" secondItem="eF4-Qr-b4S" secondAttribute="trailing" id="bEH-G3-dVO"/>
+                            <constraint firstItem="lHE-Yq-WLX" firstAttribute="width" secondItem="LWy-1x-tJR" secondAttribute="width" id="c5V-UA-Hbf"/>
+                            <constraint firstItem="Khk-x9-kCa" firstAttribute="top" secondItem="eF4-Qr-b4S" secondAttribute="top" id="ifd-3U-wZH"/>
+                            <constraint firstItem="Khk-x9-kCa" firstAttribute="leading" secondItem="eF4-Qr-b4S" secondAttribute="leading" id="kqa-TH-b7Y"/>
+                            <constraint firstItem="Khk-x9-kCa" firstAttribute="bottom" secondItem="eF4-Qr-b4S" secondAttribute="bottom" id="p65-Sv-vXY"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="eF4-Qr-b4S"/>
                     </view>
+                    <navigationItem key="navigationItem" id="XWb-A4-FmZ"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                     <connections>
-                        <outlet property="enterTextField" destination="9iY-lf-OLG" id="woW-tq-TL6"/>
-                        <outlet property="label" destination="mEr-Cu-5cT" id="uub-lt-vcK"/>
+                        <segue destination="wMl-cE-EbR" kind="show" identifier="segueVitaminD" id="qDq-Wh-Eao"/>
+                        <segue destination="mCe-mb-ymn" kind="show" identifier="segueOther" id="S0u-eb-thX"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BhO-no-w3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="-253.2233883058471"/>
+            <point key="canvasLocation" x="32.799999999999997" y="454.27286356821594"/>
         </scene>
-        <!--View Controller Two-->
-        <scene sceneID="Ybg-f5-cUU">
+        <!--View Controller VitaminD-->
+        <scene sceneID="mPJ-n3-D1c">
             <objects>
-                <viewController id="cOI-ht-GKS" customClass="ViewControllerTwo" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Uea-LW-uJJ">
+                <viewController id="wMl-cE-EbR" customClass="ViewControllerVitaminD" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gqc-Yg-Wxh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChA-La-web">
-                                <rect key="frame" x="51" y="602" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w9j-uo-biU">
+                                <rect key="frame" x="120" y="230" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08I-kK-clp">
+                                <rect key="frame" x="120" y="256" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get My Results"/>
                                 <connections>
-                                    <action selector="backButton:" destination="cOI-ht-GKS" eventType="touchUpInside" id="3kA-Jv-ANm"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="backSegue" id="Fv8-ee-ToS"/>
+                                    <action selector="enter:" destination="wMl-cE-EbR" eventType="touchUpInside" id="xm2-0L-7c9"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RLv-sX-umd">
-                                <rect key="frame" x="67" y="101" width="240" height="376"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vitamin D Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIS-Pv-BQ1">
+                                <rect key="frame" x="120" y="202" width="135" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5e-1Z-OzJ">
+                                <rect key="frame" x="16" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backPressed:" destination="wMl-cE-EbR" eventType="touchUpInside" id="xZ7-vK-wVc"/>
+                                    <segue destination="TX3-Yb-b9d" kind="show" id="CGD-mO-swF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="uFU-b7-4bg"/>
+                    </view>
+                    <connections>
+                        <outlet property="enterTextField" destination="w9j-uo-biU" id="mZ7-5V-R58"/>
+                        <segue destination="fhF-t9-t8f" kind="show" identifier="segueVitaminDResults" id="P9t-tr-zJM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ahm-V8-Pnx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="455.62218890554726"/>
+        </scene>
+        <!--View Controller Magnesium-->
+        <scene sceneID="w7B-QS-QpB">
+            <objects>
+                <viewController id="mCe-mb-ymn" customClass="ViewControllerMagnesium" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HOA-0U-cBd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Segue to Other Options" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJi-hw-EuF">
+                                <rect key="frame" x="89" y="217" width="197" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ND9-IZ-UhH">
+                                <rect key="frame" x="16" y="617" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backPressed:" destination="mCe-mb-ymn" eventType="touchUpInside" id="URp-Un-UMt"/>
+                                    <segue destination="TX3-Yb-b9d" kind="show" id="dIv-UU-6Lx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="946-4j-8WE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ooB-9x-zcN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.60000000000002" y="1148.2758620689656"/>
+        </scene>
+        <!--View Controller VitaminD Results-->
+        <scene sceneID="rve-wa-asI">
+            <objects>
+                <viewController id="fhF-t9-t8f" customClass="ViewControllerVitaminDResults" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LSJ-VB-Ie5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cE3-NV-tCb">
+                                <rect key="frame" x="67" y="155" width="240" height="357"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Your Vitamin D levels are high, here are ways to decrease your Vitamin D levels:
+
+Stop excessive intake
+Drink more fluids
+Talk to your doctor about medications </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Your Vitamin D levels are within healthy range!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PwO-0f-uGy">
+                                <rect key="frame" x="67" y="155" width="240" height="357"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sJp-8M-vjs">
+                                <rect key="frame" x="67" y="155" width="240" height="357"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Your Vitamin D levels are low, you can do these things to increase your Vitamin D levels:
@@ -94,46 +227,36 @@ Use tanning beds, but proceed with caution
 Supplements: 
 Talk to your physician about prescribing a vitamin D supplement 
 Retest in 2-3 month to check levels 
-Adjust after discussing when doctor"</string>
+Adjust after discussing when doctor</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Your Vitamin D levels are within healthy range!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bow-qi-ur2">
-                                <rect key="frame" x="67" y="101" width="240" height="376"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfQ-Rg-isz">
+                                <rect key="frame" x="16" y="617" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="t4N-bl-pD6">
-                                <rect key="frame" x="67" y="101" width="240" height="376"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Your Vitamin D levels are high, here are ways to decrease your Vitamin D levels:
-
-Stop excessive intake
-Drink more fluids
-Talk to your doctor about medications </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backPressed:" destination="fhF-t9-t8f" eventType="touchUpInside" id="1gM-xl-8O5"/>
+                                    <segue destination="wMl-cE-EbR" kind="show" id="LgW-qS-Aac"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ChA-La-web" firstAttribute="centerY" secondItem="Uea-LW-uJJ" secondAttribute="centerY" constant="283.5" id="Hm3-Im-Rnk"/>
-                            <constraint firstItem="ChA-La-web" firstAttribute="centerX" secondItem="Uea-LW-uJJ" secondAttribute="centerX" constant="-119.5" id="xch-zI-Zel"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="mEp-pN-8oO"/>
+                        <viewLayoutGuide key="safeArea" id="shS-2z-WyL"/>
                     </view>
                     <connections>
-                        <outlet property="TFAverage" destination="Bow-qi-ur2" id="KxV-kD-0em"/>
-                        <outlet property="TFGreaterThan50" destination="t4N-bl-pD6" id="iXR-1p-Dxs"/>
-                        <outlet property="TFLessThan20" destination="RLv-sX-umd" id="JAi-Gr-7QJ"/>
+                        <outlet property="TFAverage" destination="PwO-0f-uGy" id="n1r-PG-gXb"/>
+                        <outlet property="TFGreaterThan50" destination="cE3-NV-tCb" id="fDD-XJ-OFw"/>
+                        <outlet property="TFLessThan20" destination="sJp-8M-vjs" id="buR-ea-gOp"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nQq-RA-cYX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fYP-jZ-Poh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="805.60000000000002" y="-253.2233883058471"/>
+            <point key="canvasLocation" x="1508" y="459.22038980509751"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qDq-Wh-Eao"/>
+        <segue reference="CGD-mO-swF"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -1,39 +1,34 @@
 //
-//  ViewControllerTwo.swift
+//  ViewControllerVitaminDResults.swift
 //  fucntionalMedicineDraft
 //
-//  Created by Mason Mathew on 10/19/17.
+//  Created by Zachary Lintz on 10/29/17.
 //  Copyright © 2017 Gabi Stein. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerTwo: UIViewController {
-    
-    //MARK: Actions
-    @IBAction func backButton(_ sender: Any) {
-        //reset all text fields and make invisible if back button is hit
-        TFLessThan20.isHidden = true
-        TFGreaterThan50.isHidden = true
-        TFAverage.isHidden = true
-        dismiss(animated: true, completion: nil)
-    }
+class ViewControllerVitaminDResults: UIViewController {
     
     //hook up three UITextViews (one for each potential result)
     @IBOutlet weak var TFLessThan20: UITextView!
-    @IBOutlet weak var TFGreaterThan50: UITextView!
     @IBOutlet weak var TFAverage: UITextView!
-    
+    @IBOutlet weak var TFGreaterThan50: UITextView!
     
     var myString = String()
     
+    @IBAction func backPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //make all of the texts fields invisible to start
         TFLessThan20.isHidden = true
         TFGreaterThan50.isHidden = true
         TFAverage.isHidden = true
-       
+        
         //make user input into an Int
         let myStringToNum = Int(myString);
         //figure out which range the input is in
@@ -45,8 +40,9 @@ class ViewControllerTwo: UIViewController {
             TFGreaterThan50.isHidden = false
         }
         else {
-           TFAverage.isHidden = false
+            TFAverage.isHidden = false
         }
+
         // Do any additional setup after loading the view.
     }
 
