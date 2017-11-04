@@ -1,39 +1,40 @@
 //
-//  ViewControllerMain.swift
+//  ViewControllerMagnesiumResults.swift
 //  fucntionalMedicineDraft
 //
-//  Created by Zachary Lintz on 10/29/17.
+//  Created by Zachary Lintz on 11/3/17.
 //  Copyright © 2017 Gabi Stein. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerMain: UIViewController {
-
-    //identify which segue to perform
-    @IBAction func segueVitaminD(_ sender: Any) {
-        performSegue(withIdentifier: "segueVitaminD", sender: self)
-    }
+class ViewControllerMagnesiumResults: UIViewController {
     
-    @IBAction func segueMagnesium(_ sender: Any) {
-        performSegue(withIdentifier: "segueMagnesium", sender: self)
-    }
+    @IBOutlet var TVAverage: UIView!
     
-    @IBAction func segueVitaminA(_ sender: Any) {
-        performSegue(withIdentifier: "segueVitaminA", sender: self)
-    }
+    var myString = String()
     
-    @IBAction func segueVitaminK2(_ sender: Any) {
-        performSegue(withIdentifier: "segueVitaminK2", sender: self)
+    @IBAction func backButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
-    
-    @IBAction func segueVitaminC(_ sender: Any) {
-        performSegue(withIdentifier: "segueVitaminC", sender: self)
-    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        TVAverage.isHidden = true
+        //make user input into an Int
+        let myStringToNum = Int(myString);
+        if(myStringToNum! < 20) {
+            //make Text fields visible based off range number is in
+           TVAverage.isHidden = false
+        }
+        else if(myStringToNum! > 50) {
+            TVAverage.isHidden = false
+        }
+        else {
+            TVAverage.isHidden = false
+        }
+        //figure out which range the input is in
 
         // Do any additional setup after loading the view.
     }

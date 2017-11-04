@@ -1,38 +1,39 @@
 //
-//  ViewControllerMagnesium.swift
+//  ViewControllerVitaminK2.swift
 //  fucntionalMedicineDraft
 //
-//  Created by Zachary Lintz on 10/29/17.
+//  Created by Zachary Lintz on 11/4/17.
 //  Copyright © 2017 Gabi Stein. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerMagnesium: UIViewController {
+class ViewControllerVitaminK2: UIViewController {
 
-   
     @IBOutlet weak var enterTextField: UITextField!
     
-    @IBAction func backPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func enter(_ sender: Any) {
-        if enterTextField.text != "" {
-            performSegue(withIdentifier: "segueMagnesiumResults", sender: self)
+        if enterTextField.text != ""{
+            performSegue(withIdentifier: "segueVitaminK2Results", sender: self)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "segueMagnesiumResults"){
+        if(segue.identifier == "segueVitaminK2Results"){
             if (Int(enterTextField.text!) != nil) { //input will be nil if a number is not input
-                let secondController = segue.destination as! ViewControllerMagnesiumResults
+                let secondController = segue.destination as! ViewControllerVitaminK2Results
                 secondController.myString = enterTextField.text!
             } else {
                 createAlert() //show alert if input is nil
             }
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
