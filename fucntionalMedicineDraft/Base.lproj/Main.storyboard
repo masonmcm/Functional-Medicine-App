@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TX3-Yb-b9d">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,82 +14,124 @@
             <objects>
                 <viewController id="TX3-Yb-b9d" customClass="ViewControllerMain" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LWy-1x-tJR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khk-x9-kCa">
-                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7H-1p-SxJ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="1490"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHE-Yq-WLX">
-                                        <rect key="frame" x="0.0" y="-10" width="375" height="1000"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnb-Wb-Xnp">
+                                        <rect key="frame" x="36" y="15" width="304" height="235"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNa-oL-3GF">
-                                                <rect key="frame" x="39" y="321.50151471942627" width="297.00000000000006" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="Vitamin D Button"/>
-                                                <connections>
-                                                    <action selector="segueVitaminD:" destination="TX3-Yb-b9d" eventType="touchUpInside" id="M0J-gT-JZN"/>
-                                                </connections>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Asset 5" translatesAutoresizingMaskIntoConstraints="NO" id="cyz-3N-0tP">
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="235"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bT-li-Q1f">
+                                                <rect key="frame" x="105" y="190" width="166" height="32"/>
+                                                <state key="normal" title="Button" image="Asset 6"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHO-Ju-x61">
-                                                <rect key="frame" x="39" y="208.50151471942581" width="297.00000000000006" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.58625173568725586" green="0.7549668550491333" blue="0.35685941576957703" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.58625173568725586" green="0.7549668550491333" blue="0.35685941576957703" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="9bT-li-Q1f" firstAttribute="top" secondItem="bnb-Wb-Xnp" secondAttribute="top" constant="190" id="1oT-Lr-fRZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="9bT-li-Q1f" secondAttribute="trailing" constant="33" id="M8k-51-gS0"/>
+                                            <constraint firstItem="cyz-3N-0tP" firstAttribute="leading" secondItem="bnb-Wb-Xnp" secondAttribute="leading" id="MiA-Eb-bOY"/>
+                                            <constraint firstItem="cyz-3N-0tP" firstAttribute="top" secondItem="bnb-Wb-Xnp" secondAttribute="top" id="Mlq-YY-9Jr"/>
+                                            <constraint firstItem="9bT-li-Q1f" firstAttribute="leading" secondItem="bnb-Wb-Xnp" secondAttribute="leading" constant="105" id="PYI-Zd-IPh"/>
+                                            <constraint firstAttribute="height" constant="235" id="PwG-Jx-vzf"/>
+                                            <constraint firstAttribute="trailing" secondItem="cyz-3N-0tP" secondAttribute="trailing" id="Qxv-pk-w6O"/>
+                                            <constraint firstAttribute="bottom" secondItem="cyz-3N-0tP" secondAttribute="bottom" id="bML-OB-LG4"/>
+                                            <constraint firstAttribute="bottom" secondItem="9bT-li-Q1f" secondAttribute="bottom" constant="13" id="jiU-Q3-Bwp"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="g97-hD-fwK">
+                                        <rect key="frame" x="0.0" y="250" width="375" height="908"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="700" verticalCompressionResistancePriority="800" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHO-Ju-x61">
+                                                <rect key="frame" x="35" y="100" width="305" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="VxR-8g-o0Q"/>
+                                                </constraints>
                                                 <state key="normal" image="Vitamin A Button"/>
                                                 <connections>
                                                     <action selector="segueVitaminA:" destination="TX3-Yb-b9d" eventType="touchUpInside" id="yqb-vn-4Ky"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cM7-4o-nlO">
-                                                <rect key="frame" x="39" y="445.50151471942604" width="297.00000000000006" height="68"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="700" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNa-oL-3GF">
+                                                <rect key="frame" x="35" y="280" width="305" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="izG-SR-sCg"/>
+                                                </constraints>
+                                                <state key="normal" image="Vitamin D Button"/>
+                                                <connections>
+                                                    <action selector="segueVitaminD:" destination="TX3-Yb-b9d" eventType="touchUpInside" id="M0J-gT-JZN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cM7-4o-nlO">
+                                                <rect key="frame" x="35" y="460" width="305" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="qy2-Al-R6m"/>
+                                                </constraints>
                                                 <state key="normal" image="Vitamin K2 Button"/>
                                                 <connections>
                                                     <action selector="segueVitaminK2:" destination="TX3-Yb-b9d" eventType="touchUpInside" id="SfR-6V-1fS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bym-0R-YGE">
-                                                <rect key="frame" x="39" y="586.50151471942627" width="297.00000000000006" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bym-0R-YGE">
+                                                <rect key="frame" x="35" y="640" width="305" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="oe1-ub-dqI"/>
+                                                </constraints>
                                                 <state key="normal" image="Vitamin C Button"/>
                                                 <connections>
                                                     <action selector="segueVitaminC:" destination="TX3-Yb-b9d" eventType="touchUpInside" id="fTg-yv-8IH"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGP-4t-wc7">
-                                                <rect key="frame" x="39" y="722.50151471942604" width="297.00000000000006" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGP-4t-wc7">
+                                                <rect key="frame" x="35" y="820" width="305" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="0rX-Jy-lAQ"/>
+                                                </constraints>
                                                 <state key="normal" image="Magnesium Button"/>
                                                 <connections>
                                                     <action selector="segueMagnesium:" destination="TX3-Yb-b9d" eventType="touchUpInside" id="xh4-gX-snc"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="7FM-wL-ZWP"/>
+                                            <constraint firstItem="WNa-oL-3GF" firstAttribute="top" secondItem="LHO-Ju-x61" secondAttribute="bottom" constant="100" id="jGu-K8-UbZ"/>
+                                            <constraint firstAttribute="width" constant="375" id="wEC-h3-m8w"/>
                                         </constraints>
-                                    </view>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="100" leading="35" bottom="8" trailing="35"/>
+                                    </stackView>
                                 </subviews>
+                                <color key="backgroundColor" red="0.5977933406829834" green="0.7710273265838623" blue="0.33331587910652161" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="lHE-Yq-WLX" secondAttribute="bottom" id="8or-0f-X7Y"/>
-                                    <constraint firstItem="lHE-Yq-WLX" firstAttribute="top" secondItem="Khk-x9-kCa" secondAttribute="top" id="F4l-M5-LxU"/>
-                                    <constraint firstAttribute="trailing" secondItem="lHE-Yq-WLX" secondAttribute="trailing" id="ZJG-dw-Kh2"/>
-                                    <constraint firstItem="lHE-Yq-WLX" firstAttribute="leading" secondItem="Khk-x9-kCa" secondAttribute="leading" id="gxB-QL-gLq"/>
+                                    <constraint firstItem="bnb-Wb-Xnp" firstAttribute="top" secondItem="C7H-1p-SxJ" secondAttribute="top" constant="15" id="2Cc-mo-h3a"/>
+                                    <constraint firstItem="g97-hD-fwK" firstAttribute="top" secondItem="bnb-Wb-Xnp" secondAttribute="bottom" id="5t1-dq-FTe"/>
+                                    <constraint firstItem="bnb-Wb-Xnp" firstAttribute="centerX" secondItem="C7H-1p-SxJ" secondAttribute="centerX" id="F4N-as-j5D"/>
+                                    <constraint firstAttribute="trailing" secondItem="bnb-Wb-Xnp" secondAttribute="trailing" constant="35" id="NDk-oV-XFa"/>
+                                    <constraint firstItem="bnb-Wb-Xnp" firstAttribute="leading" secondItem="C7H-1p-SxJ" secondAttribute="leading" constant="36" id="QWJ-5L-mUI"/>
+                                    <constraint firstAttribute="bottom" secondItem="bnb-Wb-Xnp" secondAttribute="bottom" constant="1264" id="khq-1Y-fyl"/>
+                                    <constraint firstItem="bnb-Wb-Xnp" firstAttribute="centerX" secondItem="g97-hD-fwK" secondAttribute="centerX" id="nVz-x5-goB"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.76147842407226562" green="0.85028338432312012" blue="0.34504768252372742" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Khk-x9-kCa" firstAttribute="trailing" secondItem="eF4-Qr-b4S" secondAttribute="trailing" id="bEH-G3-dVO"/>
-                            <constraint firstItem="lHE-Yq-WLX" firstAttribute="width" secondItem="LWy-1x-tJR" secondAttribute="width" id="c5V-UA-Hbf"/>
-                            <constraint firstItem="Khk-x9-kCa" firstAttribute="top" secondItem="eF4-Qr-b4S" secondAttribute="top" id="ifd-3U-wZH"/>
-                            <constraint firstItem="Khk-x9-kCa" firstAttribute="leading" secondItem="eF4-Qr-b4S" secondAttribute="leading" id="kqa-TH-b7Y"/>
-                            <constraint firstItem="Khk-x9-kCa" firstAttribute="bottom" secondItem="eF4-Qr-b4S" secondAttribute="bottom" id="p65-Sv-vXY"/>
+                            <constraint firstAttribute="trailing" secondItem="C7H-1p-SxJ" secondAttribute="trailing" id="37P-AN-aa0"/>
+                            <constraint firstItem="C7H-1p-SxJ" firstAttribute="centerX" secondItem="LWy-1x-tJR" secondAttribute="centerX" id="UGt-Q0-ioj"/>
+                            <constraint firstItem="C7H-1p-SxJ" firstAttribute="leading" secondItem="eF4-Qr-b4S" secondAttribute="leading" id="a8o-sC-ROs"/>
+                            <constraint firstItem="C7H-1p-SxJ" firstAttribute="centerY" secondItem="LWy-1x-tJR" secondAttribute="centerY" constant="15" id="atM-Kc-4ff"/>
+                            <constraint firstItem="eF4-Qr-b4S" firstAttribute="trailing" secondItem="C7H-1p-SxJ" secondAttribute="trailing" id="cdZ-0s-Z0V"/>
+                            <constraint firstItem="C7H-1p-SxJ" firstAttribute="top" secondItem="LWy-1x-tJR" secondAttribute="top" constant="20" id="fZ9-DJ-Mav"/>
+                            <constraint firstItem="C7H-1p-SxJ" firstAttribute="leading" secondItem="eF4-Qr-b4S" secondAttribute="leading" id="wbl-pJ-Fnl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eF4-Qr-b4S"/>
                     </view>
                     <navigationItem key="navigationItem" id="XWb-A4-FmZ"/>
-                    <size key="freeformSize" width="375" height="1000"/>
+                    <size key="freeformSize" width="375" height="1500"/>
                     <connections>
                         <segue destination="wMl-cE-EbR" kind="show" identifier="segueVitaminD" id="qDq-Wh-Eao"/>
                         <segue destination="mCe-mb-ymn" kind="show" identifier="segueMagnesium" id="S0u-eb-thX"/>
@@ -100,14 +142,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BhO-no-w3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-698.39999999999998" y="752.02398800599701"/>
+            <point key="canvasLocation" x="-698.73046875" y="750.21961932650072"/>
         </scene>
         <!--View Controller VitaminK2-->
         <scene sceneID="4Iz-eo-ohc">
             <objects>
                 <viewController id="3gp-As-rRT" customClass="ViewControllerVitaminK2" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1KH-in-bfb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vitamin K2 Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHU-SH-s30">
@@ -159,7 +201,7 @@
             <objects>
                 <viewController id="aQf-1Z-HGA" customClass="ViewControllerVitaminK2Results" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Ky-na-jto">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RnS-8q-TC2">
@@ -196,7 +238,7 @@
             <objects>
                 <viewController id="DNR-qO-J5t" customClass="ViewControllerVitaminA" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b8L-qL-NWO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vitamin A Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74M-Cy-eUY">
@@ -248,7 +290,7 @@
             <objects>
                 <viewController id="wRx-xV-KBE" customClass="ViewControllerVitaminAResults" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PRa-0Y-Rle">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CI0-SH-gT4">
@@ -285,7 +327,7 @@
             <objects>
                 <viewController id="wMl-cE-EbR" customClass="ViewControllerVitaminD" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gqc-Yg-Wxh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w9j-uo-biU">
@@ -337,7 +379,7 @@
             <objects>
                 <viewController id="mCe-mb-ymn" customClass="ViewControllerMagnesium" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HOA-0U-cBd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ND9-IZ-UhH">
@@ -389,7 +431,7 @@
             <objects>
                 <viewController id="XAG-DX-qh5" customClass="ViewControllerVitaminC" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gis-So-PXL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vitamin C Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WN-9I-Tpj">
@@ -441,7 +483,7 @@
             <objects>
                 <viewController id="YAy-kP-CgS" customClass="ViewControllerVitaminCResults" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gbR-gy-N9A">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nsu-lQ-eDL">
@@ -478,7 +520,7 @@
             <objects>
                 <viewController id="zRX-Sj-z1z" customClass="ViewControllerMagnesiumResults" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RcD-JP-jcX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHY-pS-SC9">
@@ -515,7 +557,7 @@
             <objects>
                 <viewController id="fhF-t9-t8f" customClass="ViewControllerVitaminDResults" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LSJ-VB-Ie5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cE3-NV-tCb">
@@ -582,19 +624,20 @@ Adjust after discussing when doctor</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Magnesium Button" width="751" height="140"/>
-        <image name="Vitamin A Button" width="751" height="140"/>
-        <image name="Vitamin C Button" width="751" height="140"/>
-        <image name="Vitamin D Button" width="751" height="140"/>
-        <image name="Vitamin K2 Button" width="751" height="140"/>
+        <image name="Asset 5" width="518" height="365"/>
+        <image name="Asset 6" width="386" height="83"/>
+        <image name="Magnesium Button" width="756" height="142"/>
+        <image name="Vitamin A Button" width="756" height="142"/>
+        <image name="Vitamin C Button" width="756" height="142"/>
+        <image name="Vitamin D Button" width="757" height="143"/>
+        <image name="Vitamin K2 Button" width="756" height="142"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="b3r-7p-WAZ"/>
         <segue reference="ra9-v1-OSX"/>
         <segue reference="S0u-eb-thX"/>
         <segue reference="qDq-Wh-Eao"/>
-        <segue reference="a7c-VG-g3p"/>
-        <segue reference="kBM-x4-yzj"/>
-        <segue reference="3fz-uh-Hlp"/>
+        <segue reference="rEC-8A-Mb8"/>
+        <segue reference="rO8-hj-oIo"/>
+        <segue reference="dIv-UU-6Lx"/>
     </inferredMetricsTieBreakers>
 </document>
