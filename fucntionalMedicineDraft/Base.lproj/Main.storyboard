@@ -270,10 +270,21 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backdrop 2" translatesAutoresizingMaskIntoConstraints="NO" id="cuh-CZ-E2D">
                                         <rect key="frame" x="-1" y="3" width="311" height="503"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RnS-8q-TC2">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You are low, baby! " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RnS-8q-TC2" userLabel="TVLow">
                                         <rect key="frame" x="35" y="76" width="240" height="357"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You are average, baby! Yee haw!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O09-di-CW3">
+                                        <rect key="frame" x="34" y="77" width="242" height="356"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You are high, baby!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oLS-ol-n93">
+                                        <rect key="frame" x="35" y="77" width="240" height="356"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -281,15 +292,23 @@
                                 <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="cuh-CZ-E2D" secondAttribute="trailing" id="07D-HL-q8L"/>
+                                    <constraint firstItem="oLS-ol-n93" firstAttribute="centerY" secondItem="MXE-bY-V01" secondAttribute="centerY" id="1Uf-qe-Tvt"/>
+                                    <constraint firstItem="O09-di-CW3" firstAttribute="leading" secondItem="MXE-bY-V01" secondAttribute="leading" constant="34" id="2XO-b0-e24"/>
+                                    <constraint firstItem="O09-di-CW3" firstAttribute="top" secondItem="oLS-ol-n93" secondAttribute="top" id="B60-TV-H69"/>
                                     <constraint firstItem="RnS-8q-TC2" firstAttribute="centerX" secondItem="MXE-bY-V01" secondAttribute="centerX" id="Bth-VW-EY5"/>
+                                    <constraint firstItem="O09-di-CW3" firstAttribute="centerY" secondItem="MXE-bY-V01" secondAttribute="centerY" id="DSa-6x-rvT"/>
+                                    <constraint firstItem="O09-di-CW3" firstAttribute="bottom" secondItem="RnS-8q-TC2" secondAttribute="bottom" id="OzD-go-us6"/>
                                     <constraint firstItem="RnS-8q-TC2" firstAttribute="top" secondItem="MXE-bY-V01" secondAttribute="top" constant="76" id="UBM-XB-bPh"/>
+                                    <constraint firstItem="oLS-ol-n93" firstAttribute="leading" secondItem="RnS-8q-TC2" secondAttribute="leading" id="VfL-er-6Kf"/>
                                     <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerX" secondItem="RnS-8q-TC2" secondAttribute="centerX" id="aoE-FH-0ML"/>
+                                    <constraint firstItem="O09-di-CW3" firstAttribute="centerX" secondItem="MXE-bY-V01" secondAttribute="centerX" id="cmF-gv-OAW"/>
                                     <constraint firstItem="RnS-8q-TC2" firstAttribute="centerY" secondItem="MXE-bY-V01" secondAttribute="centerY" id="dn7-GQ-Ed3"/>
                                     <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerY" secondItem="RnS-8q-TC2" secondAttribute="centerY" id="hc3-JW-IC5"/>
                                     <constraint firstItem="cuh-CZ-E2D" firstAttribute="top" secondItem="MXE-bY-V01" secondAttribute="top" constant="3" id="mAx-xx-hK6"/>
                                     <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerX" secondItem="MXE-bY-V01" secondAttribute="centerX" id="oij-iL-sK0"/>
                                     <constraint firstItem="RnS-8q-TC2" firstAttribute="leading" secondItem="MXE-bY-V01" secondAttribute="leading" constant="35" id="t5C-lG-uIi"/>
                                     <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerY" secondItem="MXE-bY-V01" secondAttribute="centerY" id="uk3-mS-dlt"/>
+                                    <constraint firstItem="oLS-ol-n93" firstAttribute="centerX" secondItem="MXE-bY-V01" secondAttribute="centerX" id="yJ0-UB-E3Q"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -306,7 +325,9 @@
                         <viewLayoutGuide key="safeArea" id="jpj-RT-gTW"/>
                     </view>
                     <connections>
-                        <outlet property="TVAverage" destination="RnS-8q-TC2" id="lYd-fh-zjq"/>
+                        <outlet property="TVAverage" destination="O09-di-CW3" id="F1s-dw-Y71"/>
+                        <outlet property="TVHigh" destination="oLS-ol-n93" id="8Hg-gV-1jn"/>
+                        <outlet property="TVLow" destination="RnS-8q-TC2" id="Yun-Qo-p02"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fcs-gX-4yW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -721,7 +742,7 @@ Adjust after discussing when doctor</string>
         <segue reference="ra9-v1-OSX"/>
         <segue reference="S0u-eb-thX"/>
         <segue reference="qDq-Wh-Eao"/>
-        <segue reference="a7c-VG-g3p"/>
+        <segue reference="rEC-8A-Mb8"/>
         <segue reference="kBM-x4-yzj"/>
         <segue reference="3fz-uh-Hlp"/>
     </inferredMetricsTieBreakers>

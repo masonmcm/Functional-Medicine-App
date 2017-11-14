@@ -10,7 +10,9 @@ import UIKit
 
 class ViewControllerVitaminK2Results: UIViewController {
 
+    @IBOutlet weak var TVLow: UITextView!
     @IBOutlet weak var TVAverage: UITextView!
+    @IBOutlet weak var TVHigh: UITextView!
     
     var myString = String()
     
@@ -21,17 +23,19 @@ class ViewControllerVitaminK2Results: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        TVHigh.isHidden = true
         TVAverage.isHidden = true
+        TVLow.isHidden = true
         
         //make user input into an Int
         let myStringToNum = Int(myString);
         //figure out which range the input is in
         if(myStringToNum! < 20) {
             //make Text fields visible based off range number is in
-            TVAverage.isHidden = false
+            TVLow.isHidden = false
         }
         else if(myStringToNum! > 50) {
-            TVAverage.isHidden = false
+            TVHigh.isHidden = false
         }
         else {
             TVAverage.isHidden = false
