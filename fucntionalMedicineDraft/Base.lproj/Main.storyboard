@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -180,7 +181,7 @@
                                                 </constraints>
                                                 <directionalEdgeInsets key="directionalLayoutMargins" top="25" leading="8" bottom="8" trailing="8"/>
                                             </imageView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lOu-XJ-XKw">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number in mcg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lOu-XJ-XKw">
                                                 <rect key="frame" x="40" y="132" width="200" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -268,47 +269,68 @@
                                 <rect key="frame" x="34" y="60" width="310" height="510"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backdrop 2" translatesAutoresizingMaskIntoConstraints="NO" id="cuh-CZ-E2D">
-                                        <rect key="frame" x="-1" y="3" width="311" height="503"/>
+                                        <rect key="frame" x="-1" y="3" width="311" height="504"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You are low, baby! " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RnS-8q-TC2" userLabel="TVLow">
-                                        <rect key="frame" x="35" y="76" width="240" height="357"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You are average, baby! Yee haw!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O09-di-CW3">
-                                        <rect key="frame" x="34" y="77" width="242" height="356"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You are high, baby!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oLS-ol-n93">
-                                        <rect key="frame" x="35" y="77" width="240" height="356"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fm8-Yt-gY8">
+                                        <rect key="frame" x="30" y="86" width="251" height="338"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWV-Lj-oRE">
+                                                <rect key="frame" x="0.0" y="0.0" width="251" height="338"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="You are average, baby!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O09-di-CW3">
+                                                        <rect key="frame" x="8" y="0.0" width="243" height="364"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RnS-8q-TC2" userLabel="TVLow">
+                                                        <rect key="frame" x="0.0" y="0.0" width="251" height="338"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <string key="text">Cheese, of all the dairy products, is the highest in K2. Gouda and Brie are the two highest of all the cheeses. Then we have poultry liver, particularly goose liver, that is very high in K2. Pastured egg yolks, again not conventional egg yolks as much, but pastured egg yolks I think are two or three times higher in K2 than conventional. Organ meats from pastured animals such as pancreas and kidneys are expected to be high in K2 because of how it is metabolized, but they have not been measured at this point scientifically. Major sources of K2: Natto, which is a fermented soy product from Japan, is the highest source of K2 gram for gram of any food. It has a very strong taste, and people either like it or absolutely hate it, so it may not be a viable way of your patients getting K2 into them. Other fermented foods such as sauerkraut, and, of course, we talked about cheese, a fermented dairy product on the last slide, can be good sources of MK4 and MK7, the MK7 if it’s a fermented plant food such as sauerkraut, and MK4 if it’s a fermented animal food such as cheese.
+
+So, of course, we can supplement with K2 as well, and this may be necessary for people who aren’t
+eating organ meats, who aren’t eating grass-fed dairy products. The recommended dose for
+supplementation is 100 to 1,000 mcg a day. As I mentioned before, doses as high as 45 mg per day
+have been used in some studies for osteoporosis, and K2 seems to be safe and well tolerated even
+at that amount. Currently, there is no known toxicity level for K2.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="O09-di-CW3" firstAttribute="leading" secondItem="RWV-Lj-oRE" secondAttribute="leadingMargin" id="9AW-Cl-1SX"/>
+                                                    <constraint firstAttribute="bottom" secondItem="RnS-8q-TC2" secondAttribute="bottom" id="HEb-K4-Ouz"/>
+                                                    <constraint firstItem="O09-di-CW3" firstAttribute="trailing" secondItem="RWV-Lj-oRE" secondAttribute="trailingMargin" id="Mne-Nu-x5f"/>
+                                                    <constraint firstItem="RnS-8q-TC2" firstAttribute="leading" secondItem="RWV-Lj-oRE" secondAttribute="leading" id="PaH-Vy-cdb"/>
+                                                    <constraint firstItem="O09-di-CW3" firstAttribute="centerY" secondItem="RWV-Lj-oRE" secondAttribute="centerY" constant="17" id="aAi-gk-Q8v"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="O09-di-CW3" secondAttribute="trailing" id="bDD-aG-0oQ"/>
+                                                    <constraint firstItem="O09-di-CW3" firstAttribute="top" secondItem="RWV-Lj-oRE" secondAttribute="topMargin" id="byh-vH-LeS"/>
+                                                    <constraint firstItem="RnS-8q-TC2" firstAttribute="top" secondItem="RWV-Lj-oRE" secondAttribute="top" id="hSr-SU-ee6"/>
+                                                    <constraint firstItem="RnS-8q-TC2" firstAttribute="centerX" secondItem="RWV-Lj-oRE" secondAttribute="centerX" id="wUN-qA-XSP"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="RWV-Lj-oRE" firstAttribute="centerY" secondItem="Fm8-Yt-gY8" secondAttribute="centerY" id="7sr-Ue-QED"/>
+                                            <constraint firstItem="RWV-Lj-oRE" firstAttribute="width" secondItem="Fm8-Yt-gY8" secondAttribute="width" id="DSz-IN-RUU"/>
+                                            <constraint firstItem="RWV-Lj-oRE" firstAttribute="leading" secondItem="Fm8-Yt-gY8" secondAttribute="leading" id="H6D-8n-lRz"/>
+                                            <constraint firstAttribute="trailing" secondItem="RWV-Lj-oRE" secondAttribute="trailing" id="RJO-3r-u5L"/>
+                                            <constraint firstItem="RWV-Lj-oRE" firstAttribute="top" secondItem="Fm8-Yt-gY8" secondAttribute="top" id="TGp-7V-YIA"/>
+                                            <constraint firstAttribute="bottom" secondItem="RWV-Lj-oRE" secondAttribute="bottom" id="iZL-m1-1Fd"/>
+                                        </constraints>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="cuh-CZ-E2D" secondAttribute="trailing" id="07D-HL-q8L"/>
-                                    <constraint firstItem="oLS-ol-n93" firstAttribute="centerY" secondItem="MXE-bY-V01" secondAttribute="centerY" id="1Uf-qe-Tvt"/>
-                                    <constraint firstItem="O09-di-CW3" firstAttribute="leading" secondItem="MXE-bY-V01" secondAttribute="leading" constant="34" id="2XO-b0-e24"/>
-                                    <constraint firstItem="O09-di-CW3" firstAttribute="top" secondItem="oLS-ol-n93" secondAttribute="top" id="B60-TV-H69"/>
-                                    <constraint firstItem="RnS-8q-TC2" firstAttribute="centerX" secondItem="MXE-bY-V01" secondAttribute="centerX" id="Bth-VW-EY5"/>
-                                    <constraint firstItem="O09-di-CW3" firstAttribute="centerY" secondItem="MXE-bY-V01" secondAttribute="centerY" id="DSa-6x-rvT"/>
-                                    <constraint firstItem="O09-di-CW3" firstAttribute="bottom" secondItem="RnS-8q-TC2" secondAttribute="bottom" id="OzD-go-us6"/>
-                                    <constraint firstItem="RnS-8q-TC2" firstAttribute="top" secondItem="MXE-bY-V01" secondAttribute="top" constant="76" id="UBM-XB-bPh"/>
-                                    <constraint firstItem="oLS-ol-n93" firstAttribute="leading" secondItem="RnS-8q-TC2" secondAttribute="leading" id="VfL-er-6Kf"/>
-                                    <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerX" secondItem="RnS-8q-TC2" secondAttribute="centerX" id="aoE-FH-0ML"/>
-                                    <constraint firstItem="O09-di-CW3" firstAttribute="centerX" secondItem="MXE-bY-V01" secondAttribute="centerX" id="cmF-gv-OAW"/>
-                                    <constraint firstItem="RnS-8q-TC2" firstAttribute="centerY" secondItem="MXE-bY-V01" secondAttribute="centerY" id="dn7-GQ-Ed3"/>
-                                    <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerY" secondItem="RnS-8q-TC2" secondAttribute="centerY" id="hc3-JW-IC5"/>
+                                    <constraint firstItem="Fm8-Yt-gY8" firstAttribute="top" secondItem="MXE-bY-V01" secondAttribute="top" constant="86" id="2hv-HX-3qd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fm8-Yt-gY8" secondAttribute="trailing" constant="29" id="Auy-bj-E3v"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fm8-Yt-gY8" secondAttribute="bottom" constant="86" id="Kxt-pr-YOh"/>
                                     <constraint firstItem="cuh-CZ-E2D" firstAttribute="top" secondItem="MXE-bY-V01" secondAttribute="top" constant="3" id="mAx-xx-hK6"/>
+                                    <constraint firstItem="Fm8-Yt-gY8" firstAttribute="leading" secondItem="MXE-bY-V01" secondAttribute="leading" constant="30" id="mbB-ad-kbc"/>
                                     <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerX" secondItem="MXE-bY-V01" secondAttribute="centerX" id="oij-iL-sK0"/>
-                                    <constraint firstItem="RnS-8q-TC2" firstAttribute="leading" secondItem="MXE-bY-V01" secondAttribute="leading" constant="35" id="t5C-lG-uIi"/>
                                     <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerY" secondItem="MXE-bY-V01" secondAttribute="centerY" id="uk3-mS-dlt"/>
-                                    <constraint firstItem="oLS-ol-n93" firstAttribute="centerX" secondItem="MXE-bY-V01" secondAttribute="centerX" id="yJ0-UB-E3Q"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -326,7 +348,6 @@
                     </view>
                     <connections>
                         <outlet property="TVAverage" destination="O09-di-CW3" id="F1s-dw-Y71"/>
-                        <outlet property="TVHigh" destination="oLS-ol-n93" id="8Hg-gV-1jn"/>
                         <outlet property="TVLow" destination="RnS-8q-TC2" id="Yun-Qo-p02"/>
                     </connections>
                 </viewController>
@@ -349,7 +370,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s2O-m0-Qpn">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Level" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s2O-m0-Qpn">
                                 <rect key="frame" x="120" y="230" width="135" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -431,7 +452,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w9j-uo-biU">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Level" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w9j-uo-biU">
                                 <rect key="frame" x="120" y="230" width="135" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -492,7 +513,7 @@
                                     <segue destination="TX3-Yb-b9d" kind="show" id="dIv-UU-6Lx"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1i2-FX-8gq">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Level" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1i2-FX-8gq">
                                 <rect key="frame" x="120" y="230" width="135" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -542,7 +563,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3PH-bn-sZg">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Level" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3PH-bn-sZg">
                                 <rect key="frame" x="120" y="230" width="135" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -661,7 +682,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cE3-NV-tCb">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cE3-NV-tCb">
                                 <rect key="frame" x="67" y="155" width="240" height="357"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -673,14 +694,14 @@ Talk to your doctor about medications </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Your Vitamin D levels are within healthy range!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PwO-0f-uGy">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Your Vitamin D levels are within healthy range!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PwO-0f-uGy">
                                 <rect key="frame" x="67" y="155" width="240" height="357"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sJp-8M-vjs">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sJp-8M-vjs">
                                 <rect key="frame" x="67" y="155" width="240" height="357"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -741,7 +762,7 @@ Adjust after discussing when doctor</string>
     <inferredMetricsTieBreakers>
         <segue reference="ra9-v1-OSX"/>
         <segue reference="S0u-eb-thX"/>
-        <segue reference="qDq-Wh-Eao"/>
+        <segue reference="LgW-qS-Aac"/>
         <segue reference="rEC-8A-Mb8"/>
         <segue reference="kBM-x4-yzj"/>
         <segue reference="3fz-uh-Hlp"/>
