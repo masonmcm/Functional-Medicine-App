@@ -1,57 +1,43 @@
-//
-//  ViewControllerMain.swift
-//  fucntionalMedicineDraft
-//
-//  Created by Zachary Lintz on 10/29/17.
-//  Copyright © 2017 Gabi Stein. All rights reserved.
-//
-
 import UIKit
 
 class ViewControllerMain: UIViewController {
-
-    //identify which segue to perform
-    @IBAction func segueVitaminD(_ sender: Any) {
-        performSegue(withIdentifier: "segueVitaminD", sender: self)
+    
+    
+    @IBOutlet var buttonArray: [UIButton]!
+    var supplementNames = ["segueVitaminA", "segueVitaminD", "segueVitaminK2", "segueVitaminC", "segueMagnesium"]
+    var index = Int();
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        index = buttonArray.index(of: sender)!
+        performSegue(withIdentifier: "segueTransition", sender: self)
     }
     
-    @IBAction func segueMagnesium(_ sender: Any) {
-        performSegue(withIdentifier: "segueMagnesium", sender: self)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let secondController = segue.destination as! ViewControllerTransition
+        secondController.labelToBeDisplayed = supplementNames[index]
     }
-    
-    @IBAction func segueVitaminA(_ sender: Any) {
-        performSegue(withIdentifier: "segueVitaminA", sender: self)
-    }
-    
-    @IBAction func segueVitaminK2(_ sender: Any) {
-        performSegue(withIdentifier: "segueVitaminK2", sender: self)
-    }
-    
-    @IBAction func segueVitaminC(_ sender: Any) {
-        performSegue(withIdentifier: "segueVitaminC", sender: self)
-    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
+

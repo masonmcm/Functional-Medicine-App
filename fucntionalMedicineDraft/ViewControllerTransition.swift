@@ -1,32 +1,28 @@
-//
-//  ViewControllerVitaminK2.swift
-//  fucntionalMedicineDraft
-//
-//  Created by Zachary Lintz on 11/4/17.
-//  Copyright © 2017 Gabi Stein. All rights reserved.
-//
-
 import UIKit
 
-class ViewControllerVitaminK2: UIViewController {
-
+class ViewControllerTransition: UIViewController {
+    
     @IBOutlet weak var enterTextField: UITextField!
     
+    var labelToBeDisplayed = String()
+    var supplementNames = ["segueVitaminK2", "segueVitaminC", "segueVitaminD", "segueVitaminA", "segueMagnesium"]
+    
+    @IBOutlet var supplementLabels: [UIImageView]!
     
     @IBAction func backButtonPressed(_ sender: Any) {
-         dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func enter(_ sender: Any) {
         if enterTextField.text != ""{
-            performSegue(withIdentifier: "segueVitaminK2Results", sender: self)
+            performSegue(withIdentifier: "segueResults", sender: self)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "segueVitaminK2Results"){
+        if(segue.identifier == "segueResults"){
             if (Int(enterTextField.text!) != nil) { //input will be nil if a number is not input
-                let secondController = segue.destination as! ViewControllerVitaminK2Results
+                let secondController = segue.destination as! ViewControllerResults
                 secondController.myString = enterTextField.text!
             } else {
                 createAlert() //show alert if input is nil
@@ -36,10 +32,16 @@ class ViewControllerVitaminK2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        var count = 0
+        while count < supplementNames.count{
+            supplementLabels[count].isHidden = true
+            if(supplementNames[count] == labelToBeDisplayed){
+                supplementLabels[count].isHidden = false
+            }
+            count = count + 1
+        }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -54,15 +56,16 @@ class ViewControllerVitaminK2: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
+
