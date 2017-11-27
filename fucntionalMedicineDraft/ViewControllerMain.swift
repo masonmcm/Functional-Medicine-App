@@ -4,17 +4,24 @@ class ViewControllerMain: UIViewController {
     
     
     @IBOutlet var buttonArray: [UIButton]!
-    var supplementNames = ["segueVitaminA", "segueVitaminD", "segueVitaminK2", "segueVitaminC", "segueMagnesium"]
+    var supplementNames = ["segueVitaminA", "segueVitaminD", "segueVitaminK2", "segueVitaminC", "segueMagnesium", "segueHowToBegin"]
     var index = Int();
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         index = buttonArray.index(of: sender)!
-        performSegue(withIdentifier: "segueTransition", sender: self)
+        print(index)
+        if supplementNames[index] != "segueHowToBegin" {
+            performSegue(withIdentifier: "segueTransition", sender: self)
+        } else {
+            performSegue(withIdentifier: "segueHowToBegin", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let secondController = segue.destination as! ViewControllerTransition
-        secondController.labelToBeDisplayed = supplementNames[index]
+        if supplementNames[index] != "segueHowToBegin" {
+            let secondController = segue.destination as! ViewControllerTransition
+            secondController.labelToBeDisplayed = supplementNames[index]
+        }
     }
     
     override func viewDidLoad() {

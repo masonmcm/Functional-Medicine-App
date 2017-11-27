@@ -29,7 +29,10 @@
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bT-li-Q1f">
                                                 <rect key="frame" x="105" y="190" width="166" height="32"/>
-                                                <state key="normal" title="Button" image="Asset 6"/>
+                                                <state key="normal" title="HowToBegin" image="Asset 6"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="TX3-Yb-b9d" eventType="touchUpInside" id="v2H-nG-EdZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.58625173568725586" green="0.7549668550491333" blue="0.35685941576957703" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -141,12 +144,67 @@
                         <outletCollection property="buttonArray" destination="cM7-4o-nlO" collectionClass="NSMutableArray" id="emX-by-AEg"/>
                         <outletCollection property="buttonArray" destination="Bym-0R-YGE" collectionClass="NSMutableArray" id="xyF-bz-Jd7"/>
                         <outletCollection property="buttonArray" destination="hGP-4t-wc7" collectionClass="NSMutableArray" id="fad-9o-SWP"/>
+                        <outletCollection property="buttonArray" destination="9bT-li-Q1f" collectionClass="NSMutableArray" id="ZVI-iU-oIm"/>
                         <segue destination="3gp-As-rRT" kind="show" identifier="segueTransition" id="rO8-hj-oIo"/>
+                        <segue destination="KJe-vr-i4r" kind="show" identifier="segueHowToBegin" id="RGi-Pd-etq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BhO-no-w3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-674" y="724"/>
+        </scene>
+        <!--View Controller How To Begin-->
+        <scene sceneID="vpj-Wu-FAB">
+            <objects>
+                <viewController id="KJe-vr-i4r" customClass="ViewControllerHowToBegin" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g2R-n1-j4w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Use the App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUw-xv-GcC">
+                                <rect key="frame" x="40" y="20" width="240" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3L-iA-MyH">
+                                <rect key="frame" x="16" y="450" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="KJe-vr-i4r" eventType="touchUpInside" id="PcJ-Fu-klC"/>
+                                    <segue destination="TX3-Yb-b9d" kind="show" id="mS7-nx-VIg"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jv6-4e-UK3">
+                                <rect key="frame" x="40" y="77" width="240" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Have your functional medicine test results in hand. 
+
+Go to the vitamin you want to learn more about. 
+
+Enter your level. 
+
+Read the feedback on whether that vitamin’s level is low, high, or just right.
+
+Continue reading on what supplements and food options currently exist to help you with levels for that vitamin. 
+
+Repeat for other vitamins. 
+
+*Disclaimer here about doctor*</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pDj-PR-Ru4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOx-vQ-JRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318.75" y="-890"/>
         </scene>
         <!--View Controller Transition-->
         <scene sceneID="4Iz-eo-ohc">
@@ -427,6 +485,7 @@
         <image name="Vitamin K2 Label" width="552" height="116"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kBM-x4-yzj"/>
+        <segue reference="rO8-hj-oIo"/>
+        <segue reference="mS7-nx-VIg"/>
     </inferredMetricsTieBreakers>
 </document>
