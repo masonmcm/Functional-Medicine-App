@@ -9,7 +9,7 @@ class ViewControllerMain: UIViewController {
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         index = buttonArray.index(of: sender)!
-        if supplementNames[index] != "segueHowToBegin" {
+        if (supplementNames[index] != "segueHowToBegin") {
             performSegue(withIdentifier: "segueTransition", sender: self)
         } else {
             performSegue(withIdentifier: "segueHowToBegin", sender: self)
@@ -17,7 +17,7 @@ class ViewControllerMain: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if supplementNames[index] != "segueHowToBegin" {
+        if (supplementNames[index] != "segueHowToBegin") {
             let secondController = segue.destination as! ViewControllerTransition
             secondController.labelToBeDisplayed = supplementNames[index]
             secondController.sender = self

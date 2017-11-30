@@ -17,7 +17,7 @@ class ViewControllerTransition: UIViewController {
     }
     
     @IBAction func enter(_ sender: Any) {
-        if enterTextField.text != ""{
+        if (enterTextField.text != "") {
             performSegue(withIdentifier: "segueResults", sender: self)
         }
     }
@@ -38,7 +38,7 @@ class ViewControllerTransition: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var count = 0
-        while count < supplementNames.count{
+        while (count < supplementNames.count) {
             supplementLabels[count].isHidden = true
             count += 1
         }
