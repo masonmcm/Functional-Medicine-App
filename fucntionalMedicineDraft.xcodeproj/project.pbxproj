@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		228E2C7E1FCB92450009619C /* ViewControllerHowToBegin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E2C7D1FCB92450009619C /* ViewControllerHowToBegin.swift */; };
+		22B41DC11FCC827B00EE4CFE /* Supplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B41DC01FCC827B00EE4CFE /* Supplement.swift */; };
 		22FC0CC21FA654930006EE08 /* ViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC0CC11FA654930006EE08 /* ViewControllerMain.swift */; };
 		34BEF4781F8D65F1009C9F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEF4771F8D65F1009C9F7D /* AppDelegate.swift */; };
 		34BEF47F1F8D65F1009C9F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BEF47E1F8D65F1009C9F7D /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		228E2C7D1FCB92450009619C /* ViewControllerHowToBegin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHowToBegin.swift; sourceTree = "<group>"; };
+		22B41DC01FCC827B00EE4CFE /* Supplement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supplement.swift; sourceTree = "<group>"; };
 		22FC0CC11FA654930006EE08 /* ViewControllerMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMain.swift; sourceTree = "<group>"; };
 		34BEF4741F8D65F1009C9F7D /* fucntionalMedicineDraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fucntionalMedicineDraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BEF4771F8D65F1009C9F7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				CCEF1DFB1FC62BCD00CCA5AB /* ViewControllerResults.swift */,
 				34BEF4771F8D65F1009C9F7D /* AppDelegate.swift */,
 				CC4DB0DD1FC62B4000C5405B /* Main.storyboard */,
+				22B41DC01FCC827B00EE4CFE /* Supplement.swift */,
 				34BEF47E1F8D65F1009C9F7D /* Assets.xcassets */,
 				34BEF4801F8D65F1009C9F7D /* LaunchScreen.storyboard */,
 				34BEF4831F8D65F1009C9F7D /* Info.plist */,
@@ -210,6 +213,7 @@
 			files = (
 				CCEF1DFC1FC62BCD00CCA5AB /* ViewControllerResults.swift in Sources */,
 				228E2C7E1FCB92450009619C /* ViewControllerHowToBegin.swift in Sources */,
+				22B41DC11FCC827B00EE4CFE /* Supplement.swift in Sources */,
 				34BEF4781F8D65F1009C9F7D /* AppDelegate.swift in Sources */,
 				22FC0CC21FA654930006EE08 /* ViewControllerMain.swift in Sources */,
 				CCEF1DFA1FC62BAB00CCA5AB /* ViewControllerTransition.swift in Sources */,

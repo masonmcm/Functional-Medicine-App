@@ -15,6 +15,7 @@ class ViewControllerResults: UIViewController {
     @IBOutlet weak var TVHigh: UITextView!
     
     var myString = String()
+    var supplement: Supplement? = nil
     
     @IBAction func backButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -22,6 +23,10 @@ class ViewControllerResults: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        if let supplement_level = supplement?.level {
+//            print(supplement_level)
+//        }
         
         TVHigh.isHidden = true
         TVAverage.isHidden = true

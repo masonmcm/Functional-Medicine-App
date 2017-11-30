@@ -6,6 +6,9 @@ class ViewControllerTransition: UIViewController {
     
     var labelToBeDisplayed = String()
     var supplementNames = ["segueVitaminK2", "segueVitaminC", "segueVitaminD", "segueVitaminA", "segueMagnesium"]
+    lazy var supplement = Supplement(supplement: labelToBeDisplayed)
+    var didGoBack = true
+    var sender: Any?
     
     @IBOutlet var supplementLabels: [UIImageView]!
     
@@ -23,6 +26,8 @@ class ViewControllerTransition: UIViewController {
         if(segue.identifier == "segueResults"){
             if (Int(enterTextField.text!) != nil) { //input will be nil if a number is not input
                 let secondController = segue.destination as! ViewControllerResults
+                supplement.level = Int(enterTextField.text!)!
+                secondController.supplement = supplement
                 secondController.myString = enterTextField.text!
             } else {
                 createAlert() //show alert if input is nil
@@ -35,10 +40,19 @@ class ViewControllerTransition: UIViewController {
         var count = 0
         while count < supplementNames.count{
             supplementLabels[count].isHidden = true
-            if(supplementNames[count] == labelToBeDisplayed){
-                supplementLabels[count].isHidden = false
-            }
-            count = count + 1
+            count += 1
+        }
+        
+        determineDidGoBack(sender: self.sender)
+        if(!didGoBack) {
+            supplementLabels[supplementNames.index(of: supplement.supplementName)!].isHidden = false
+        }
+        
+    }
+    
+    func determineDidGoBack(sender: Any?) {
+        if(sender != nil && sender is ViewControllerMain) {
+            didGoBack = false
         }
     }
     
