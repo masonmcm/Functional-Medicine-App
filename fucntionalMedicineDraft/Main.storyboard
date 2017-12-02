@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+        <array key="Raleway-Thin.ttf">
+            <string>Raleway-Thin</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller Main-->
         <scene sceneID="yac-9n-Gbf">
@@ -164,31 +172,20 @@
         <scene sceneID="vpj-Wu-FAB">
             <objects>
                 <viewController id="KJe-vr-i4r" customClass="ViewControllerHowToBegin" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="g2R-n1-j4w">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" id="g2R-n1-j4w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Use the App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUw-xv-GcC">
-                                <rect key="frame" x="40" y="20" width="240" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3L-iA-MyH">
-                                <rect key="frame" x="16" y="450" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="backButtonPressed:" destination="KJe-vr-i4r" eventType="touchUpInside" id="PcJ-Fu-klC"/>
-                                    <segue destination="TX3-Yb-b9d" kind="show" id="mS7-nx-VIg"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jv6-4e-UK3">
-                                <rect key="frame" x="40" y="77" width="240" height="360"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Have your functional medicine test results in hand. 
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Cr-Wg-hJB">
+                                <rect key="frame" x="18" y="36" width="341" height="951"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="NfT-dr-EDN">
+                                        <rect key="frame" x="-2" y="0.0" width="345" height="950"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jv6-4e-UK3">
+                                        <rect key="frame" x="3" y="100" width="335" height="846"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Have your functional medicine test results in hand. 
 
 Go to the vitamin you want to learn more about. 
 
@@ -201,17 +198,63 @@ Continue reading on what supplements and food options currently exist to help yo
 Repeat for other vitamins. 
 
 *Disclaimer here about doctor*</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                        <color key="textColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Use the App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUw-xv-GcC">
+                                        <rect key="frame" x="90" y="30" width="161" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3L-iA-MyH">
+                                        <rect key="frame" x="20" y="894" width="221" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="Q14-rb-3dY"/>
+                                        </constraints>
+                                        <state key="normal" title="Back" image="Inverted Back Button"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="KJe-vr-i4r" eventType="touchUpInside" id="PcJ-Fu-klC"/>
+                                            <segue destination="TX3-Yb-b9d" kind="show" id="mS7-nx-VIg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="LUw-xv-GcC" secondAttribute="trailing" constant="90" id="ACM-TT-6gV"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jv6-4e-UK3" secondAttribute="bottom" constant="5" id="LUJ-i1-S4k"/>
+                                    <constraint firstItem="LUw-xv-GcC" firstAttribute="centerX" secondItem="Jv6-4e-UK3" secondAttribute="centerX" id="PV2-JI-QYh"/>
+                                    <constraint firstItem="Jv6-4e-UK3" firstAttribute="top" secondItem="7Cr-Wg-hJB" secondAttribute="top" constant="100" id="U9k-GM-mnz"/>
+                                    <constraint firstItem="Jv6-4e-UK3" firstAttribute="leading" secondItem="7Cr-Wg-hJB" secondAttribute="leading" constant="3" id="fjD-vG-yjt"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jv6-4e-UK3" secondAttribute="trailing" constant="3" id="gvH-zo-O9d"/>
+                                    <constraint firstItem="LUw-xv-GcC" firstAttribute="top" secondItem="7Cr-Wg-hJB" secondAttribute="top" constant="30" id="ixf-28-kd7"/>
+                                    <constraint firstItem="NfT-dr-EDN" firstAttribute="bottom" secondItem="v3L-iA-MyH" secondAttribute="bottom" constant="19" id="jLI-NI-C7u"/>
+                                    <constraint firstItem="v3L-iA-MyH" firstAttribute="leading" secondItem="NfT-dr-EDN" secondAttribute="leading" constant="22" id="kG8-vB-TgZ"/>
+                                    <constraint firstItem="NfT-dr-EDN" firstAttribute="top" secondItem="7Cr-Wg-hJB" secondAttribute="top" id="kce-MJ-l4y"/>
+                                    <constraint firstItem="LUw-xv-GcC" firstAttribute="centerX" secondItem="NfT-dr-EDN" secondAttribute="centerX" id="lgC-Zw-unR"/>
+                                    <constraint firstItem="Jv6-4e-UK3" firstAttribute="centerX" secondItem="7Cr-Wg-hJB" secondAttribute="centerX" id="m8q-jk-mMH"/>
+                                    <constraint firstItem="NfT-dr-EDN" firstAttribute="centerY" secondItem="7Cr-Wg-hJB" secondAttribute="centerY" id="ngA-es-k6i"/>
+                                    <constraint firstItem="LUw-xv-GcC" firstAttribute="leading" secondItem="7Cr-Wg-hJB" secondAttribute="leading" constant="90" id="oc4-1c-N1e"/>
+                                    <constraint firstItem="NfT-dr-EDN" firstAttribute="leading" secondItem="7Cr-Wg-hJB" secondAttribute="leading" constant="-2" id="rOX-wV-AE8"/>
+                                    <constraint firstItem="NfT-dr-EDN" firstAttribute="trailing" secondItem="v3L-iA-MyH" secondAttribute="trailing" constant="102" id="wkV-MG-SWW"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="pDj-PR-Ru4" firstAttribute="bottom" secondItem="7Cr-Wg-hJB" secondAttribute="bottom" constant="13" id="EHi-2w-qWy"/>
+                            <constraint firstItem="7Cr-Wg-hJB" firstAttribute="leading" secondItem="pDj-PR-Ru4" secondAttribute="leading" constant="18" id="eic-iL-daN"/>
+                            <constraint firstItem="7Cr-Wg-hJB" firstAttribute="trailing" secondItem="g2R-n1-j4w" secondAttribute="trailingMargin" id="gIi-0x-eJI"/>
+                            <constraint firstItem="7Cr-Wg-hJB" firstAttribute="top" secondItem="pDj-PR-Ru4" secondAttribute="top" constant="16" id="rZA-eR-VlF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pDj-PR-Ru4"/>
                     </view>
+                    <size key="freeformSize" width="375" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOx-vQ-JRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318.75" y="-890"/>
+            <point key="canvasLocation" x="318.11594202898556" y="-890.21739130434787"/>
         </scene>
         <!--View Controller Transition-->
         <scene sceneID="4Iz-eo-ohc">
@@ -327,12 +370,13 @@ Repeat for other vitamins.
                                                     <constraint firstItem="oSB-og-lt5" firstAttribute="centerX" secondItem="yUL-Az-RCy" secondAttribute="centerX" id="yJa-5W-atg"/>
                                                 </constraints>
                                             </view>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lOu-XJ-XKw">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lOu-XJ-XKw">
                                                 <rect key="frame" x="15" y="279" width="354" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="r4f-4u-kSk"/>
                                                 </constraints>
-                                                <attributedString key="attributedText"/>
+                                                <color key="textColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i2-0m-njY">
@@ -438,7 +482,7 @@ Repeat for other vitamins.
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You are high, baby!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oLS-ol-n93">
                                         <rect key="frame" x="35" y="77" width="279" height="425"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -495,6 +539,8 @@ Repeat for other vitamins.
         <image name="Backdrop" width="599" height="479"/>
         <image name="Backdrop 2" width="585" height="1113"/>
         <image name="Go Button 2" width="280" height="67"/>
+        <image name="Inverted Back Button" width="281" height="70"/>
+        <image name="Inverted Backdrop" width="599" height="479"/>
         <image name="Magnesium Button" width="756" height="142"/>
         <image name="Magnesium Label" width="552" height="116"/>
         <image name="Vitamin A Button" width="756" height="142"/>
@@ -507,7 +553,8 @@ Repeat for other vitamins.
         <image name="Vitamin K2 Label" width="552" height="116"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rO8-hj-oIo"/>
-        <segue reference="3fz-uh-Hlp"/>
+        <segue reference="b3r-7p-WAZ"/>
+        <segue reference="kBM-x4-yzj"/>
+        <segue reference="mS7-nx-VIg"/>
     </inferredMetricsTieBreakers>
 </document>

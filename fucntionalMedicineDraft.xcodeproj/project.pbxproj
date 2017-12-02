@@ -15,6 +15,9 @@
 		34BEF4821F8D65F1009C9F7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34BEF4801F8D65F1009C9F7D /* LaunchScreen.storyboard */; };
 		34BEF48D1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEF48C1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift */; };
 		CC4DB0DE1FC62B4000C5405B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4DB0DD1FC62B4000C5405B /* Main.storyboard */; };
+		CC89EE361FD25A2F004ED529 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC89EE351FD25A2E004ED529 /* Raleway-Medium.ttf */; };
+		CC89EE381FD25A5D004ED529 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC89EE371FD25A5C004ED529 /* Raleway-Thin.ttf */; };
+		CC89EE3A1FD25A6C004ED529 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC89EE391FD25A6B004ED529 /* Raleway-Bold.ttf */; };
 		CCEF1DFA1FC62BAB00CCA5AB /* ViewControllerTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEF1DF91FC62BAB00CCA5AB /* ViewControllerTransition.swift */; };
 		CCEF1DFC1FC62BCD00CCA5AB /* ViewControllerResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEF1DFB1FC62BCD00CCA5AB /* ViewControllerResults.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +45,9 @@
 		34BEF48C1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fucntionalMedicineDraftTests.swift; sourceTree = "<group>"; };
 		34BEF48E1F8D65F1009C9F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC4DB0DD1FC62B4000C5405B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CC89EE351FD25A2E004ED529 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		CC89EE371FD25A5C004ED529 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		CC89EE391FD25A6B004ED529 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		CCEF1DF91FC62BAB00CCA5AB /* ViewControllerTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTransition.swift; sourceTree = "<group>"; };
 		CCEF1DFB1FC62BCD00CCA5AB /* ViewControllerResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +98,7 @@
 				34BEF4771F8D65F1009C9F7D /* AppDelegate.swift */,
 				CC4DB0DD1FC62B4000C5405B /* Main.storyboard */,
 				22B41DC01FCC827B00EE4CFE /* Supplement.swift */,
+				CCF6E07C1FD24BA2009855C8 /* Fonts */,
 				34BEF47E1F8D65F1009C9F7D /* Assets.xcassets */,
 				34BEF4801F8D65F1009C9F7D /* LaunchScreen.storyboard */,
 				34BEF4831F8D65F1009C9F7D /* Info.plist */,
@@ -106,6 +113,16 @@
 				34BEF48E1F8D65F1009C9F7D /* Info.plist */,
 			);
 			path = fucntionalMedicineDraftTests;
+			sourceTree = "<group>";
+		};
+		CCF6E07C1FD24BA2009855C8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CC89EE351FD25A2E004ED529 /* Raleway-Medium.ttf */,
+				CC89EE371FD25A5C004ED529 /* Raleway-Thin.ttf */,
+				CC89EE391FD25A6B004ED529 /* Raleway-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +208,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC89EE381FD25A5D004ED529 /* Raleway-Thin.ttf in Resources */,
+				CC89EE3A1FD25A6C004ED529 /* Raleway-Bold.ttf in Resources */,
 				34BEF4821F8D65F1009C9F7D /* LaunchScreen.storyboard in Resources */,
+				CC89EE361FD25A2F004ED529 /* Raleway-Medium.ttf in Resources */,
 				34BEF47F1F8D65F1009C9F7D /* Assets.xcassets in Resources */,
 				CC4DB0DE1FC62B4000C5405B /* Main.storyboard in Resources */,
 			);

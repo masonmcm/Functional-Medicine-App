@@ -2,6 +2,7 @@ import UIKit
 
 class ViewControllerTransition: UIViewController {
     
+    let customFont = UIFont(name: "Raleway-Thin", size: 17)
     @IBOutlet weak var enterTextField: UITextField!
     @IBOutlet var supplementLabels: [UIImageView]!
     var labelIdentifier = [String: UIImageView]()
@@ -16,7 +17,8 @@ class ViewControllerTransition: UIViewController {
     
     @IBAction func enter(_ sender: Any) {
         if enterTextField.text != ""{
-            supplement.level = Int(enterTextField.text!)!
+            print(enterTextField.text!)
+//            supplement.level = enterTextField.text
             performSegue(withIdentifier: "segueResults", sender: self)
         }
     }
@@ -41,12 +43,12 @@ class ViewControllerTransition: UIViewController {
             let l = label.accessibilityLabel!
             labelIdentifier.updateValue(label, forKey: l)
         }
-        
+        enterTextField.font = customFont;
         determineDidGoBack(sender: self.sender)
         if(!didGoBack) {
            labelIdentifier[labelToBeDisplayed]!.isHidden = false
-                }
-            }
+        }
+    }
     
     func determineDidGoBack(sender: Any?) {
         if(sender != nil && sender is ViewControllerMain) {
