@@ -16,6 +16,9 @@ struct Supplement{
     init(supplement name: String){
         self.supplementName = name
     }
+    
+    // function- choose which text view is displayed
+    // implement logic to decide which text view is displayed
 
 }
 

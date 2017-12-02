@@ -24,10 +24,6 @@ class ViewControllerResults: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        if let supplement_level = supplement?.level {
-//            print(supplement_level)
-//        }
-        
         TVHigh.isHidden = true
         TVAverage.isHidden = true
         TVLow.isHidden = true

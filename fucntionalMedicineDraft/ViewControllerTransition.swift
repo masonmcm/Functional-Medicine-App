@@ -3,14 +3,12 @@ import UIKit
 class ViewControllerTransition: UIViewController {
     
     @IBOutlet weak var enterTextField: UITextField!
-    
+    @IBOutlet var supplementLabels: [UIImageView]!
+    var labelIdentifier = [String: UIImageView]()
     var labelToBeDisplayed = String()
-    var supplementNames = ["segueVitaminK2", "segueVitaminC", "segueVitaminD", "segueVitaminA", "segueMagnesium"]
     lazy var supplement = Supplement(supplement: labelToBeDisplayed)
     var didGoBack = true
     var sender: Any?
-    
-    @IBOutlet var supplementLabels: [UIImageView]!
     
     @IBAction func backButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -18,37 +16,37 @@ class ViewControllerTransition: UIViewController {
     
     @IBAction func enter(_ sender: Any) {
         if enterTextField.text != ""{
+            supplement.level = Int(enterTextField.text!)!
             performSegue(withIdentifier: "segueResults", sender: self)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "segueResults"){
-            if (Int(enterTextField.text!) != nil) { //input will be nil if a number is not input
+            if (Int(enterTextField.text!) != nil) {
                 let secondController = segue.destination as! ViewControllerResults
-                supplement.level = Int(enterTextField.text!)!
                 secondController.supplement = supplement
                 secondController.myString = enterTextField.text!
             } else {
-                createAlert() //show alert if input is nil
+                createAlert()
             }
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var count = 0
-        while count < supplementNames.count{
-            supplementLabels[count].isHidden = true
-            count += 1
+        
+        for label in supplementLabels {
+            label.isHidden = true
+            let l = label.accessibilityLabel!
+            labelIdentifier.updateValue(label, forKey: l)
         }
         
         determineDidGoBack(sender: self.sender)
         if(!didGoBack) {
-            supplementLabels[supplementNames.index(of: supplement.supplementName)!].isHidden = false
-        }
-        
-    }
+           labelIdentifier[labelToBeDisplayed]!.isHidden = false
+                }
+            }
     
     func determineDidGoBack(sender: Any?) {
         if(sender != nil && sender is ViewControllerMain) {

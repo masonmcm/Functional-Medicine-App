@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TX3-Yb-b9d">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -29,7 +29,8 @@
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bT-li-Q1f">
                                                 <rect key="frame" x="105" y="190" width="166" height="32"/>
-                                                <state key="normal" title="HowToBegin" image="Asset 6"/>
+                                                <accessibility key="accessibilityConfiguration" label="How to begin"/>
+                                                <state key="normal" title="How to begin" image="Asset 6"/>
                                                 <connections>
                                                     <action selector="buttonPressed:" destination="TX3-Yb-b9d" eventType="touchUpInside" id="v2H-nG-EdZ"/>
                                                 </connections>
@@ -55,9 +56,11 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="700" verticalCompressionResistancePriority="800" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHO-Ju-x61">
                                                 <rect key="frame" x="35" y="100" width="305" height="80"/>
+                                                <accessibility key="accessibilityConfiguration" label="Vitamin A"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="VxR-8g-o0Q"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                 <state key="normal" title="Vitamin A" image="Vitamin A Button"/>
                                                 <connections>
                                                     <action selector="buttonPressed:" destination="TX3-Yb-b9d" eventType="touchUpInside" id="aPV-Nz-FBj"/>
@@ -65,6 +68,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="700" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNa-oL-3GF">
                                                 <rect key="frame" x="35" y="280" width="305" height="80"/>
+                                                <accessibility key="accessibilityConfiguration" label="Vitamin D"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="izG-SR-sCg"/>
                                                 </constraints>
@@ -75,6 +79,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cM7-4o-nlO">
                                                 <rect key="frame" x="35" y="460" width="305" height="80"/>
+                                                <accessibility key="accessibilityConfiguration" label="Vitamin K2"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="qy2-Al-R6m"/>
                                                 </constraints>
@@ -85,6 +90,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bym-0R-YGE">
                                                 <rect key="frame" x="35" y="640" width="305" height="80"/>
+                                                <accessibility key="accessibilityConfiguration" label="Vitamin C"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="oe1-ub-dqI"/>
                                                 </constraints>
@@ -95,6 +101,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="700" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGP-4t-wc7">
                                                 <rect key="frame" x="35" y="820" width="305" height="80"/>
+                                                <accessibility key="accessibilityConfiguration" label="Magnesium"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="0rX-Jy-lAQ"/>
                                                 </constraints>
@@ -158,7 +165,7 @@
             <objects>
                 <viewController id="KJe-vr-i4r" customClass="ViewControllerHowToBegin" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g2R-n1-j4w">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How to Use the App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUw-xv-GcC">
@@ -211,11 +218,11 @@ Repeat for other vitamins.
             <objects>
                 <viewController id="3gp-As-rRT" customClass="ViewControllerTransition" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1KH-in-bfb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orN-rb-ZIh">
-                                <rect key="frame" x="16" y="399" width="103" height="37"/>
+                                <rect key="frame" x="20" y="655" width="193" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="cd2-sP-JAN"/>
                                 </constraints>
@@ -226,19 +233,22 @@ Repeat for other vitamins.
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="be8-7b-fQz">
-                                <rect key="frame" x="15" y="63" width="290" height="316"/>
+                                <rect key="frame" x="15" y="63" width="384" height="572"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="osx-7m-PGp">
-                                        <rect key="frame" x="0.0" y="1" width="290" height="314"/>
+                                        <rect key="frame" x="0.0" y="1" width="384" height="570"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NNu-MY-MnD">
-                                        <rect key="frame" x="0.0" y="0.0" width="290" height="316"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="572"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUL-Az-RCy">
-                                                <rect key="frame" x="15" y="25" width="260" height="56"/>
+                                                <rect key="frame" x="15" y="25" width="354" height="56"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vitamin K2 Label" translatesAutoresizingMaskIntoConstraints="NO" id="ftj-bh-SWe">
-                                                        <rect key="frame" x="0.0" y="-17" width="260" height="90"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vitamin K2 Label" translatesAutoresizingMaskIntoConstraints="NO" id="ftj-bh-SWe" colorLabel="IBBuiltInLabel-Orange">
+                                                        <rect key="frame" x="0.0" y="-17" width="354" height="90"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin K2">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="94v-4i-LvU"/>
                                                             <constraint firstAttribute="height" constant="90" id="vXm-7D-lWu"/>
@@ -246,7 +256,10 @@ Repeat for other vitamins.
                                                         <directionalEdgeInsets key="directionalLayoutMargins" top="25" leading="8" bottom="8" trailing="8"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vitamin C Label" translatesAutoresizingMaskIntoConstraints="NO" id="oSB-og-lt5">
-                                                        <rect key="frame" x="0.0" y="-17" width="260" height="90"/>
+                                                        <rect key="frame" x="0.0" y="-17" width="354" height="90"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin C">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="90" id="l1s-lU-J0D"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="vD6-Sa-ev5"/>
@@ -254,7 +267,10 @@ Repeat for other vitamins.
                                                         <directionalEdgeInsets key="directionalLayoutMargins" top="25" leading="8" bottom="8" trailing="8"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vitamin D Label" translatesAutoresizingMaskIntoConstraints="NO" id="21o-8h-tyw">
-                                                        <rect key="frame" x="0.0" y="-17" width="260" height="90"/>
+                                                        <rect key="frame" x="0.0" y="-17" width="354" height="90"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin D">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="90" id="Wf0-E1-cfF"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="ihq-bj-Q8A"/>
@@ -262,7 +278,10 @@ Repeat for other vitamins.
                                                         <directionalEdgeInsets key="directionalLayoutMargins" top="25" leading="8" bottom="8" trailing="8"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vitamin A Label" translatesAutoresizingMaskIntoConstraints="NO" id="cAn-d8-NpD">
-                                                        <rect key="frame" x="0.0" y="-17" width="260" height="90"/>
+                                                        <rect key="frame" x="0.0" y="-17" width="354" height="90"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin A">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="90" id="sCQ-AD-yo8"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="z0V-rR-eoD"/>
@@ -270,7 +289,10 @@ Repeat for other vitamins.
                                                         <directionalEdgeInsets key="directionalLayoutMargins" top="25" leading="8" bottom="8" trailing="8"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Magnesium Label" translatesAutoresizingMaskIntoConstraints="NO" id="rQ9-7d-ev1">
-                                                        <rect key="frame" x="0.0" y="-17" width="260" height="90"/>
+                                                        <rect key="frame" x="0.0" y="-17" width="354" height="90"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Magnesium">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="PMQ-Ur-g4j"/>
                                                             <constraint firstAttribute="height" constant="90" id="Ujf-Pt-EfN"/>
@@ -306,7 +328,7 @@ Repeat for other vitamins.
                                                 </constraints>
                                             </view>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lOu-XJ-XKw">
-                                                <rect key="frame" x="15" y="151" width="260" height="30"/>
+                                                <rect key="frame" x="15" y="279" width="354" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="r4f-4u-kSk"/>
                                                 </constraints>
@@ -314,7 +336,7 @@ Repeat for other vitamins.
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i2-0m-njY">
-                                                <rect key="frame" x="8" y="251" width="274" height="40"/>
+                                                <rect key="frame" x="52" y="507" width="280" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="MIg-Jp-hET"/>
                                                 </constraints>
@@ -381,11 +403,11 @@ Repeat for other vitamins.
             <objects>
                 <viewController id="aQf-1Z-HGA" customClass="ViewControllerResults" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Ky-na-jto">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aus-sz-9Vu">
-                                <rect key="frame" x="16" y="403" width="103" height="37"/>
+                                <rect key="frame" x="16" y="659" width="197" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="cEZ-wn-jKi"/>
                                 </constraints>
@@ -396,25 +418,25 @@ Repeat for other vitamins.
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXE-bY-V01">
-                                <rect key="frame" x="34" y="60" width="255" height="323"/>
+                                <rect key="frame" x="34" y="60" width="349" height="579"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backdrop 2" translatesAutoresizingMaskIntoConstraints="NO" id="cuh-CZ-E2D">
-                                        <rect key="frame" x="-1" y="3" width="256" height="316"/>
+                                        <rect key="frame" x="-1" y="3" width="350" height="572"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You are low, baby! " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RnS-8q-TC2" userLabel="TVLow">
-                                        <rect key="frame" x="35" y="76" width="185" height="170"/>
+                                        <rect key="frame" x="35" y="76" width="279" height="426"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You are average, baby! Yee haw!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O09-di-CW3">
-                                        <rect key="frame" x="34" y="77" width="187" height="169"/>
+                                        <rect key="frame" x="34" y="77" width="281" height="425"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You are high, baby!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oLS-ol-n93">
-                                        <rect key="frame" x="35" y="77" width="185" height="169"/>
+                                        <rect key="frame" x="35" y="77" width="279" height="425"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -469,7 +491,7 @@ Repeat for other vitamins.
     <resources>
         <image name="Asset 5" width="518" height="365"/>
         <image name="Asset 6" width="386" height="83"/>
-        <image name="Back Button" width="281" height="71"/>
+        <image name="Back Button" width="281" height="70"/>
         <image name="Backdrop" width="599" height="479"/>
         <image name="Backdrop 2" width="585" height="1113"/>
         <image name="Go Button 2" width="280" height="67"/>
@@ -486,6 +508,6 @@ Repeat for other vitamins.
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="rO8-hj-oIo"/>
-        <segue reference="mS7-nx-VIg"/>
+        <segue reference="3fz-uh-Hlp"/>
     </inferredMetricsTieBreakers>
 </document>

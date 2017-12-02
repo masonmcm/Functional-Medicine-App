@@ -4,30 +4,33 @@ class ViewControllerMain: UIViewController {
     
     
     @IBOutlet var buttonArray: [UIButton]!
-    var supplementNames = ["segueVitaminA", "segueVitaminD", "segueVitaminK2", "segueVitaminC", "segueMagnesium", "segueHowToBegin"]
-    var index = Int();
+    var buttonIdentifier = [UIButton: String]()
+    var buttonTitle = String()
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        index = buttonArray.index(of: sender)!
-        if supplementNames[index] != "segueHowToBegin" {
-            performSegue(withIdentifier: "segueTransition", sender: self)
+        buttonTitle = buttonIdentifier[sender]!
+        if buttonTitle == "How to begin" {
+             performSegue(withIdentifier: "segueHowToBegin", sender: self)
         } else {
-            performSegue(withIdentifier: "segueHowToBegin", sender: self)
+             performSegue(withIdentifier: "segueTransition", sender: self)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if supplementNames[index] != "segueHowToBegin" {
+        if segue.identifier! == "segueTransition"{
             let secondController = segue.destination as! ViewControllerTransition
-            secondController.labelToBeDisplayed = supplementNames[index]
+            secondController.labelToBeDisplayed = buttonTitle
             secondController.sender = self
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        for button in buttonArray {
+        let b = button.accessibilityLabel!
+        buttonIdentifier.updateValue(b, forKey: button)
+        }
         
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {
