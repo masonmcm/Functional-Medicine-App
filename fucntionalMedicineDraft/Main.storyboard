@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TX3-Yb-b9d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TX3-Yb-b9d">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -479,24 +479,22 @@ Repeat for other vitamins.
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You are high, baby!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oLS-ol-n93">
-                                        <rect key="frame" x="35" y="77" width="279" height="425"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="High, baby, high!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ef6-zG-INe" userLabel="TVHigh">
+                                        <rect key="frame" x="35" y="77" width="280" height="424"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="cuh-CZ-E2D" secondAttribute="trailing" id="07D-HL-q8L"/>
-                                    <constraint firstItem="oLS-ol-n93" firstAttribute="centerY" secondItem="MXE-bY-V01" secondAttribute="centerY" id="1Uf-qe-Tvt"/>
                                     <constraint firstItem="O09-di-CW3" firstAttribute="leading" secondItem="MXE-bY-V01" secondAttribute="leading" constant="34" id="2XO-b0-e24"/>
-                                    <constraint firstItem="O09-di-CW3" firstAttribute="top" secondItem="oLS-ol-n93" secondAttribute="top" id="B60-TV-H69"/>
                                     <constraint firstItem="RnS-8q-TC2" firstAttribute="centerX" secondItem="MXE-bY-V01" secondAttribute="centerX" id="Bth-VW-EY5"/>
                                     <constraint firstItem="O09-di-CW3" firstAttribute="centerY" secondItem="MXE-bY-V01" secondAttribute="centerY" id="DSa-6x-rvT"/>
                                     <constraint firstItem="O09-di-CW3" firstAttribute="bottom" secondItem="RnS-8q-TC2" secondAttribute="bottom" id="OzD-go-us6"/>
                                     <constraint firstItem="RnS-8q-TC2" firstAttribute="top" secondItem="MXE-bY-V01" secondAttribute="top" constant="76" id="UBM-XB-bPh"/>
-                                    <constraint firstItem="oLS-ol-n93" firstAttribute="leading" secondItem="RnS-8q-TC2" secondAttribute="leading" id="VfL-er-6Kf"/>
                                     <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerX" secondItem="RnS-8q-TC2" secondAttribute="centerX" id="aoE-FH-0ML"/>
                                     <constraint firstItem="O09-di-CW3" firstAttribute="centerX" secondItem="MXE-bY-V01" secondAttribute="centerX" id="cmF-gv-OAW"/>
                                     <constraint firstItem="RnS-8q-TC2" firstAttribute="centerY" secondItem="MXE-bY-V01" secondAttribute="centerY" id="dn7-GQ-Ed3"/>
@@ -505,7 +503,6 @@ Repeat for other vitamins.
                                     <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerX" secondItem="MXE-bY-V01" secondAttribute="centerX" id="oij-iL-sK0"/>
                                     <constraint firstItem="RnS-8q-TC2" firstAttribute="leading" secondItem="MXE-bY-V01" secondAttribute="leading" constant="35" id="t5C-lG-uIi"/>
                                     <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerY" secondItem="MXE-bY-V01" secondAttribute="centerY" id="uk3-mS-dlt"/>
-                                    <constraint firstItem="oLS-ol-n93" firstAttribute="centerX" secondItem="MXE-bY-V01" secondAttribute="centerX" id="yJ0-UB-E3Q"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -523,13 +520,13 @@ Repeat for other vitamins.
                     </view>
                     <connections>
                         <outlet property="TVAverage" destination="O09-di-CW3" id="F1s-dw-Y71"/>
-                        <outlet property="TVHigh" destination="oLS-ol-n93" id="8Hg-gV-1jn"/>
+                        <outlet property="TVHigh" destination="ef6-zG-INe" id="haL-x2-9Ro"/>
                         <outlet property="TVLow" destination="RnS-8q-TC2" id="Yun-Qo-p02"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fcs-gX-4yW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1607" y="711"/>
+            <point key="canvasLocation" x="1605.7971014492755" y="710.86956521739137"/>
         </scene>
     </scenes>
     <resources>
@@ -553,7 +550,6 @@ Repeat for other vitamins.
         <image name="Vitamin K2 Label" width="552" height="116"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="b3r-7p-WAZ"/>
         <segue reference="kBM-x4-yzj"/>
         <segue reference="mS7-nx-VIg"/>
     </inferredMetricsTieBreakers>

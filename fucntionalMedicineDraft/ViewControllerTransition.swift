@@ -7,9 +7,15 @@ class ViewControllerTransition: UIViewController {
     @IBOutlet var supplementLabels: [UIImageView]!
     var labelIdentifier = [String: UIImageView]()
     var labelToBeDisplayed = String()
-    lazy var supplement = Supplement(supplement: labelToBeDisplayed)
     var didGoBack = true
     var sender: Any?
+    lazy var supplement: Supplement = {
+        if (Int(enterTextField.text!) != nil) {
+            return Supplement(supplement: labelToBeDisplayed, input: Int(enterTextField.text!)!)
+        }else{
+            return Supplement(supplement: labelToBeDisplayed, input: 0)
+        }
+    }()
     
     @IBAction func backButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -17,8 +23,6 @@ class ViewControllerTransition: UIViewController {
     
     @IBAction func enter(_ sender: Any) {
         if enterTextField.text != ""{
-            print(enterTextField.text!)
-//            supplement.level = enterTextField.text
             performSegue(withIdentifier: "segueResults", sender: self)
         }
     }

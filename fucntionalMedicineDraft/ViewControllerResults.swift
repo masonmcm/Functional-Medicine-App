@@ -15,7 +15,7 @@ class ViewControllerResults: UIViewController {
     @IBOutlet weak var TVHigh: UITextView!
     
     var myString = String()
-    var supplement: Supplement? = nil
+    lazy var supplement: Supplement? = nil
     
     @IBAction func backButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -23,25 +23,17 @@ class ViewControllerResults: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         TVHigh.isHidden = true
         TVAverage.isHidden = true
         TVLow.isHidden = true
-        
-        //make user input into an Int
-        let myStringToNum = Int(myString);
-        //figure out which range the input is in
-        if(myStringToNum! < 20) {
-            //make Text fields visible based off range number is in
-            TVLow.isHidden = false
-        }
-        else if(myStringToNum! > 50) {
+        print(supplement?.levelOfTextDisplayed)
+        if(supplement?.levelOfTextDisplayed == "High"){
             TVHigh.isHidden = false
-        }
-        else {
+        }else if(supplement?.levelOfTextDisplayed == "Low"){
+            TVLow.isHidden = false
+        }else{
             TVAverage.isHidden = false
         }
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning() {

@@ -11,14 +11,61 @@ import Foundation
 struct Supplement{
     
     var supplementName: String
-    var level: Int = 5
+    var supplementLevel: Int
+    lazy var levelOfTextDisplayed = chooseText()
     
-    init(supplement name: String){
+    init(supplement name: String, input amount: Int){
         self.supplementName = name
+        self.supplementLevel = amount
     }
-    
-    // function- choose which text view is displayed
-    // implement logic to decide which text view is displayed
 
+    func chooseText() -> String{
+        let textLevel: String
+        if(supplementLevel < 20) {
+            textLevel = "Low"
+        }else if(supplementLevel > 50){
+            textLevel = "High"
+        }else{
+            textLevel = "Average"
+        }
+        return textLevel
+    }
 }
 
+//struct Text {
+//    var textLevel: String
+//
+//    init(_ level: String){
+//        self.textLevel = level
+//    }
+//
+//
+//}
+
+//    init (
+//        let myStringToNum = Int(myString)
+//    //figure out which range the input is in
+//    if(myStringToNum! < 20) {
+//    //make Text fields visible based off range number is in
+//    TVLow.isHidden = false
+//    }
+//    else if(myStringToNum! > 50) {
+//    TVHigh.isHidden = false
+//    }
+//    else {
+//    TVAverage.isHidden = false
+//    }
+//
+//}
+//class High: Level{
+//
+//}
+//
+//class Low: Level{
+//
+//}
+//
+//class Avg: Level{
+//
+//}
+//
