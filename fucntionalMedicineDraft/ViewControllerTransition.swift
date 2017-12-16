@@ -9,13 +9,13 @@ class ViewControllerTransition: UIViewController {
     var labelToBeDisplayed = String()
     var didGoBack = true
     var sender: Any?
-    lazy var supplement: Supplement = {
-        if (Int(enterTextField.text!) != nil) {
-            return Supplement(supplement: labelToBeDisplayed, input: Int(enterTextField.text!)!)
-        }else{
-            return Supplement(supplement: labelToBeDisplayed, input: 0)
-        }
-    }()
+//    lazy var supplement: Supplement = {
+//        if (Int(enterTextField.text!) != nil) {
+//            return Supplement(supplement: labelToBeDisplayed, input: Int(enterTextField.text!)!)
+//        }else{
+//            return Supplement(supplement: labelToBeDisplayed, input: 0)
+//        }
+//    }()
     
     @IBAction func backButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -31,12 +31,16 @@ class ViewControllerTransition: UIViewController {
         if(segue.identifier == "segueResults"){
             if (Int(enterTextField.text!) != nil) {
                 let secondController = segue.destination as! ViewControllerResults
-                secondController.supplement = supplement
+                secondController.supplement = supplementGenerator()
                 secondController.myString = enterTextField.text!
             } else {
                 createAlert()
             }
         }
+    }
+    
+    func supplementGenerator() -> Supplement{
+        return Supplement(supplement: labelToBeDisplayed, input: Int(enterTextField.text!)!)
     }
     
     override func viewDidLoad() {

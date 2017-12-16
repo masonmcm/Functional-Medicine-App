@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Supplement{
+class Supplement{
     
     var supplementName: String
     var supplementLevel: Int
@@ -19,7 +19,7 @@ struct Supplement{
         self.supplementLevel = amount
     }
 
-    func chooseText() -> String{
+   func chooseText() -> String{
         let textLevel: String
         if(supplementLevel < 20) {
             textLevel = "Low"
@@ -31,16 +31,6 @@ struct Supplement{
         return textLevel
     }
 }
-
-//struct Text {
-//    var textLevel: String
-//
-//    init(_ level: String){
-//        self.textLevel = level
-//    }
-//
-//
-//}
 
 //    init (
 //        let myStringToNum = Int(myString)

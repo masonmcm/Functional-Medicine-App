@@ -26,7 +26,6 @@ class ViewControllerResults: UIViewController {
         TVHigh.isHidden = true
         TVAverage.isHidden = true
         TVLow.isHidden = true
-        print(supplement?.levelOfTextDisplayed)
         if(supplement?.levelOfTextDisplayed == "High"){
             TVHigh.isHidden = false
         }else if(supplement?.levelOfTextDisplayed == "Low"){
