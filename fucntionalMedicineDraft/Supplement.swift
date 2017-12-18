@@ -32,30 +32,4 @@ class Supplement{
     }
 }
 
-//    init (
-//        let myStringToNum = Int(myString)
-//    //figure out which range the input is in
-//    if(myStringToNum! < 20) {
-//    //make Text fields visible based off range number is in
-//    TVLow.isHidden = false
-//    }
-//    else if(myStringToNum! > 50) {
-//    TVHigh.isHidden = false
-//    }
-//    else {
-//    TVAverage.isHidden = false
-//    }
-//
-//}
-//class High: Level{
-//
-//}
-//
-//class Low: Level{
-//
-//}
-//
-//class Avg: Level{
-//
-//}
-//
+

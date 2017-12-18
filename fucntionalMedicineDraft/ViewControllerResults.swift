@@ -10,9 +10,21 @@ import UIKit
 
 class ViewControllerResults: UIViewController {
     
-    @IBOutlet weak var TVLow: UITextView!
-    @IBOutlet weak var TVAverage: UITextView!
-    @IBOutlet weak var TVHigh: UITextView!
+
+    @IBOutlet weak var HighC: UITextView!
+    @IBOutlet weak var LowC: UITextView!
+    @IBOutlet weak var HighK2: UITextView!
+    @IBOutlet weak var LowK2: UITextView!
+    @IBOutlet weak var HighD: UITextView!
+    @IBOutlet weak var LowD: UITextView!
+    @IBOutlet weak var HighA: UITextView!
+    @IBOutlet weak var LowA: UITextView!
+    @IBOutlet weak var HighMag: UITextView!
+    @IBOutlet weak var LowMag: UITextView!
+    
+    @IBOutlet var textViews: [UITextView]!
+    var textViewIdentifierByLevel = [String: UITextView]()
+    var textViewIdentifierBySupplement = [String: UITextView]()
     
     var myString = String()
     lazy var supplement: Supplement? = nil
@@ -23,18 +35,36 @@ class ViewControllerResults: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        TVHigh.isHidden = true
-        TVAverage.isHidden = true
-        TVLow.isHidden = true
-        if(supplement?.levelOfTextDisplayed == "High"){
-            TVHigh.isHidden = false
-        }else if(supplement?.levelOfTextDisplayed == "Low"){
-            TVLow.isHidden = false
-        }else{
-            TVAverage.isHidden = false
+        for text in textViews {
+            text.isHidden = true
+            var supplementName: String = ""
+            var supplementLevel: String = ""
+            var pastComma = false
+            for character in text.accessibilityLabel! {
+                if pastComma {
+                    if character == " "{
+                        continue
+                    }
+                }
+                    if(character == ","){
+                        pastComma = true
+                    }else if !pastComma{
+                        supplementName.append(character)
+                    }else{
+                        supplementLevel.append(character)
+                    }
+                }
+            if(supplement!.supplementName == supplementName){
+                 if(supplement!.levelOfTextDisplayed == "High" && supplementLevel == "High"){
+                    text.isHidden = false
+                 }else if (supplement!.levelOfTextDisplayed == "Low" && supplementLevel == "Low"){
+                    text.isHidden = false
+                 }else if(supplement!.levelOfTextDisplayed == "Average" && supplementLevel == "Average"){
+                    text.isHidden = false
         }
     }
-    
+    }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
