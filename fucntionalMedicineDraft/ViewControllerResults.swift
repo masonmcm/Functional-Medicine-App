@@ -23,6 +23,8 @@ class ViewControllerResults: UIViewController {
     @IBOutlet weak var LowMag: UITextView!
     
     @IBOutlet var textViews: [UITextView]!
+    @IBOutlet var imageViews: [UIImageView]!
+    
     var textViewIdentifierByLevel = [String: UITextView]()
     var textViewIdentifierBySupplement = [String: UITextView]()
     
@@ -35,10 +37,13 @@ class ViewControllerResults: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var textToBeDisplayed: UITextView = UITextView()
+        var imageToBeDisplayed: UIImageView = UIImageView()
+        
         for text in textViews {
             text.isHidden = true
-            var supplementName: String = ""
-            var supplementLevel: String = ""
+            var supplementNameText: String = ""
+            var supplementLevelText: String = ""
             var pastComma = false
             for character in text.accessibilityLabel! {
                 if pastComma {
@@ -49,22 +54,48 @@ class ViewControllerResults: UIViewController {
                     if(character == ","){
                         pastComma = true
                     }else if !pastComma{
-                        supplementName.append(character)
+                        supplementNameText.append(character)
                     }else{
-                        supplementLevel.append(character)
+                        supplementLevelText.append(character)
                     }
+                
+                    if(supplement!.supplementName == supplementNameText &&
+                        supplement!.levelOfTextDisplayed  == supplementLevelText) {
+                        textToBeDisplayed = text
                 }
-            if(supplement!.supplementName == supplementName){
-                 if(supplement!.levelOfTextDisplayed == "High" && supplementLevel == "High"){
-                    text.isHidden = false
-                 }else if (supplement!.levelOfTextDisplayed == "Low" && supplementLevel == "Low"){
-                    text.isHidden = false
-                 }else if(supplement!.levelOfTextDisplayed == "Average" && supplementLevel == "Average"){
-                    text.isHidden = false
+            }
         }
+            for label in imageViews {
+                label.isHidden = true
+                var supplementNameLabel: String = ""
+                var supplementLevelLabel: String = ""
+                var pastComma = false
+                for character in label.accessibilityLabel! {
+                    if pastComma {
+                        if character == " "{
+                            continue
+                        }
+                    }
+                    if(character == ","){
+                        pastComma = true
+                    }else if !pastComma{
+                        supplementNameLabel.append(character)
+                    }else{
+                        supplementLevelLabel.append(character)
+                    }
+                    
+                if(supplement!.supplementName == supplementNameLabel &&
+                    supplement!.levelOfTextDisplayed  == supplementLevelLabel) {
+                    imageToBeDisplayed = label
+                }
+            }
+        }
+
+        textToBeDisplayed.isHidden = false
+        imageToBeDisplayed.isHidden = false
+        
     }
-    }
-    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
