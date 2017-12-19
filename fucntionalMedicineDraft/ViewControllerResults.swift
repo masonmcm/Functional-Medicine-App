@@ -10,25 +10,8 @@ import UIKit
 
 class ViewControllerResults: UIViewController {
     
-
-    @IBOutlet weak var HighC: UITextView!
-    @IBOutlet weak var LowC: UITextView!
-    @IBOutlet weak var HighK2: UITextView!
-    @IBOutlet weak var LowK2: UITextView!
-    @IBOutlet weak var HighD: UITextView!
-    @IBOutlet weak var LowD: UITextView!
-    @IBOutlet weak var HighA: UITextView!
-    @IBOutlet weak var LowA: UITextView!
-    @IBOutlet weak var HighMag: UITextView!
-    @IBOutlet weak var LowMag: UITextView!
-    
     @IBOutlet var textViews: [UITextView]!
     @IBOutlet var imageViews: [UIImageView]!
-    
-    var textViewIdentifierByLevel = [String: UITextView]()
-    var textViewIdentifierBySupplement = [String: UITextView]()
-    
-    var myString = String()
     lazy var supplement: Supplement? = nil
     
     @IBAction func backButtonPressed(_ sender: Any) {
@@ -58,7 +41,6 @@ class ViewControllerResults: UIViewController {
                     }else{
                         supplementLevelText.append(character)
                     }
-                
                     if(supplement!.supplementName == supplementNameText &&
                         supplement!.levelOfTextDisplayed  == supplementLevelText) {
                         textToBeDisplayed = text
@@ -83,7 +65,8 @@ class ViewControllerResults: UIViewController {
                     }else{
                         supplementLevelLabel.append(character)
                     }
-                    
+                    print(supplementNameLabel)
+                    print(supplementLevelLabel)
                 if(supplement!.supplementName == supplementNameLabel &&
                     supplement!.levelOfTextDisplayed  == supplementLevelLabel) {
                     imageToBeDisplayed = label

@@ -533,6 +533,41 @@ Repeat for other vitamins.
                                                     <bool key="isElement" value="YES"/>
                                                 </accessibility>
                                             </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgMag" translatesAutoresizingMaskIntoConstraints="NO" id="wbJ-IR-yEF" userLabel="AvgMag Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
+                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <accessibility key="accessibilityConfiguration" label="Magnesium, Average">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgA" translatesAutoresizingMaskIntoConstraints="NO" id="ZRG-O3-qf7" userLabel="AvgA Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
+                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <accessibility key="accessibilityConfiguration" label="Vitamin A, Average">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgK2" translatesAutoresizingMaskIntoConstraints="NO" id="pLU-wc-Q6u" userLabel="AvgK2 Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
+                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <accessibility key="accessibilityConfiguration" label="Vitamin K2, Average">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgC" translatesAutoresizingMaskIntoConstraints="NO" id="6fl-f1-eaO" userLabel="AvgC Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
+                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <accessibility key="accessibilityConfiguration" label="Vitamin C, Average">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgD" translatesAutoresizingMaskIntoConstraints="NO" id="faK-dX-feS" userLabel="AvgD Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
+                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <accessibility key="accessibilityConfiguration" label="Vitamin D, Average">
+                                                    <bool key="isElement" value="YES"/>
+                                                </accessibility>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -542,24 +577,38 @@ Repeat for other vitamins.
                                             <constraint firstAttribute="bottom" secondItem="VO0-fw-LlJ" secondAttribute="bottom" id="4wl-LA-cU6"/>
                                             <constraint firstItem="9gL-kh-XI0" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="5sQ-ff-xmz"/>
                                             <constraint firstAttribute="trailing" secondItem="VO0-fw-LlJ" secondAttribute="trailing" id="6m0-j4-gnc"/>
+                                            <constraint firstAttribute="trailing" secondItem="pLU-wc-Q6u" secondAttribute="trailing" id="7Zk-i3-FvT"/>
                                             <constraint firstItem="JK3-2q-94L" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="8ko-f1-IGH"/>
+                                            <constraint firstAttribute="trailing" secondItem="wbJ-IR-yEF" secondAttribute="trailing" id="8rF-ut-hyZ"/>
                                             <constraint firstAttribute="trailing" secondItem="9gL-kh-XI0" secondAttribute="trailing" id="9I3-i5-3zG"/>
                                             <constraint firstAttribute="width" secondItem="zXq-4q-gqR" secondAttribute="height" multiplier="21:4" id="9Wb-m3-y6J"/>
+                                            <constraint firstItem="faK-dX-feS" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="Ary-vS-DfB"/>
                                             <constraint firstItem="hFs-6v-zdg" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="Dln-Zh-oyf"/>
                                             <constraint firstAttribute="trailing" secondItem="hFs-6v-zdg" secondAttribute="trailing" id="E0q-h8-0Ex"/>
+                                            <constraint firstAttribute="bottom" secondItem="faK-dX-feS" secondAttribute="bottom" id="G5o-hC-G9V"/>
                                             <constraint firstAttribute="bottom" secondItem="aCR-M6-euC" secondAttribute="bottom" id="GUG-Ra-56k"/>
+                                            <constraint firstAttribute="bottom" secondItem="wbJ-IR-yEF" secondAttribute="bottom" id="Gja-EG-uJL"/>
                                             <constraint firstAttribute="trailing" secondItem="aCR-M6-euC" secondAttribute="trailing" id="IpN-He-c5x"/>
+                                            <constraint firstAttribute="bottom" secondItem="6fl-f1-eaO" secondAttribute="bottom" id="J7J-8e-aOU"/>
+                                            <constraint firstItem="6fl-f1-eaO" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="Jro-KM-us1"/>
                                             <constraint firstItem="VO0-fw-LlJ" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="K1u-ax-L84"/>
+                                            <constraint firstAttribute="trailing" secondItem="faK-dX-feS" secondAttribute="trailing" id="K5C-32-aey"/>
                                             <constraint firstAttribute="bottom" secondItem="ucP-tS-09R" secondAttribute="bottom" id="KSb-5j-fG9"/>
+                                            <constraint firstItem="faK-dX-feS" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="LRz-yH-YR1"/>
                                             <constraint firstItem="9gL-kh-XI0" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="LW4-IJ-qU1"/>
                                             <constraint firstAttribute="bottom" secondItem="nHG-OW-8ZU" secondAttribute="bottom" id="NFI-oT-nh0"/>
+                                            <constraint firstItem="6fl-f1-eaO" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="S0s-Zs-ZOW"/>
+                                            <constraint firstAttribute="bottom" secondItem="pLU-wc-Q6u" secondAttribute="bottom" id="SRc-DT-tWw"/>
                                             <constraint firstItem="JK3-2q-94L" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="TjL-PY-VpF"/>
                                             <constraint firstItem="Rix-a2-nyh" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="UQ2-dV-aW5"/>
                                             <constraint firstItem="jyL-Mr-ozH" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="VH8-7A-eIy"/>
+                                            <constraint firstItem="wbJ-IR-yEF" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="VsL-u0-8r1"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZRG-O3-qf7" secondAttribute="trailing" id="YDj-e7-plR"/>
                                             <constraint firstAttribute="bottom" secondItem="9gL-kh-XI0" secondAttribute="bottom" id="Zdj-9N-4Li"/>
                                             <constraint firstAttribute="trailing" secondItem="jyL-Mr-ozH" secondAttribute="trailing" id="Zuz-Zo-OYh"/>
                                             <constraint firstItem="aCR-M6-euC" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="agT-bq-jlp"/>
                                             <constraint firstItem="Rix-a2-nyh" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="awZ-O9-1eH"/>
+                                            <constraint firstAttribute="trailing" secondItem="6fl-f1-eaO" secondAttribute="trailing" id="b38-hJ-2rp"/>
                                             <constraint firstAttribute="trailing" secondItem="ucP-tS-09R" secondAttribute="trailing" id="bBn-yN-PqY"/>
                                             <constraint firstItem="VO0-fw-LlJ" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="bRU-7k-Y3J"/>
                                             <constraint firstAttribute="bottom" secondItem="JK3-2q-94L" secondAttribute="bottom" id="d1i-cI-ZPx"/>
@@ -569,12 +618,18 @@ Repeat for other vitamins.
                                             <constraint firstItem="aCR-M6-euC" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="hHa-iL-0GW"/>
                                             <constraint firstAttribute="trailing" secondItem="nHG-OW-8ZU" secondAttribute="trailing" id="heD-fh-9L8"/>
                                             <constraint firstAttribute="trailing" secondItem="JK3-2q-94L" secondAttribute="trailing" id="khW-UD-Hgu"/>
+                                            <constraint firstItem="ZRG-O3-qf7" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="lh6-Mt-oRy"/>
                                             <constraint firstItem="jyL-Mr-ozH" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="mwJ-xE-wpJ"/>
                                             <constraint firstItem="ucP-tS-09R" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="nPl-zh-bFG"/>
                                             <constraint firstItem="bqs-XW-pxx" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="qeO-jO-8qv"/>
+                                            <constraint firstItem="pLU-wc-Q6u" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="sld-4P-3Mk"/>
                                             <constraint firstAttribute="trailing" secondItem="bqs-XW-pxx" secondAttribute="trailing" id="t83-NN-JIU"/>
+                                            <constraint firstItem="pLU-wc-Q6u" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="vcV-p1-abF"/>
                                             <constraint firstAttribute="bottom" secondItem="Rix-a2-nyh" secondAttribute="bottom" id="vnY-Wa-Iul"/>
                                             <constraint firstAttribute="bottom" secondItem="bqs-XW-pxx" secondAttribute="bottom" id="vuq-XW-wtz"/>
+                                            <constraint firstItem="wbJ-IR-yEF" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="w7N-Wl-kQ9"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZRG-O3-qf7" secondAttribute="bottom" id="wGN-Op-v5H"/>
+                                            <constraint firstItem="ZRG-O3-qf7" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="yuj-FZ-k2r"/>
                                             <constraint firstItem="nHG-OW-8ZU" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="zYa-ZZ-Ytf"/>
                                             <constraint firstItem="nHG-OW-8ZU" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="zrM-I8-b22"/>
                                         </constraints>
@@ -771,16 +826,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                     </view>
                     <size key="freeformSize" width="414" height="900"/>
                     <connections>
-                        <outlet property="HighA" destination="zcg-Tg-Zts" id="9ef-qO-8IG"/>
-                        <outlet property="HighC" destination="ef6-zG-INe" id="D7J-cu-VTj"/>
-                        <outlet property="HighD" destination="HEn-Ak-8iW" id="s15-o5-MHj"/>
-                        <outlet property="HighK2" destination="z67-h5-WeT" id="iX7-oJ-pV1"/>
-                        <outlet property="HighMag" destination="qQY-IK-gTb" id="TYO-lL-uSy"/>
-                        <outlet property="LowA" destination="8aJ-NY-1z1" id="Ng1-zL-IHn"/>
-                        <outlet property="LowC" destination="ilc-Fg-zXQ" id="tbf-ag-kEc"/>
-                        <outlet property="LowD" destination="0Jq-dc-Czf" id="pp7-Vg-Ezx"/>
-                        <outlet property="LowK2" destination="eFU-Og-1xn" id="UPR-VR-qPx"/>
-                        <outlet property="LowMag" destination="loP-2P-HRc" id="khb-lz-TTV"/>
                         <outletCollection property="textViews" destination="ilc-Fg-zXQ" collectionClass="NSMutableArray" id="eiz-7m-v70"/>
                         <outletCollection property="textViews" destination="ef6-zG-INe" collectionClass="NSMutableArray" id="XZT-IL-HNC"/>
                         <outletCollection property="textViews" destination="z67-h5-WeT" collectionClass="NSMutableArray" id="TIs-vk-9SX"/>
@@ -801,6 +846,11 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                         <outletCollection property="imageViews" destination="nHG-OW-8ZU" collectionClass="NSMutableArray" id="FGZ-Qs-uXr"/>
                         <outletCollection property="imageViews" destination="hFs-6v-zdg" collectionClass="NSMutableArray" id="ZWS-GB-Gma"/>
                         <outletCollection property="imageViews" destination="9gL-kh-XI0" collectionClass="NSMutableArray" id="bWE-Rw-zsX"/>
+                        <outletCollection property="imageViews" destination="wbJ-IR-yEF" collectionClass="NSMutableArray" id="FqM-oe-qp2"/>
+                        <outletCollection property="imageViews" destination="ZRG-O3-qf7" collectionClass="NSMutableArray" id="GdX-6m-qzL"/>
+                        <outletCollection property="imageViews" destination="pLU-wc-Q6u" collectionClass="NSMutableArray" id="WKx-a2-dER"/>
+                        <outletCollection property="imageViews" destination="6fl-f1-eaO" collectionClass="NSMutableArray" id="KIX-mK-AZI"/>
+                        <outletCollection property="imageViews" destination="faK-dX-feS" collectionClass="NSMutableArray" id="RtS-e3-W02"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fcs-gX-4yW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -811,6 +861,11 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
     <resources>
         <image name="Asset 5" width="518" height="365"/>
         <image name="Asset 6" width="386" height="83"/>
+        <image name="AvgA" width="757" height="143"/>
+        <image name="AvgC" width="757" height="143"/>
+        <image name="AvgD" width="757" height="143"/>
+        <image name="AvgK2" width="757" height="143"/>
+        <image name="AvgMag" width="757" height="143"/>
         <image name="Back Button" width="281" height="70"/>
         <image name="Backdrop" width="599" height="479"/>
         <image name="Go Button 2" width="280" height="67"/>

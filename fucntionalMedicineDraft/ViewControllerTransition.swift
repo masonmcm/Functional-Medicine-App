@@ -25,7 +25,6 @@ class ViewControllerTransition: UIViewController {
             if (Int(enterTextField.text!) != nil) {
                 let secondController = segue.destination as! ViewControllerResults
                 secondController.supplement = supplementGenerator()
-                secondController.myString = enterTextField.text!
             } else {
                 createAlert()
             }
