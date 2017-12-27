@@ -65,8 +65,8 @@ class ViewControllerResults: UIViewController {
                     }else{
                         supplementLevelLabel.append(character)
                     }
-                    print(supplementNameLabel)
-                    print(supplementLevelLabel)
+//                    print(supplementNameLabel)
+//                    print(supplementLevelLabel)
                 if(supplement!.supplementName == supplementNameLabel &&
                     supplement!.levelOfTextDisplayed  == supplementLevelLabel) {
                     imageToBeDisplayed = label
