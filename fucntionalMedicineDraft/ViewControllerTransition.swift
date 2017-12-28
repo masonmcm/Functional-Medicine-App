@@ -9,12 +9,16 @@ class ViewControllerTransition: UIViewController {
     var labelToBeDisplayed = String()
     var didGoBack = true
     var sender: Any?
+    let supplementUnits: [String: String] = ["A": "mcg (micrograms)", "D": "ng (nanograms)", "C": "mg (milligrams)", "K": "ng (nanograms)", "M": "mg (milligrams)"]
     
     @IBAction func backButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func enter(_ sender: Any) {
+        if enterTextField.isEditing {
+            enterTextField.placeholder = nil
+        }
         if enterTextField.text != ""{
             performSegue(withIdentifier: "segueResults", sender: self)
         }
@@ -37,16 +41,24 @@ class ViewControllerTransition: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         for label in supplementLabels {
             label.isHidden = true
             let l = label.accessibilityLabel!
             labelIdentifier.updateValue(label, forKey: l)
         }
+        
         enterTextField.font = customFont;
+        
         determineDidGoBack(sender: self.sender)
         if(!didGoBack) {
-           labelIdentifier[labelToBeDisplayed]!.isHidden = false
+            let splitVitaminName = labelToBeDisplayed.components(separatedBy: " ")
+            let tempVitaminNameInit = splitVitaminName[splitVitaminName.count - 1]
+            let tempVitaminNameFinal = tempVitaminNameInit[tempVitaminNameInit.startIndex]
+            let vitaminName = String(tempVitaminNameFinal)
+            enterTextField.placeholder = "Enter " + labelToBeDisplayed + " levels in " + supplementUnits[vitaminName]!
+            
+            labelIdentifier[labelToBeDisplayed]!.isHidden = false
         }
     }
     
