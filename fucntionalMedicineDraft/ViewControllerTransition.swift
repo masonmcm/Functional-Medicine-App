@@ -22,7 +22,7 @@ class ViewControllerTransition: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "segueResults"){
-            if (Int(enterTextField.text!) != nil) {
+            if (Double(enterTextField.text!) != nil) {
                 let secondController = segue.destination as! ViewControllerResults
                 secondController.supplement = supplementGenerator()
             } else {
@@ -32,7 +32,7 @@ class ViewControllerTransition: UIViewController {
     }
     
     func supplementGenerator() -> Supplement{
-        return Supplement(supplement: labelToBeDisplayed, input: Int(enterTextField.text!)!)
+        return Supplement(supplement: labelToBeDisplayed, input: Double(enterTextField.text!)!)
     }
     
     override func viewDidLoad() {
