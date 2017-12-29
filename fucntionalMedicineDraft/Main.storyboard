@@ -269,7 +269,7 @@ Repeat for other vitamins.
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orN-rb-ZIh">
-                                <rect key="frame" x="20" y="655" width="193" height="37"/>
+                                <rect key="frame" x="32" y="666" width="181" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="cd2-sP-JAN"/>
                                 </constraints>
@@ -281,13 +281,13 @@ Repeat for other vitamins.
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="be8-7b-fQz">
-                                <rect key="frame" x="15" y="63" width="384" height="572"/>
+                                <rect key="frame" x="15" y="170" width="384" height="366"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="osx-7m-PGp">
-                                        <rect key="frame" x="0.0" y="1" width="384" height="570"/>
+                                        <rect key="frame" x="0.0" y="1" width="384" height="364"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NNu-MY-MnD">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="572"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="366"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUL-Az-RCy">
                                                 <rect key="frame" x="15" y="25" width="354" height="56"/>
@@ -376,7 +376,7 @@ Repeat for other vitamins.
                                                 </constraints>
                                             </view>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lOu-XJ-XKw">
-                                                <rect key="frame" x="15" y="279" width="354" height="30"/>
+                                                <rect key="frame" x="15" y="176" width="354" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="r4f-4u-kSk"/>
                                                 </constraints>
@@ -385,7 +385,7 @@ Repeat for other vitamins.
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i2-0m-njY">
-                                                <rect key="frame" x="52" y="507" width="280" height="40"/>
+                                                <rect key="frame" x="100" y="301" width="184" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="MIg-Jp-hET"/>
                                                 </constraints>
@@ -400,6 +400,8 @@ Repeat for other vitamins.
                                             <constraint firstAttribute="trailing" secondItem="lOu-XJ-XKw" secondAttribute="trailing" constant="15" id="SNR-7j-m4l"/>
                                             <constraint firstItem="lOu-XJ-XKw" firstAttribute="leading" secondItem="NNu-MY-MnD" secondAttribute="leading" constant="15" id="dTb-zq-DlY"/>
                                             <constraint firstAttribute="trailing" secondItem="yUL-Az-RCy" secondAttribute="trailing" constant="15" id="iJ9-3w-iHf"/>
+                                            <constraint firstAttribute="trailing" secondItem="1i2-0m-njY" secondAttribute="trailing" constant="100" id="jxC-Ti-Zrq"/>
+                                            <constraint firstItem="1i2-0m-njY" firstAttribute="leading" secondItem="NNu-MY-MnD" secondAttribute="leading" constant="100" id="pfa-LG-sbT"/>
                                         </constraints>
                                         <directionalEdgeInsets key="directionalLayoutMargins" top="25" leading="8" bottom="25" trailing="8"/>
                                     </stackView>
@@ -422,10 +424,10 @@ Repeat for other vitamins.
                         </subviews>
                         <color key="backgroundColor" red="0.58625173568725586" green="0.7549668550491333" blue="0.35685941576957703" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="be8-7b-fQz" firstAttribute="top" secondItem="1KH-in-bfb" secondAttribute="top" constant="63" id="BHL-D5-mCW"/>
-                            <constraint firstItem="orN-rb-ZIh" firstAttribute="leading" secondItem="1KH-in-bfb" secondAttribute="leadingMargin" id="OYt-It-LW1"/>
-                            <constraint firstAttribute="bottom" secondItem="be8-7b-fQz" secondAttribute="bottom" constant="101" id="kzg-yr-7aj"/>
-                            <constraint firstItem="orN-rb-ZIh" firstAttribute="top" secondItem="be8-7b-fQz" secondAttribute="bottom" constant="20" id="nKV-lG-wCt"/>
+                            <constraint firstItem="be8-7b-fQz" firstAttribute="top" secondItem="1KH-in-bfb" secondAttribute="top" constant="170" id="BHL-D5-mCW"/>
+                            <constraint firstItem="orN-rb-ZIh" firstAttribute="leading" secondItem="1KH-in-bfb" secondAttribute="leadingMargin" constant="12" id="OYt-It-LW1"/>
+                            <constraint firstAttribute="bottom" secondItem="be8-7b-fQz" secondAttribute="bottom" constant="200" id="kzg-yr-7aj"/>
+                            <constraint firstItem="orN-rb-ZIh" firstAttribute="top" secondItem="be8-7b-fQz" secondAttribute="bottom" constant="130" id="nKV-lG-wCt"/>
                             <constraint firstAttribute="trailing" secondItem="orN-rb-ZIh" secondAttribute="trailing" constant="201" id="q8B-If-aXY"/>
                             <constraint firstItem="be8-7b-fQz" firstAttribute="leading" secondItem="1KH-in-bfb" secondAttribute="leading" constant="15" id="y7J-ea-Ihj"/>
                             <constraint firstAttribute="trailing" secondItem="be8-7b-fQz" secondAttribute="trailing" constant="15" id="yih-AH-xXI"/>
@@ -460,398 +462,412 @@ Repeat for other vitamins.
                                 <rect key="frame" x="0.0" y="20" width="414" height="880"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="cuh-CZ-E2D">
-                                        <rect key="frame" x="20" y="100" width="374" height="679"/>
+                                        <rect key="frame" x="20" y="150" width="374" height="630"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXq-4q-gqR" userLabel="Label Views">
-                                        <rect key="frame" x="10" y="10" width="394" height="75"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="68.5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jac-Vf-oLu">
+                                        <rect key="frame" x="32" y="50" width="350" height="797"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighA" translatesAutoresizingMaskIntoConstraints="NO" id="JK3-2q-94L" userLabel="LowMag Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
-                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <accessibility key="accessibilityConfiguration" label="Magnesium, Low">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighMag" translatesAutoresizingMaskIntoConstraints="NO" id="VO0-fw-LlJ" userLabel="HighMag Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
-                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <accessibility key="accessibilityConfiguration" label="Magnesium, High">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LowA" translatesAutoresizingMaskIntoConstraints="NO" id="bqs-XW-pxx" userLabel="LowA Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
-                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin A, Low">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighA" translatesAutoresizingMaskIntoConstraints="NO" id="ucP-tS-09R" userLabel="HighA Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
-                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin A, High">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LowK2" translatesAutoresizingMaskIntoConstraints="NO" id="aCR-M6-euC" userLabel="LowK2 Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
-                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin K2, Low">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighK2" translatesAutoresizingMaskIntoConstraints="NO" id="Rix-a2-nyh" userLabel="HighK2 Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
-                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin K2, High">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LowC" translatesAutoresizingMaskIntoConstraints="NO" id="jyL-Mr-ozH" userLabel="LowC Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
-                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin C, Low">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighC" translatesAutoresizingMaskIntoConstraints="NO" id="nHG-OW-8ZU" userLabel="HighC Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
-                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin C, High">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LowD" translatesAutoresizingMaskIntoConstraints="NO" id="hFs-6v-zdg" userLabel="LowD Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
-                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin D, Low">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighD" translatesAutoresizingMaskIntoConstraints="NO" id="9gL-kh-XI0" userLabel="HighD Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
-                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin D, High">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgMag" translatesAutoresizingMaskIntoConstraints="NO" id="wbJ-IR-yEF" userLabel="AvgMag Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
-                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <accessibility key="accessibilityConfiguration" label="Magnesium, Average">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgA" translatesAutoresizingMaskIntoConstraints="NO" id="ZRG-O3-qf7" userLabel="AvgA Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
-                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin A, Average">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgK2" translatesAutoresizingMaskIntoConstraints="NO" id="pLU-wc-Q6u" userLabel="AvgK2 Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
-                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin K2, Average">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgC" translatesAutoresizingMaskIntoConstraints="NO" id="6fl-f1-eaO" userLabel="AvgC Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
-                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin C, Average">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgD" translatesAutoresizingMaskIntoConstraints="NO" id="faK-dX-feS" userLabel="AvgD Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="75"/>
-                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin D, Average">
-                                                    <bool key="isElement" value="YES"/>
-                                                </accessibility>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Rix-a2-nyh" secondAttribute="trailing" id="10f-Ti-cIb"/>
-                                            <constraint firstItem="bqs-XW-pxx" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="2FG-S4-jF6"/>
-                                            <constraint firstAttribute="bottom" secondItem="hFs-6v-zdg" secondAttribute="bottom" id="3Eb-S3-Kbr"/>
-                                            <constraint firstAttribute="bottom" secondItem="VO0-fw-LlJ" secondAttribute="bottom" id="4wl-LA-cU6"/>
-                                            <constraint firstItem="9gL-kh-XI0" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="5sQ-ff-xmz"/>
-                                            <constraint firstAttribute="trailing" secondItem="VO0-fw-LlJ" secondAttribute="trailing" id="6m0-j4-gnc"/>
-                                            <constraint firstAttribute="trailing" secondItem="pLU-wc-Q6u" secondAttribute="trailing" id="7Zk-i3-FvT"/>
-                                            <constraint firstItem="JK3-2q-94L" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="8ko-f1-IGH"/>
-                                            <constraint firstAttribute="trailing" secondItem="wbJ-IR-yEF" secondAttribute="trailing" id="8rF-ut-hyZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="9gL-kh-XI0" secondAttribute="trailing" id="9I3-i5-3zG"/>
-                                            <constraint firstAttribute="width" secondItem="zXq-4q-gqR" secondAttribute="height" multiplier="21:4" id="9Wb-m3-y6J"/>
-                                            <constraint firstItem="faK-dX-feS" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="Ary-vS-DfB"/>
-                                            <constraint firstItem="hFs-6v-zdg" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="Dln-Zh-oyf"/>
-                                            <constraint firstAttribute="trailing" secondItem="hFs-6v-zdg" secondAttribute="trailing" id="E0q-h8-0Ex"/>
-                                            <constraint firstAttribute="bottom" secondItem="faK-dX-feS" secondAttribute="bottom" id="G5o-hC-G9V"/>
-                                            <constraint firstAttribute="bottom" secondItem="aCR-M6-euC" secondAttribute="bottom" id="GUG-Ra-56k"/>
-                                            <constraint firstAttribute="bottom" secondItem="wbJ-IR-yEF" secondAttribute="bottom" id="Gja-EG-uJL"/>
-                                            <constraint firstAttribute="trailing" secondItem="aCR-M6-euC" secondAttribute="trailing" id="IpN-He-c5x"/>
-                                            <constraint firstAttribute="bottom" secondItem="6fl-f1-eaO" secondAttribute="bottom" id="J7J-8e-aOU"/>
-                                            <constraint firstItem="6fl-f1-eaO" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="Jro-KM-us1"/>
-                                            <constraint firstItem="VO0-fw-LlJ" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="K1u-ax-L84"/>
-                                            <constraint firstAttribute="trailing" secondItem="faK-dX-feS" secondAttribute="trailing" id="K5C-32-aey"/>
-                                            <constraint firstAttribute="bottom" secondItem="ucP-tS-09R" secondAttribute="bottom" id="KSb-5j-fG9"/>
-                                            <constraint firstItem="faK-dX-feS" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="LRz-yH-YR1"/>
-                                            <constraint firstItem="9gL-kh-XI0" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="LW4-IJ-qU1"/>
-                                            <constraint firstAttribute="bottom" secondItem="nHG-OW-8ZU" secondAttribute="bottom" id="NFI-oT-nh0"/>
-                                            <constraint firstItem="6fl-f1-eaO" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="S0s-Zs-ZOW"/>
-                                            <constraint firstAttribute="bottom" secondItem="pLU-wc-Q6u" secondAttribute="bottom" id="SRc-DT-tWw"/>
-                                            <constraint firstItem="JK3-2q-94L" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="TjL-PY-VpF"/>
-                                            <constraint firstItem="Rix-a2-nyh" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="UQ2-dV-aW5"/>
-                                            <constraint firstItem="jyL-Mr-ozH" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="VH8-7A-eIy"/>
-                                            <constraint firstItem="wbJ-IR-yEF" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="VsL-u0-8r1"/>
-                                            <constraint firstAttribute="trailing" secondItem="ZRG-O3-qf7" secondAttribute="trailing" id="YDj-e7-plR"/>
-                                            <constraint firstAttribute="bottom" secondItem="9gL-kh-XI0" secondAttribute="bottom" id="Zdj-9N-4Li"/>
-                                            <constraint firstAttribute="trailing" secondItem="jyL-Mr-ozH" secondAttribute="trailing" id="Zuz-Zo-OYh"/>
-                                            <constraint firstItem="aCR-M6-euC" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="agT-bq-jlp"/>
-                                            <constraint firstItem="Rix-a2-nyh" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="awZ-O9-1eH"/>
-                                            <constraint firstAttribute="trailing" secondItem="6fl-f1-eaO" secondAttribute="trailing" id="b38-hJ-2rp"/>
-                                            <constraint firstAttribute="trailing" secondItem="ucP-tS-09R" secondAttribute="trailing" id="bBn-yN-PqY"/>
-                                            <constraint firstItem="VO0-fw-LlJ" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="bRU-7k-Y3J"/>
-                                            <constraint firstAttribute="bottom" secondItem="JK3-2q-94L" secondAttribute="bottom" id="d1i-cI-ZPx"/>
-                                            <constraint firstItem="ucP-tS-09R" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="eIo-Yj-t9m"/>
-                                            <constraint firstAttribute="bottom" secondItem="jyL-Mr-ozH" secondAttribute="bottom" id="fcv-2a-3r4"/>
-                                            <constraint firstItem="hFs-6v-zdg" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="gSk-m3-goK"/>
-                                            <constraint firstItem="aCR-M6-euC" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="hHa-iL-0GW"/>
-                                            <constraint firstAttribute="trailing" secondItem="nHG-OW-8ZU" secondAttribute="trailing" id="heD-fh-9L8"/>
-                                            <constraint firstAttribute="trailing" secondItem="JK3-2q-94L" secondAttribute="trailing" id="khW-UD-Hgu"/>
-                                            <constraint firstItem="ZRG-O3-qf7" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="lh6-Mt-oRy"/>
-                                            <constraint firstItem="jyL-Mr-ozH" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="mwJ-xE-wpJ"/>
-                                            <constraint firstItem="ucP-tS-09R" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="nPl-zh-bFG"/>
-                                            <constraint firstItem="bqs-XW-pxx" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="qeO-jO-8qv"/>
-                                            <constraint firstItem="pLU-wc-Q6u" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="sld-4P-3Mk"/>
-                                            <constraint firstAttribute="trailing" secondItem="bqs-XW-pxx" secondAttribute="trailing" id="t83-NN-JIU"/>
-                                            <constraint firstItem="pLU-wc-Q6u" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="vcV-p1-abF"/>
-                                            <constraint firstAttribute="bottom" secondItem="Rix-a2-nyh" secondAttribute="bottom" id="vnY-Wa-Iul"/>
-                                            <constraint firstAttribute="bottom" secondItem="bqs-XW-pxx" secondAttribute="bottom" id="vuq-XW-wtz"/>
-                                            <constraint firstItem="wbJ-IR-yEF" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="w7N-Wl-kQ9"/>
-                                            <constraint firstAttribute="bottom" secondItem="ZRG-O3-qf7" secondAttribute="bottom" id="wGN-Op-v5H"/>
-                                            <constraint firstItem="ZRG-O3-qf7" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="yuj-FZ-k2r"/>
-                                            <constraint firstItem="nHG-OW-8ZU" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="zYa-ZZ-Ytf"/>
-                                            <constraint firstItem="nHG-OW-8ZU" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="zrM-I8-b22"/>
-                                        </constraints>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aus-sz-9Vu">
-                                        <rect key="frame" x="34" y="707" width="197" height="37"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="37" id="WUx-WJ-LU8"/>
-                                        </constraints>
-                                        <state key="normal" image="Inverted Back Button"/>
-                                        <connections>
-                                            <action selector="backButtonPressed:" destination="aQf-1Z-HGA" eventType="touchUpInside" id="QO9-Yf-qNg"/>
-                                        </connections>
-                                    </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zab-tb-z02" userLabel="Text Views">
-                                        <rect key="frame" x="32" y="110" width="350" height="587"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ilc-Fg-zXQ" userLabel="LowC">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="587"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXq-4q-gqR" userLabel="Label Views">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighA" translatesAutoresizingMaskIntoConstraints="NO" id="JK3-2q-94L" userLabel="LowMag Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Magnesium, Low">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighMag" translatesAutoresizingMaskIntoConstraints="NO" id="VO0-fw-LlJ" userLabel="HighMag Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Magnesium, High">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LowA" translatesAutoresizingMaskIntoConstraints="NO" id="bqs-XW-pxx" userLabel="LowA Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin A, Low">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighA" translatesAutoresizingMaskIntoConstraints="NO" id="ucP-tS-09R" userLabel="HighA Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin A, High">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LowK2" translatesAutoresizingMaskIntoConstraints="NO" id="aCR-M6-euC" userLabel="LowK2 Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin K2, Low">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighK2" translatesAutoresizingMaskIntoConstraints="NO" id="Rix-a2-nyh" userLabel="HighK2 Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin K2, High">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LowC" translatesAutoresizingMaskIntoConstraints="NO" id="jyL-Mr-ozH" userLabel="LowC Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin C, Low">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighC" translatesAutoresizingMaskIntoConstraints="NO" id="nHG-OW-8ZU" userLabel="HighC Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin C, High">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LowD" translatesAutoresizingMaskIntoConstraints="NO" id="hFs-6v-zdg" userLabel="LowD Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin D, Low">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighD" translatesAutoresizingMaskIntoConstraints="NO" id="9gL-kh-XI0" userLabel="HighD Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin D, High">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgMag" translatesAutoresizingMaskIntoConstraints="NO" id="wbJ-IR-yEF" userLabel="AvgMag Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Magnesium, Average">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgA" translatesAutoresizingMaskIntoConstraints="NO" id="ZRG-O3-qf7" userLabel="AvgA Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin A, Average">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgK2" translatesAutoresizingMaskIntoConstraints="NO" id="pLU-wc-Q6u" userLabel="AvgK2 Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin K2, Average">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgC" translatesAutoresizingMaskIntoConstraints="NO" id="6fl-f1-eaO" userLabel="AvgC Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin C, Average">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgD" translatesAutoresizingMaskIntoConstraints="NO" id="faK-dX-feS" userLabel="AvgD Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin D, Average">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin C, Low"/>
-                                                <string key="text">Symptoms for insufficient vitamin C include poor wound healing and fatigue because of vitamin C’s role in collagen production. 
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Rix-a2-nyh" secondAttribute="trailing" id="10f-Ti-cIb"/>
+                                                    <constraint firstItem="bqs-XW-pxx" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="2FG-S4-jF6"/>
+                                                    <constraint firstAttribute="bottom" secondItem="hFs-6v-zdg" secondAttribute="bottom" id="3Eb-S3-Kbr"/>
+                                                    <constraint firstAttribute="bottom" secondItem="VO0-fw-LlJ" secondAttribute="bottom" id="4wl-LA-cU6"/>
+                                                    <constraint firstItem="9gL-kh-XI0" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="5sQ-ff-xmz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="VO0-fw-LlJ" secondAttribute="trailing" id="6m0-j4-gnc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pLU-wc-Q6u" secondAttribute="trailing" id="7Zk-i3-FvT"/>
+                                                    <constraint firstItem="JK3-2q-94L" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="8ko-f1-IGH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wbJ-IR-yEF" secondAttribute="trailing" id="8rF-ut-hyZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9gL-kh-XI0" secondAttribute="trailing" id="9I3-i5-3zG"/>
+                                                    <constraint firstAttribute="width" secondItem="zXq-4q-gqR" secondAttribute="height" multiplier="21:4" id="9Wb-m3-y6J"/>
+                                                    <constraint firstItem="faK-dX-feS" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="Ary-vS-DfB"/>
+                                                    <constraint firstItem="hFs-6v-zdg" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="Dln-Zh-oyf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hFs-6v-zdg" secondAttribute="trailing" id="E0q-h8-0Ex"/>
+                                                    <constraint firstAttribute="bottom" secondItem="faK-dX-feS" secondAttribute="bottom" id="G5o-hC-G9V"/>
+                                                    <constraint firstAttribute="bottom" secondItem="aCR-M6-euC" secondAttribute="bottom" id="GUG-Ra-56k"/>
+                                                    <constraint firstAttribute="bottom" secondItem="wbJ-IR-yEF" secondAttribute="bottom" id="Gja-EG-uJL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aCR-M6-euC" secondAttribute="trailing" id="IpN-He-c5x"/>
+                                                    <constraint firstAttribute="bottom" secondItem="6fl-f1-eaO" secondAttribute="bottom" id="J7J-8e-aOU"/>
+                                                    <constraint firstItem="6fl-f1-eaO" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="Jro-KM-us1"/>
+                                                    <constraint firstItem="VO0-fw-LlJ" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="K1u-ax-L84"/>
+                                                    <constraint firstAttribute="trailing" secondItem="faK-dX-feS" secondAttribute="trailing" id="K5C-32-aey"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ucP-tS-09R" secondAttribute="bottom" id="KSb-5j-fG9"/>
+                                                    <constraint firstItem="faK-dX-feS" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="LRz-yH-YR1"/>
+                                                    <constraint firstItem="9gL-kh-XI0" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="LW4-IJ-qU1"/>
+                                                    <constraint firstAttribute="bottom" secondItem="nHG-OW-8ZU" secondAttribute="bottom" id="NFI-oT-nh0"/>
+                                                    <constraint firstItem="6fl-f1-eaO" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="S0s-Zs-ZOW"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pLU-wc-Q6u" secondAttribute="bottom" id="SRc-DT-tWw"/>
+                                                    <constraint firstItem="JK3-2q-94L" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="TjL-PY-VpF"/>
+                                                    <constraint firstItem="Rix-a2-nyh" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="UQ2-dV-aW5"/>
+                                                    <constraint firstItem="jyL-Mr-ozH" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="VH8-7A-eIy"/>
+                                                    <constraint firstItem="wbJ-IR-yEF" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="VsL-u0-8r1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ZRG-O3-qf7" secondAttribute="trailing" id="YDj-e7-plR"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9gL-kh-XI0" secondAttribute="bottom" id="Zdj-9N-4Li"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jyL-Mr-ozH" secondAttribute="trailing" id="Zuz-Zo-OYh"/>
+                                                    <constraint firstItem="aCR-M6-euC" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="agT-bq-jlp"/>
+                                                    <constraint firstItem="Rix-a2-nyh" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="awZ-O9-1eH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6fl-f1-eaO" secondAttribute="trailing" id="b38-hJ-2rp"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ucP-tS-09R" secondAttribute="trailing" id="bBn-yN-PqY"/>
+                                                    <constraint firstItem="VO0-fw-LlJ" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="bRU-7k-Y3J"/>
+                                                    <constraint firstAttribute="bottom" secondItem="JK3-2q-94L" secondAttribute="bottom" id="d1i-cI-ZPx"/>
+                                                    <constraint firstItem="ucP-tS-09R" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="eIo-Yj-t9m"/>
+                                                    <constraint firstAttribute="bottom" secondItem="jyL-Mr-ozH" secondAttribute="bottom" id="fcv-2a-3r4"/>
+                                                    <constraint firstItem="hFs-6v-zdg" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="gSk-m3-goK"/>
+                                                    <constraint firstItem="aCR-M6-euC" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="hHa-iL-0GW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="nHG-OW-8ZU" secondAttribute="trailing" id="heD-fh-9L8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JK3-2q-94L" secondAttribute="trailing" id="khW-UD-Hgu"/>
+                                                    <constraint firstItem="ZRG-O3-qf7" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="lh6-Mt-oRy"/>
+                                                    <constraint firstItem="jyL-Mr-ozH" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="mwJ-xE-wpJ"/>
+                                                    <constraint firstItem="ucP-tS-09R" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="nPl-zh-bFG"/>
+                                                    <constraint firstItem="bqs-XW-pxx" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="qeO-jO-8qv"/>
+                                                    <constraint firstItem="pLU-wc-Q6u" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="sld-4P-3Mk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bqs-XW-pxx" secondAttribute="trailing" id="t83-NN-JIU"/>
+                                                    <constraint firstItem="pLU-wc-Q6u" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="vcV-p1-abF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Rix-a2-nyh" secondAttribute="bottom" id="vnY-Wa-Iul"/>
+                                                    <constraint firstAttribute="bottom" secondItem="bqs-XW-pxx" secondAttribute="bottom" id="vuq-XW-wtz"/>
+                                                    <constraint firstItem="wbJ-IR-yEF" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="w7N-Wl-kQ9"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ZRG-O3-qf7" secondAttribute="bottom" id="wGN-Op-v5H"/>
+                                                    <constraint firstItem="ZRG-O3-qf7" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="yuj-FZ-k2r"/>
+                                                    <constraint firstItem="nHG-OW-8ZU" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="zYa-ZZ-Ytf"/>
+                                                    <constraint firstItem="nHG-OW-8ZU" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="zrM-I8-b22"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zab-tb-z02" userLabel="Text Views">
+                                                <rect key="frame" x="0.0" y="135.33333333333337" width="350" height="556"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ilc-Fg-zXQ" userLabel="LowC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin C, Low"/>
+                                                        <string key="text">Symptoms for insufficient vitamin C include poor wound healing and fatigue because of vitamin C’s role in collagen production. 
 
 Some potential food sources to consider  to increase your vitamin C levels include red peppers, oranges, kiwi, broccoli, and strawberries. There are also non-food supplements that can be used to help manage low vitamin C levels. 
 
 Vitamin C can be combined with iron enriched foods to help with the absorption of iron, but if your iron levels are high, then think about getting more vitamin C from supplements rather than food. 
 </string>
-                                                <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ef6-zG-INe" userLabel="HighC">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="587"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin C, High"/>
-                                                <string key="text">
+                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ef6-zG-INe" userLabel="HighC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin C, High"/>
+                                                        <string key="text">
 High doses of vitamin C while on anticoagulants could potentially block the benefits of those types of anticoagulants, so if this describes you, you should contact your physician. 
 
 High vitamin C levels can also lead to the formation of kidney stones, severe diarrhea, nausea, and gastritis. Food with high levels of vitamin C include red peppers, oranges, kiwi, broccoli, strawberries, so it important to be aware of your consumption levels, if you already have high vitamin C levels. 
 </string>
-                                                <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="21"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="z67-h5-WeT" userLabel="HighK2">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="587"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin K2, High"/>
-                                                <string key="text">You have high levels of K2, there is nothing negative to cite for this. 
+                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="21"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="z67-h5-WeT" userLabel="HighK2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin K2, High"/>
+                                                        <string key="text">You have high levels of K2, there is nothing negative to cite for this. 
 </string>
-                                                <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eFU-Og-1xn" userLabel="LowK2">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="587"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin K2, Low"/>
-                                                <string key="text">Some foods to consider adding to your diet include: cheese, poultry liver, pasteurized egg yolks, other organ meats, and sauerkraut. Supplements can also help with low levels, with recommendations of 100 to 1000 mcg/day.</string>
-                                                <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HEn-Ak-8iW" userLabel="HighD">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="587"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin D, High"/>
-                                                <string key="text">High vitamin D can lead to a build up of calcium in your blood. This build up can cause poor appetite, nausea, vomiting, and potential kidney problems. Medicine and intravenous fluid can be taken to counteract these effects. 
+                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eFU-Og-1xn" userLabel="LowK2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin K2, Low"/>
+                                                        <string key="text">Some foods to consider adding to your diet include: cheese, poultry liver, pasteurized egg yolks, other organ meats, and sauerkraut. Supplements can also help with low levels, with recommendations of 100 to 1000 mcg/day.</string>
+                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HEn-Ak-8iW" userLabel="HighD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin D, High"/>
+                                                        <string key="text">High vitamin D can lead to a build up of calcium in your blood. This build up can cause poor appetite, nausea, vomiting, and potential kidney problems. Medicine and intravenous fluid can be taken to counteract these effects. 
 </string>
-                                                <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Jq-dc-Czf" userLabel="LowD">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="587"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin D, Low"/>
-                                                <string key="text">Low levels of vitamin D can lead to heart attacks, cancer, severe asthma, autoimmune disease, type 2 diabeters, and an increased chance of death from all causes. Food to consider when vitamin D levels are low include cod livers, cod liver oils, fatty fishes, egg yolks, and exposure to sun. Other supplements can be given beyond dietary changes to help increase vitamin D levels. </string>
-                                                <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zcg-Tg-Zts" userLabel="HighA">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="587"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin A, High"/>
-                                                <string key="text">High levels of vitamin A can lead to headaches, dizziness, nausea, skin irritation, bone and joint pain, liver abnormalities, coma, and death. In order to decrease vitamin A levels, one can reduce consumption levels of vitamin A rich foods. 
+                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Jq-dc-Czf" userLabel="LowD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin D, Low"/>
+                                                        <string key="text">Low levels of vitamin D can lead to heart attacks, cancer, severe asthma, autoimmune disease, type 2 diabeters, and an increased chance of death from all causes. Food to consider when vitamin D levels are low include cod livers, cod liver oils, fatty fishes, egg yolks, and exposure to sun. Other supplements can be given beyond dietary changes to help increase vitamin D levels. </string>
+                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zcg-Tg-Zts" userLabel="HighA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin A, High"/>
+                                                        <string key="text">High levels of vitamin A can lead to headaches, dizziness, nausea, skin irritation, bone and joint pain, liver abnormalities, coma, and death. In order to decrease vitamin A levels, one can reduce consumption levels of vitamin A rich foods. 
 
 </string>
-                                                <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8aJ-NY-1z1" userLabel="LowA">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="587"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration" label="Vitamin A, Low"/>
-                                                <string key="text">Long-term deficiency of vitamin A can lead to blindness, xerophthalmia, chronic diarrhea, and increased mortality from infections. Suboptimal vitamin A levels include poor vision at night, keratosis pilaris, dry skin, dry eyes, infections, acne, eczema, psoriasis, menstrual dysfunctions, hypothyroidism, and autoimmune disease. 
+                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8aJ-NY-1z1" userLabel="LowA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin A, Low"/>
+                                                        <string key="text">Long-term deficiency of vitamin A can lead to blindness, xerophthalmia, chronic diarrhea, and increased mortality from infections. Suboptimal vitamin A levels include poor vision at night, keratosis pilaris, dry skin, dry eyes, infections, acne, eczema, psoriasis, menstrual dysfunctions, hypothyroidism, and autoimmune disease. 
 
 Food sources to raise vitamin A include various types of liver, egg yolks, and orange and yellow vegetables. Fish oil vitamins can also be used as a supplement for vitamin A. 
 
 </string>
-                                                <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qQY-IK-gTb" userLabel="HighMag">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="587"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration" label="Magnesium, High"/>
-                                                <string key="text">High magnesium levels could mean the adrenal gland is not producing enough hormones. Patients could also experience kidney malfunctions if magnesium levels are low.  Other side effects include muscle weakness, low blood pressure, and impaired breathing. 
+                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qQY-IK-gTb" userLabel="HighMag">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Magnesium, High"/>
+                                                        <string key="text">High magnesium levels could mean the adrenal gland is not producing enough hormones. Patients could also experience kidney malfunctions if magnesium levels are low.  Other side effects include muscle weakness, low blood pressure, and impaired breathing. 
 </string>
-                                                <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="loP-2P-HRc" userLabel="LowMag">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="587"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <accessibility key="accessibilityConfiguration" label="Magnesium, Low"/>
-                                                <string key="text">In order to counteract low magnesium, supplements and food additions are commonly available. Foods include soaked pumpkins seeds, soaked almonds, spinach, chard, molasses, dark chocolate, legumes, and bananas.  
+                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="loP-2P-HRc" userLabel="LowMag">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Magnesium, Low"/>
+                                                        <string key="text">In order to counteract low magnesium, supplements and food additions are commonly available. Foods include soaked pumpkins seeds, soaked almonds, spinach, chard, molasses, dark chocolate, legumes, and bananas.  
 </string>
-                                                <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
+                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="ef6-zG-INe" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="4g0-7e-qG7"/>
+                                                    <constraint firstItem="HEn-Ak-8iW" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="6D5-7W-eja"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ef6-zG-INe" secondAttribute="bottom" id="79E-Lo-x8e"/>
+                                                    <constraint firstItem="8aJ-NY-1z1" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="7LB-Hp-X8c"/>
+                                                    <constraint firstItem="qQY-IK-gTb" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="9mO-Ef-lOT"/>
+                                                    <constraint firstItem="0Jq-dc-Czf" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="Cuj-p1-awC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="eFU-Og-1xn" secondAttribute="bottom" id="DRA-Mo-pqe"/>
+                                                    <constraint firstItem="z67-h5-WeT" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="DmC-5j-xbv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="z67-h5-WeT" secondAttribute="bottom" id="EBj-TN-ZeP"/>
+                                                    <constraint firstItem="eFU-Og-1xn" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="F9s-SQ-RJo"/>
+                                                    <constraint firstItem="loP-2P-HRc" firstAttribute="centerX" secondItem="zab-tb-z02" secondAttribute="centerX" id="HBJ-QA-zGF"/>
+                                                    <constraint firstItem="0Jq-dc-Czf" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="Jaf-Ze-emu"/>
+                                                    <constraint firstItem="z67-h5-WeT" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="K47-Uu-LWP"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ilc-Fg-zXQ" secondAttribute="trailing" id="KRb-ev-VH6"/>
+                                                    <constraint firstItem="loP-2P-HRc" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="M3P-Wb-Pnf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qQY-IK-gTb" secondAttribute="trailing" id="MpH-Vw-FzU"/>
+                                                    <constraint firstItem="qQY-IK-gTb" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="NAd-GG-A0S"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ilc-Fg-zXQ" secondAttribute="bottom" id="NZz-QV-XLM"/>
+                                                    <constraint firstAttribute="bottom" secondItem="loP-2P-HRc" secondAttribute="bottom" id="PCd-TL-x9G"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ef6-zG-INe" secondAttribute="trailing" id="R55-fP-5q9"/>
+                                                    <constraint firstItem="HEn-Ak-8iW" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="Rom-Dj-cft"/>
+                                                    <constraint firstAttribute="trailing" secondItem="loP-2P-HRc" secondAttribute="trailing" id="S9n-QN-mEo"/>
+                                                    <constraint firstAttribute="width" constant="350" id="UZD-ax-8nQ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="zcg-Tg-Zts" secondAttribute="trailing" id="V7O-ac-zF8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="z67-h5-WeT" secondAttribute="trailing" id="VcD-dy-RB6"/>
+                                                    <constraint firstAttribute="bottom" secondItem="HEn-Ak-8iW" secondAttribute="bottom" id="akQ-Uo-ZoF"/>
+                                                    <constraint firstItem="zcg-Tg-Zts" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="arL-Bs-gBi"/>
+                                                    <constraint firstItem="eFU-Og-1xn" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="cAI-Rw-0nM"/>
+                                                    <constraint firstItem="zcg-Tg-Zts" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="coA-yk-X5x"/>
+                                                    <constraint firstAttribute="trailing" secondItem="HEn-Ak-8iW" secondAttribute="trailing" id="d4t-qD-GDH"/>
+                                                    <constraint firstAttribute="bottom" secondItem="zcg-Tg-Zts" secondAttribute="bottom" id="dQU-78-9BH"/>
+                                                    <constraint firstAttribute="bottom" secondItem="qQY-IK-gTb" secondAttribute="bottom" id="ebm-dA-bp7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eFU-Og-1xn" secondAttribute="trailing" id="ed1-gT-9H3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8aJ-NY-1z1" secondAttribute="trailing" id="f25-2p-buO"/>
+                                                    <constraint firstItem="8aJ-NY-1z1" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="iba-QO-f75"/>
+                                                    <constraint firstItem="ilc-Fg-zXQ" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="kdH-9i-Pqk"/>
+                                                    <constraint firstAttribute="bottom" secondItem="0Jq-dc-Czf" secondAttribute="bottom" id="nCB-RL-QJc"/>
+                                                    <constraint firstItem="loP-2P-HRc" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="pfg-0C-8Th"/>
+                                                    <constraint firstItem="ilc-Fg-zXQ" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="sIz-oN-S94"/>
+                                                    <constraint firstItem="ef6-zG-INe" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="ybl-PU-q7X"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0Jq-dc-Czf" secondAttribute="trailing" id="zhE-yt-72j"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8aJ-NY-1z1" secondAttribute="bottom" id="zmE-0X-82r"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QgY-Wj-49y">
+                                                <rect key="frame" x="0.0" y="760" width="350" height="37"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aus-sz-9Vu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="169" height="37"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="37" id="WUx-WJ-LU8"/>
+                                                        </constraints>
+                                                        <state key="normal" image="Back Button"/>
+                                                        <connections>
+                                                            <action selector="backButtonPressed:" destination="aQf-1Z-HGA" eventType="touchUpInside" id="QO9-Yf-qNg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="37" id="7eK-2r-ilY"/>
+                                                    <constraint firstAttribute="bottom" secondItem="aus-sz-9Vu" secondAttribute="bottom" id="DwR-0S-XW2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aus-sz-9Vu" secondAttribute="trailing" constant="181" id="IV4-hy-5kC"/>
+                                                    <constraint firstItem="aus-sz-9Vu" firstAttribute="top" secondItem="QgY-Wj-49y" secondAttribute="top" id="PAN-0i-L9o"/>
+                                                    <constraint firstItem="aus-sz-9Vu" firstAttribute="leading" secondItem="QgY-Wj-49y" secondAttribute="leading" id="dsp-Em-ZkD"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="ef6-zG-INe" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="4g0-7e-qG7"/>
-                                            <constraint firstItem="HEn-Ak-8iW" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="6D5-7W-eja"/>
-                                            <constraint firstAttribute="bottom" secondItem="ef6-zG-INe" secondAttribute="bottom" id="79E-Lo-x8e"/>
-                                            <constraint firstItem="8aJ-NY-1z1" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="7LB-Hp-X8c"/>
-                                            <constraint firstItem="qQY-IK-gTb" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="9mO-Ef-lOT"/>
-                                            <constraint firstItem="0Jq-dc-Czf" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="Cuj-p1-awC"/>
-                                            <constraint firstAttribute="bottom" secondItem="eFU-Og-1xn" secondAttribute="bottom" id="DRA-Mo-pqe"/>
-                                            <constraint firstItem="z67-h5-WeT" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="DmC-5j-xbv"/>
-                                            <constraint firstAttribute="bottom" secondItem="z67-h5-WeT" secondAttribute="bottom" id="EBj-TN-ZeP"/>
-                                            <constraint firstItem="eFU-Og-1xn" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="F9s-SQ-RJo"/>
-                                            <constraint firstItem="0Jq-dc-Czf" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="Jaf-Ze-emu"/>
-                                            <constraint firstItem="z67-h5-WeT" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="K47-Uu-LWP"/>
-                                            <constraint firstAttribute="trailing" secondItem="ilc-Fg-zXQ" secondAttribute="trailing" id="KRb-ev-VH6"/>
-                                            <constraint firstItem="loP-2P-HRc" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="M3P-Wb-Pnf"/>
-                                            <constraint firstAttribute="trailing" secondItem="qQY-IK-gTb" secondAttribute="trailing" id="MpH-Vw-FzU"/>
-                                            <constraint firstItem="qQY-IK-gTb" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="NAd-GG-A0S"/>
-                                            <constraint firstAttribute="bottom" secondItem="ilc-Fg-zXQ" secondAttribute="bottom" id="NZz-QV-XLM"/>
-                                            <constraint firstAttribute="bottom" secondItem="loP-2P-HRc" secondAttribute="bottom" id="PCd-TL-x9G"/>
-                                            <constraint firstAttribute="trailing" secondItem="ef6-zG-INe" secondAttribute="trailing" id="R55-fP-5q9"/>
-                                            <constraint firstItem="HEn-Ak-8iW" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="Rom-Dj-cft"/>
-                                            <constraint firstAttribute="trailing" secondItem="loP-2P-HRc" secondAttribute="trailing" id="S9n-QN-mEo"/>
-                                            <constraint firstAttribute="width" constant="350" id="UZD-ax-8nQ"/>
-                                            <constraint firstAttribute="trailing" secondItem="zcg-Tg-Zts" secondAttribute="trailing" id="V7O-ac-zF8"/>
-                                            <constraint firstAttribute="trailing" secondItem="z67-h5-WeT" secondAttribute="trailing" id="VcD-dy-RB6"/>
-                                            <constraint firstAttribute="bottom" secondItem="HEn-Ak-8iW" secondAttribute="bottom" id="akQ-Uo-ZoF"/>
-                                            <constraint firstItem="zcg-Tg-Zts" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="arL-Bs-gBi"/>
-                                            <constraint firstItem="eFU-Og-1xn" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="cAI-Rw-0nM"/>
-                                            <constraint firstItem="zcg-Tg-Zts" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="coA-yk-X5x"/>
-                                            <constraint firstAttribute="trailing" secondItem="HEn-Ak-8iW" secondAttribute="trailing" id="d4t-qD-GDH"/>
-                                            <constraint firstAttribute="bottom" secondItem="zcg-Tg-Zts" secondAttribute="bottom" id="dQU-78-9BH"/>
-                                            <constraint firstAttribute="bottom" secondItem="qQY-IK-gTb" secondAttribute="bottom" id="ebm-dA-bp7"/>
-                                            <constraint firstAttribute="trailing" secondItem="eFU-Og-1xn" secondAttribute="trailing" id="ed1-gT-9H3"/>
-                                            <constraint firstAttribute="trailing" secondItem="8aJ-NY-1z1" secondAttribute="trailing" id="f25-2p-buO"/>
-                                            <constraint firstItem="8aJ-NY-1z1" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="iba-QO-f75"/>
-                                            <constraint firstItem="loP-2P-HRc" firstAttribute="centerX" secondItem="zab-tb-z02" secondAttribute="centerX" id="k8X-8m-Tjl"/>
-                                            <constraint firstItem="ilc-Fg-zXQ" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="kdH-9i-Pqk"/>
-                                            <constraint firstAttribute="bottom" secondItem="0Jq-dc-Czf" secondAttribute="bottom" id="nCB-RL-QJc"/>
-                                            <constraint firstItem="loP-2P-HRc" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="pfg-0C-8Th"/>
-                                            <constraint firstItem="ilc-Fg-zXQ" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="sIz-oN-S94"/>
-                                            <constraint firstItem="ef6-zG-INe" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="ybl-PU-q7X"/>
-                                            <constraint firstAttribute="trailing" secondItem="0Jq-dc-Czf" secondAttribute="trailing" id="zhE-yt-72j"/>
-                                            <constraint firstAttribute="bottom" secondItem="8aJ-NY-1z1" secondAttribute="bottom" id="zmE-0X-82r"/>
+                                            <constraint firstItem="QgY-Wj-49y" firstAttribute="centerX" secondItem="jac-Vf-oLu" secondAttribute="centerX" id="1rg-FJ-py4"/>
+                                            <constraint firstItem="zab-tb-z02" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="bottom" constant="68.5" id="jaa-iq-ygP"/>
+                                            <constraint firstItem="QgY-Wj-49y" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="bottom" constant="68.5" id="uMG-SI-rtE"/>
                                         </constraints>
-                                    </view>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="zXq-4q-gqR" firstAttribute="leading" secondItem="qcM-Z5-GT7" secondAttribute="leading" constant="10" id="0mU-b7-dM5"/>
-                                    <constraint firstAttribute="trailing" secondItem="zXq-4q-gqR" secondAttribute="trailing" constant="10" id="19n-3n-LPF"/>
-                                    <constraint firstItem="cuh-CZ-E2D" firstAttribute="leading" secondItem="qcM-Z5-GT7" secondAttribute="leading" constant="20" id="FdM-rb-ykt"/>
-                                    <constraint firstItem="aus-sz-9Vu" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="bottom" constant="10" id="GhC-io-QYE"/>
-                                    <constraint firstItem="aus-sz-9Vu" firstAttribute="leading" secondItem="qcM-Z5-GT7" secondAttribute="leading" constant="34" id="NoD-VS-gSU"/>
-                                    <constraint firstAttribute="bottom" secondItem="cuh-CZ-E2D" secondAttribute="bottom" constant="20" id="PIo-5d-x6k"/>
-                                    <constraint firstAttribute="bottom" secondItem="aus-sz-9Vu" secondAttribute="bottom" constant="55" id="SlA-we-PkC"/>
-                                    <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerY" secondItem="qcM-Z5-GT7" secondAttribute="centerY" id="Vm9-g2-IiT"/>
-                                    <constraint firstItem="zab-tb-z02" firstAttribute="centerX" secondItem="qcM-Z5-GT7" secondAttribute="centerX" id="WNi-HE-ezx"/>
-                                    <constraint firstAttribute="trailing" secondItem="aus-sz-9Vu" secondAttribute="trailing" constant="183" id="ern-Wa-iNR"/>
-                                    <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerX" secondItem="zXq-4q-gqR" secondAttribute="centerX" id="gYw-YT-bBR"/>
-                                    <constraint firstItem="zXq-4q-gqR" firstAttribute="top" secondItem="qcM-Z5-GT7" secondAttribute="top" constant="10" id="iaA-Lf-avz"/>
-                                    <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerX" secondItem="zab-tb-z02" secondAttribute="centerX" id="k5V-tb-4Ud"/>
-                                    <constraint firstItem="cuh-CZ-E2D" firstAttribute="top" secondItem="qcM-Z5-GT7" secondAttribute="top" constant="100" id="qku-Gv-Ko7"/>
-                                    <constraint firstItem="zab-tb-z02" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="bottom" constant="25" id="z9V-hb-3Jr"/>
+                                    <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerX" secondItem="qcM-Z5-GT7" secondAttribute="centerX" id="6QP-gC-vP3"/>
+                                    <constraint firstItem="cuh-CZ-E2D" firstAttribute="leading" secondItem="qcM-Z5-GT7" secondAttribute="leading" constant="20" id="6Y1-BM-Fud"/>
+                                    <constraint firstItem="jac-Vf-oLu" firstAttribute="top" secondItem="qcM-Z5-GT7" secondAttribute="top" constant="50" id="KeU-TC-7Iq"/>
+                                    <constraint firstAttribute="bottom" secondItem="jac-Vf-oLu" secondAttribute="bottom" constant="33" id="O17-dV-Fqt"/>
+                                    <constraint firstAttribute="trailing" secondItem="cuh-CZ-E2D" secondAttribute="trailing" constant="20" id="ZEX-2Z-ZDu"/>
+                                    <constraint firstItem="cuh-CZ-E2D" firstAttribute="top" secondItem="qcM-Z5-GT7" secondAttribute="top" constant="150" id="anV-Yy-0PM"/>
+                                    <constraint firstAttribute="bottom" secondItem="cuh-CZ-E2D" secondAttribute="bottom" constant="100" id="snV-aU-Niq"/>
+                                    <constraint firstItem="jac-Vf-oLu" firstAttribute="centerX" secondItem="qcM-Z5-GT7" secondAttribute="centerX" id="ufd-uW-xqh"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.59779334070000001" green="0.77102732659999995" blue="0.33331587909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="qcM-Z5-GT7" firstAttribute="height" secondItem="6Ky-na-jto" secondAttribute="height" constant="-20" id="7cW-pO-wgh"/>
-                            <constraint firstItem="qcM-Z5-GT7" firstAttribute="leading" secondItem="jpj-RT-gTW" secondAttribute="leading" id="8sA-OT-pAs"/>
+                            <constraint firstItem="qcM-Z5-GT7" firstAttribute="leading" secondItem="jpj-RT-gTW" secondAttribute="leading" id="0J4-Ls-KzA"/>
                             <constraint firstItem="qcM-Z5-GT7" firstAttribute="top" secondItem="jpj-RT-gTW" secondAttribute="top" id="DOw-jS-IBX"/>
-                            <constraint firstItem="qcM-Z5-GT7" firstAttribute="centerX" secondItem="6Ky-na-jto" secondAttribute="centerX" id="Mjd-KW-Bc1"/>
-                            <constraint firstItem="jpj-RT-gTW" firstAttribute="trailing" secondItem="qcM-Z5-GT7" secondAttribute="trailing" id="htH-Ja-bh7"/>
+                            <constraint firstItem="jpj-RT-gTW" firstAttribute="trailing" secondItem="qcM-Z5-GT7" secondAttribute="trailing" id="dkJ-qc-Kxa"/>
+                            <constraint firstAttribute="bottom" secondItem="qcM-Z5-GT7" secondAttribute="bottom" id="jI7-gD-duy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jpj-RT-gTW"/>
                     </view>
                     <size key="freeformSize" width="414" height="900"/>
                     <connections>
-                        <outletCollection property="textViews" destination="ilc-Fg-zXQ" collectionClass="NSMutableArray" id="eiz-7m-v70"/>
-                        <outletCollection property="textViews" destination="ef6-zG-INe" collectionClass="NSMutableArray" id="XZT-IL-HNC"/>
-                        <outletCollection property="textViews" destination="z67-h5-WeT" collectionClass="NSMutableArray" id="TIs-vk-9SX"/>
-                        <outletCollection property="textViews" destination="eFU-Og-1xn" collectionClass="NSMutableArray" id="zDR-1c-kyg"/>
-                        <outletCollection property="textViews" destination="HEn-Ak-8iW" collectionClass="NSMutableArray" id="FDH-II-noe"/>
-                        <outletCollection property="textViews" destination="0Jq-dc-Czf" collectionClass="NSMutableArray" id="NrJ-9K-OWR"/>
+                        <outletCollection property="imageViews" destination="VO0-fw-LlJ" collectionClass="NSMutableArray" id="ON8-si-bgf"/>
+                        <outletCollection property="imageViews" destination="hFs-6v-zdg" collectionClass="NSMutableArray" id="ZWS-GB-Gma"/>
+                        <outletCollection property="imageViews" destination="aCR-M6-euC" collectionClass="NSMutableArray" id="qhO-km-g3C"/>
+                        <outletCollection property="imageViews" destination="JK3-2q-94L" collectionClass="NSMutableArray" id="OVq-c2-FTg"/>
+                        <outletCollection property="imageViews" destination="6fl-f1-eaO" collectionClass="NSMutableArray" id="KIX-mK-AZI"/>
+                        <outletCollection property="imageViews" destination="nHG-OW-8ZU" collectionClass="NSMutableArray" id="FGZ-Qs-uXr"/>
+                        <outletCollection property="imageViews" destination="ucP-tS-09R" collectionClass="NSMutableArray" id="HyT-Ke-ZIi"/>
+                        <outletCollection property="imageViews" destination="ZRG-O3-qf7" collectionClass="NSMutableArray" id="GdX-6m-qzL"/>
+                        <outletCollection property="imageViews" destination="Rix-a2-nyh" collectionClass="NSMutableArray" id="B2j-PH-QZH"/>
+                        <outletCollection property="imageViews" destination="faK-dX-feS" collectionClass="NSMutableArray" id="RtS-e3-W02"/>
+                        <outletCollection property="imageViews" destination="bqs-XW-pxx" collectionClass="NSMutableArray" id="IJc-he-vqA"/>
+                        <outletCollection property="imageViews" destination="wbJ-IR-yEF" collectionClass="NSMutableArray" id="FqM-oe-qp2"/>
+                        <outletCollection property="imageViews" destination="9gL-kh-XI0" collectionClass="NSMutableArray" id="bWE-Rw-zsX"/>
+                        <outletCollection property="imageViews" destination="jyL-Mr-ozH" collectionClass="NSMutableArray" id="otm-Uq-Yuw"/>
+                        <outletCollection property="imageViews" destination="pLU-wc-Q6u" collectionClass="NSMutableArray" id="WKx-a2-dER"/>
                         <outletCollection property="textViews" destination="zcg-Tg-Zts" collectionClass="NSMutableArray" id="MMd-jK-HOS"/>
-                        <outletCollection property="textViews" destination="8aJ-NY-1z1" collectionClass="NSMutableArray" id="CRT-qs-m0g"/>
+                        <outletCollection property="textViews" destination="ilc-Fg-zXQ" collectionClass="NSMutableArray" id="eiz-7m-v70"/>
+                        <outletCollection property="textViews" destination="z67-h5-WeT" collectionClass="NSMutableArray" id="TIs-vk-9SX"/>
                         <outletCollection property="textViews" destination="qQY-IK-gTb" collectionClass="NSMutableArray" id="eyS-RN-3R8"/>
                         <outletCollection property="textViews" destination="loP-2P-HRc" collectionClass="NSMutableArray" id="yEH-0D-OJc"/>
-                        <outletCollection property="imageViews" destination="JK3-2q-94L" collectionClass="NSMutableArray" id="OVq-c2-FTg"/>
-                        <outletCollection property="imageViews" destination="VO0-fw-LlJ" collectionClass="NSMutableArray" id="ON8-si-bgf"/>
-                        <outletCollection property="imageViews" destination="bqs-XW-pxx" collectionClass="NSMutableArray" id="IJc-he-vqA"/>
-                        <outletCollection property="imageViews" destination="ucP-tS-09R" collectionClass="NSMutableArray" id="HyT-Ke-ZIi"/>
-                        <outletCollection property="imageViews" destination="aCR-M6-euC" collectionClass="NSMutableArray" id="qhO-km-g3C"/>
-                        <outletCollection property="imageViews" destination="Rix-a2-nyh" collectionClass="NSMutableArray" id="B2j-PH-QZH"/>
-                        <outletCollection property="imageViews" destination="jyL-Mr-ozH" collectionClass="NSMutableArray" id="otm-Uq-Yuw"/>
-                        <outletCollection property="imageViews" destination="nHG-OW-8ZU" collectionClass="NSMutableArray" id="FGZ-Qs-uXr"/>
-                        <outletCollection property="imageViews" destination="hFs-6v-zdg" collectionClass="NSMutableArray" id="ZWS-GB-Gma"/>
-                        <outletCollection property="imageViews" destination="9gL-kh-XI0" collectionClass="NSMutableArray" id="bWE-Rw-zsX"/>
-                        <outletCollection property="imageViews" destination="wbJ-IR-yEF" collectionClass="NSMutableArray" id="FqM-oe-qp2"/>
-                        <outletCollection property="imageViews" destination="ZRG-O3-qf7" collectionClass="NSMutableArray" id="GdX-6m-qzL"/>
-                        <outletCollection property="imageViews" destination="pLU-wc-Q6u" collectionClass="NSMutableArray" id="WKx-a2-dER"/>
-                        <outletCollection property="imageViews" destination="6fl-f1-eaO" collectionClass="NSMutableArray" id="KIX-mK-AZI"/>
-                        <outletCollection property="imageViews" destination="faK-dX-feS" collectionClass="NSMutableArray" id="RtS-e3-W02"/>
+                        <outletCollection property="textViews" destination="0Jq-dc-Czf" collectionClass="NSMutableArray" id="NrJ-9K-OWR"/>
+                        <outletCollection property="textViews" destination="ef6-zG-INe" collectionClass="NSMutableArray" id="XZT-IL-HNC"/>
+                        <outletCollection property="textViews" destination="eFU-Og-1xn" collectionClass="NSMutableArray" id="zDR-1c-kyg"/>
+                        <outletCollection property="textViews" destination="8aJ-NY-1z1" collectionClass="NSMutableArray" id="CRT-qs-m0g"/>
+                        <outletCollection property="textViews" destination="HEn-Ak-8iW" collectionClass="NSMutableArray" id="FDH-II-noe"/>
                         <segue destination="Kyr-Lu-vKf" kind="unwind" identifier="unwindSegueToVCT" unwindAction="unwindToVCTWithSegue:" id="43x-kg-ZNk"/>
                     </connections>
                 </viewController>
@@ -896,6 +912,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
         <image name="Vitamin K2 Label" width="552" height="116"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3fz-uh-Hlp"/>
+        <segue reference="mS7-nx-VIg"/>
     </inferredMetricsTieBreakers>
 </document>
