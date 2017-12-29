@@ -15,11 +15,12 @@ class ViewControllerResults: UIViewController {
     lazy var supplement: Supplement? = nil
     
     @IBAction func backButtonPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "unwindSegueToVCT", sender: self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         var textToBeDisplayed: UITextView = UITextView()
         var imageToBeDisplayed: UIImageView = UIImageView()
         
@@ -65,8 +66,6 @@ class ViewControllerResults: UIViewController {
                     }else{
                         supplementLevelLabel.append(character)
                     }
-//                    print(supplementNameLabel)
-//                    print(supplementLevelLabel)
                 if(supplement!.supplementName == supplementNameLabel &&
                     supplement!.levelOfTextDisplayed  == supplementLevelLabel) {
                     imageToBeDisplayed = label
