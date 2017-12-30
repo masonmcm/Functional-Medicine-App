@@ -70,7 +70,7 @@ class ViewControllerTransition: UIViewController {
         let tempVitaminNameInit = splitVitaminName[splitVitaminName.count - 1]
         let tempVitaminNameFinal = tempVitaminNameInit[tempVitaminNameInit.startIndex]
         let vitaminName = String(tempVitaminNameFinal)
-        enterTextField.placeholder = "Enter " + labelToBeDisplayed + " levels in " + supplementUnits[vitaminName]!
+        enterTextField.placeholder = "Enter levels in " + supplementUnits[vitaminName]!
     }
     
     override func didReceiveMemoryWarning() {
