@@ -11,9 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Raleway-Medium.ttf">
-            <string>Raleway-Medium</string>
-        </array>
         <array key="Raleway-Thin.ttf">
             <string>Raleway-Thin</string>
         </array>
@@ -24,22 +21,21 @@
             <objects>
                 <viewController id="TX3-Yb-b9d" customClass="ViewControllerMain" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LWy-1x-tJR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7H-1p-SxJ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="1490"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="1300"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnb-Wb-Xnp">
                                         <rect key="frame" x="36" y="15" width="304" height="235"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Asset 5" translatesAutoresizingMaskIntoConstraints="NO" id="cyz-3N-0tP">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="POM Home" translatesAutoresizingMaskIntoConstraints="NO" id="cyz-3N-0tP">
                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="235"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bT-li-Q1f">
-                                                <rect key="frame" x="105" y="190" width="166" height="32"/>
+                                                <rect key="frame" x="124" y="171" width="162" height="34"/>
                                                 <accessibility key="accessibilityConfiguration" label="How to begin"/>
-                                                <state key="normal" title="How to begin" image="Asset 6"/>
                                                 <connections>
                                                     <action selector="buttonPressed:" destination="TX3-Yb-b9d" eventType="touchUpInside" id="v2H-nG-EdZ"/>
                                                 </connections>
@@ -48,16 +44,16 @@
                                         <color key="backgroundColor" red="0.58625173568725586" green="0.7549668550491333" blue="0.35685941576957703" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" red="0.58625173568725586" green="0.7549668550491333" blue="0.35685941576957703" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstItem="9bT-li-Q1f" firstAttribute="top" secondItem="bnb-Wb-Xnp" secondAttribute="top" constant="190" id="1oT-Lr-fRZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="9bT-li-Q1f" secondAttribute="trailing" constant="33" id="M8k-51-gS0"/>
+                                            <constraint firstItem="9bT-li-Q1f" firstAttribute="top" secondItem="bnb-Wb-Xnp" secondAttribute="top" constant="171" id="1oT-Lr-fRZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="9bT-li-Q1f" secondAttribute="trailing" constant="18" id="M8k-51-gS0"/>
                                             <constraint firstItem="cyz-3N-0tP" firstAttribute="leading" secondItem="bnb-Wb-Xnp" secondAttribute="leading" id="MiA-Eb-bOY"/>
                                             <constraint firstItem="cyz-3N-0tP" firstAttribute="top" secondItem="bnb-Wb-Xnp" secondAttribute="top" id="Mlq-YY-9Jr"/>
-                                            <constraint firstItem="9bT-li-Q1f" firstAttribute="leading" secondItem="bnb-Wb-Xnp" secondAttribute="leading" constant="105" id="PYI-Zd-IPh"/>
+                                            <constraint firstItem="9bT-li-Q1f" firstAttribute="leading" secondItem="bnb-Wb-Xnp" secondAttribute="leading" constant="124" id="PYI-Zd-IPh"/>
                                             <constraint firstAttribute="trailing" secondItem="cyz-3N-0tP" secondAttribute="trailing" id="Qxv-pk-w6O"/>
                                             <constraint firstAttribute="height" constant="235" id="b82-ZO-AmY"/>
                                             <constraint firstAttribute="bottom" secondItem="cyz-3N-0tP" secondAttribute="bottom" id="bML-OB-LG4"/>
                                             <constraint firstAttribute="width" constant="304" id="hDR-ye-kbT"/>
-                                            <constraint firstAttribute="bottom" secondItem="9bT-li-Q1f" secondAttribute="bottom" constant="13" id="jiU-Q3-Bwp"/>
+                                            <constraint firstAttribute="bottom" secondItem="9bT-li-Q1f" secondAttribute="bottom" constant="30" id="jiU-Q3-Bwp"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="g97-hD-fwK">
@@ -133,19 +129,18 @@
                                     <constraint firstItem="g97-hD-fwK" firstAttribute="top" secondItem="bnb-Wb-Xnp" secondAttribute="bottom" id="5t1-dq-FTe"/>
                                     <constraint firstItem="bnb-Wb-Xnp" firstAttribute="centerX" secondItem="C7H-1p-SxJ" secondAttribute="centerX" id="F4N-as-j5D"/>
                                     <constraint firstAttribute="trailing" secondItem="g97-hD-fwK" secondAttribute="trailing" id="Fnv-UQ-b1K"/>
-                                    <constraint firstAttribute="height" constant="1490" id="Qmo-Vi-ZBI"/>
-                                    <constraint firstAttribute="bottom" secondItem="bnb-Wb-Xnp" secondAttribute="bottom" constant="1264" id="khq-1Y-fyl"/>
                                     <constraint firstItem="bnb-Wb-Xnp" firstAttribute="centerX" secondItem="g97-hD-fwK" secondAttribute="centerX" id="nVz-x5-goB"/>
                                     <constraint firstAttribute="width" constant="375" id="uW1-Oy-76h"/>
+                                    <constraint firstAttribute="bottom" secondItem="bnb-Wb-Xnp" secondAttribute="bottom" constant="1050" id="yU7-Lk-7uU"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.76147842407226562" green="0.85028338432312012" blue="0.34504768252372742" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="C7H-1p-SxJ" secondAttribute="trailing" id="37P-AN-aa0"/>
+                            <constraint firstItem="C7H-1p-SxJ" firstAttribute="height" secondItem="LWy-1x-tJR" secondAttribute="height" id="FAs-SC-vFR"/>
                             <constraint firstItem="C7H-1p-SxJ" firstAttribute="centerX" secondItem="LWy-1x-tJR" secondAttribute="centerX" id="UGt-Q0-ioj"/>
                             <constraint firstItem="C7H-1p-SxJ" firstAttribute="leading" secondItem="eF4-Qr-b4S" secondAttribute="leading" id="a8o-sC-ROs"/>
-                            <constraint firstItem="C7H-1p-SxJ" firstAttribute="centerY" secondItem="LWy-1x-tJR" secondAttribute="centerY" constant="15" id="atM-Kc-4ff"/>
                             <constraint firstItem="eF4-Qr-b4S" firstAttribute="trailing" secondItem="C7H-1p-SxJ" secondAttribute="trailing" id="cdZ-0s-Z0V"/>
                             <constraint firstItem="C7H-1p-SxJ" firstAttribute="top" secondItem="LWy-1x-tJR" secondAttribute="top" constant="20" id="fZ9-DJ-Mav"/>
                             <constraint firstItem="C7H-1p-SxJ" firstAttribute="leading" secondItem="eF4-Qr-b4S" secondAttribute="leading" id="wbl-pJ-Fnl"/>
@@ -153,7 +148,7 @@
                         <viewLayoutGuide key="safeArea" id="eF4-Qr-b4S"/>
                     </view>
                     <navigationItem key="navigationItem" id="XWb-A4-FmZ"/>
-                    <size key="freeformSize" width="375" height="1500"/>
+                    <size key="freeformSize" width="375" height="1300"/>
                     <connections>
                         <outletCollection property="buttonArray" destination="LHO-Ju-x61" collectionClass="NSMutableArray" id="N8e-lp-qWM"/>
                         <outletCollection property="buttonArray" destination="WNa-oL-3GF" collectionClass="NSMutableArray" id="FEf-GJ-vEZ"/>
@@ -167,28 +162,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BhO-no-w3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-674" y="724"/>
+            <point key="canvasLocation" x="-674.63768115942037" y="723.09782608695662"/>
         </scene>
         <!--View Controller How To Begin-->
         <scene sceneID="vpj-Wu-FAB">
             <objects>
                 <viewController id="KJe-vr-i4r" customClass="ViewControllerHowToBegin" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" id="g2R-n1-j4w">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Dk-k6-nvd">
-                                <rect key="frame" x="-5" y="4" width="385" height="992"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="NfT-dr-EDN">
-                                        <rect key="frame" x="20" y="109.99999999999994" width="345" height="864.66666666666652"/>
+                                        <rect key="frame" x="20" y="108" width="335" height="629.66666666666663"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jv6-4e-UK3">
-                                        <rect key="frame" x="25" y="129.66666666666663" width="335" height="772"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3L-iA-MyH">
+                                        <rect key="frame" x="42" y="667.66666666666663" width="221" height="37"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="335" id="GEk-0y-fHU"/>
-                                            <constraint firstAttribute="height" constant="772" id="Wb5-Tt-Avy"/>
+                                            <constraint firstAttribute="height" constant="37" id="cFg-GP-0Et"/>
+                                            <constraint firstAttribute="width" constant="221" id="xMk-wW-VHo"/>
+                                        </constraints>
+                                        <state key="normal" title="Back" image="Inverted Back Button"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="KJe-vr-i4r" eventType="touchUpInside" id="PcJ-Fu-klC"/>
+                                            <segue destination="TX3-Yb-b9d" kind="show" id="mS7-nx-VIg"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="How to Use" highlightedImage="How to Use" translatesAutoresizingMaskIntoConstraints="NO" id="g7Z-HO-Eaf">
+                                        <rect key="frame" x="10" y="20" width="355" height="67.666666666666671"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="g7Z-HO-Eaf" secondAttribute="height" multiplier="21:4" id="ZdU-hy-FJO"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5e-Jp-baI" userLabel="Text Label">
+                                        <rect key="frame" x="25" y="117.66666666666669" width="325" height="500.00000000000006"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="500" id="7ag-lr-TOt"/>
                                         </constraints>
                                         <string key="text">Have your functional medicine test results in hand. 
 
@@ -201,60 +212,42 @@ Read the feedback on whether that vitamin’s level is low, high, or just right.
 Continue reading on what supplements and food options currently exist to help you with levels for that vitamin. 
 
 Repeat for other vitamins. 
-
 *Disclaimer here about doctor*</string>
-                                        <color key="textColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3L-iA-MyH">
-                                        <rect key="frame" x="42" y="905" width="221" height="37"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="37" id="cFg-GP-0Et"/>
-                                            <constraint firstAttribute="width" constant="221" id="xMk-wW-VHo"/>
-                                        </constraints>
-                                        <state key="normal" title="Back" image="Inverted Back Button"/>
-                                        <connections>
-                                            <action selector="backButtonPressed:" destination="KJe-vr-i4r" eventType="touchUpInside" id="PcJ-Fu-klC"/>
-                                            <segue destination="TX3-Yb-b9d" kind="show" id="mS7-nx-VIg"/>
-                                        </connections>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="How to Use" highlightedImage="How to Use" translatesAutoresizingMaskIntoConstraints="NO" id="g7Z-HO-Eaf">
-                                        <rect key="frame" x="10" y="20" width="365" height="69.666666666666671"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="g7Z-HO-Eaf" secondAttribute="height" multiplier="21:4" id="ZdU-hy-FJO"/>
-                                        </constraints>
-                                    </imageView>
+                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="21"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="v3L-iA-MyH" secondAttribute="bottom" constant="50" id="0ee-s6-t9q"/>
-                                    <constraint firstItem="Jv6-4e-UK3" firstAttribute="top" secondItem="g7Z-HO-Eaf" secondAttribute="bottom" constant="40" id="1Ye-Jz-Crd"/>
+                                    <constraint firstAttribute="bottom" secondItem="v3L-iA-MyH" secondAttribute="bottom" constant="43.333333333333371" id="0ee-s6-t9q"/>
+                                    <constraint firstItem="S5e-Jp-baI" firstAttribute="leading" secondItem="5Dk-k6-nvd" secondAttribute="leading" constant="25" id="2pN-Ca-MtV"/>
                                     <constraint firstItem="v3L-iA-MyH" firstAttribute="leading" secondItem="5Dk-k6-nvd" secondAttribute="leading" constant="42" id="37M-rL-0Ml"/>
-                                    <constraint firstItem="Jv6-4e-UK3" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" id="3U5-WO-Kdv"/>
-                                    <constraint firstItem="Jv6-4e-UK3" firstAttribute="leading" secondItem="5Dk-k6-nvd" secondAttribute="leading" constant="25" id="5cy-GR-c0I"/>
-                                    <constraint firstItem="NfT-dr-EDN" firstAttribute="centerX" secondItem="Jv6-4e-UK3" secondAttribute="centerX" id="BrB-RW-Of6"/>
-                                    <constraint firstItem="Jv6-4e-UK3" firstAttribute="centerX" secondItem="g7Z-HO-Eaf" secondAttribute="centerX" id="KfH-DU-tdp"/>
+                                    <constraint firstItem="v3L-iA-MyH" firstAttribute="top" secondItem="S5e-Jp-baI" secondAttribute="bottom" constant="50" id="GPh-TR-ybl"/>
                                     <constraint firstAttribute="trailing" secondItem="g7Z-HO-Eaf" secondAttribute="trailing" constant="10" id="O98-I9-FHi"/>
-                                    <constraint firstAttribute="bottom" secondItem="NfT-dr-EDN" secondAttribute="bottom" constant="17" id="TUs-i6-OhU"/>
-                                    <constraint firstAttribute="bottom" secondItem="Jv6-4e-UK3" secondAttribute="bottom" constant="90" id="ZAU-5V-auC"/>
+                                    <constraint firstItem="NfT-dr-EDN" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" id="Q6W-rB-6ot"/>
+                                    <constraint firstAttribute="bottom" secondItem="NfT-dr-EDN" secondAttribute="bottom" constant="10.333333333333371" id="TUs-i6-OhU"/>
                                     <constraint firstItem="NfT-dr-EDN" firstAttribute="top" secondItem="g7Z-HO-Eaf" secondAttribute="bottom" constant="20" id="eSd-7P-ogv"/>
+                                    <constraint firstItem="S5e-Jp-baI" firstAttribute="top" secondItem="g7Z-HO-Eaf" secondAttribute="bottom" constant="30" id="gzw-RT-pJH"/>
+                                    <constraint firstAttribute="trailing" secondItem="S5e-Jp-baI" secondAttribute="trailing" constant="25" id="lon-IR-EUJ"/>
                                     <constraint firstItem="g7Z-HO-Eaf" firstAttribute="leading" secondItem="5Dk-k6-nvd" secondAttribute="leading" constant="10" id="qR3-im-5Bq"/>
+                                    <constraint firstItem="S5e-Jp-baI" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" id="sZF-yd-sPf"/>
                                     <constraint firstItem="NfT-dr-EDN" firstAttribute="leading" secondItem="5Dk-k6-nvd" secondAttribute="leading" constant="20" id="tJX-G8-cBX"/>
-                                    <constraint firstAttribute="trailing" secondItem="Jv6-4e-UK3" secondAttribute="trailing" constant="25" id="vf6-aD-0Wl"/>
                                     <constraint firstItem="g7Z-HO-Eaf" firstAttribute="top" secondItem="5Dk-k6-nvd" secondAttribute="top" constant="20" id="xeU-pR-vro"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="pDj-PR-Ru4" firstAttribute="bottom" secondItem="5Dk-k6-nvd" secondAttribute="bottom" constant="4" id="1xw-ya-iTe"/>
+                            <constraint firstItem="5Dk-k6-nvd" firstAttribute="top" secondItem="g2R-n1-j4w" secondAttribute="top" id="8jz-Qn-gwn"/>
+                            <constraint firstItem="pDj-PR-Ru4" firstAttribute="bottom" secondItem="5Dk-k6-nvd" secondAttribute="bottom" id="Ftm-F4-6Bw"/>
                             <constraint firstItem="5Dk-k6-nvd" firstAttribute="centerX" secondItem="g2R-n1-j4w" secondAttribute="centerX" id="Qz8-gQ-Iuy"/>
+                            <constraint firstItem="5Dk-k6-nvd" firstAttribute="leading" secondItem="g2R-n1-j4w" secondAttribute="leading" id="gAp-cW-8AE"/>
+                            <constraint firstAttribute="trailing" secondItem="5Dk-k6-nvd" secondAttribute="trailing" id="mYo-ao-m4m"/>
                             <constraint firstItem="5Dk-k6-nvd" firstAttribute="centerY" secondItem="g2R-n1-j4w" secondAttribute="centerY" id="wqo-xF-cxI"/>
-                            <constraint firstItem="5Dk-k6-nvd" firstAttribute="leading" secondItem="g2R-n1-j4w" secondAttribute="leadingMargin" constant="-21" id="zbX-Fi-gaD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pDj-PR-Ru4"/>
                     </view>
-                    <size key="freeformSize" width="375" height="1000"/>
+                    <size key="freeformSize" width="375" height="800"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOx-vQ-JRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -396,7 +389,9 @@ Repeat for other vitamins.
                                             </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="384" id="3f1-wW-sJf"/>
                                             <constraint firstItem="yUL-Az-RCy" firstAttribute="leading" secondItem="NNu-MY-MnD" secondAttribute="leading" constant="15" id="Cgs-bP-0vg"/>
+                                            <constraint firstAttribute="height" constant="366" id="KKB-uq-Cod"/>
                                             <constraint firstAttribute="trailing" secondItem="lOu-XJ-XKw" secondAttribute="trailing" constant="15" id="SNR-7j-m4l"/>
                                             <constraint firstItem="lOu-XJ-XKw" firstAttribute="leading" secondItem="NNu-MY-MnD" secondAttribute="leading" constant="15" id="dTb-zq-DlY"/>
                                             <constraint firstAttribute="trailing" secondItem="yUL-Az-RCy" secondAttribute="trailing" constant="15" id="iJ9-3w-iHf"/>
@@ -425,12 +420,11 @@ Repeat for other vitamins.
                         <color key="backgroundColor" red="0.58625173568725586" green="0.7549668550491333" blue="0.35685941576957703" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="be8-7b-fQz" firstAttribute="top" secondItem="1KH-in-bfb" secondAttribute="top" constant="170" id="BHL-D5-mCW"/>
-                            <constraint firstItem="orN-rb-ZIh" firstAttribute="leading" secondItem="1KH-in-bfb" secondAttribute="leadingMargin" constant="12" id="OYt-It-LW1"/>
+                            <constraint firstItem="orN-rb-ZIh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1KH-in-bfb" secondAttribute="leadingMargin" constant="12" id="OYt-It-LW1"/>
                             <constraint firstAttribute="bottom" secondItem="be8-7b-fQz" secondAttribute="bottom" constant="200" id="kzg-yr-7aj"/>
                             <constraint firstItem="orN-rb-ZIh" firstAttribute="top" secondItem="be8-7b-fQz" secondAttribute="bottom" constant="130" id="nKV-lG-wCt"/>
-                            <constraint firstAttribute="trailing" secondItem="orN-rb-ZIh" secondAttribute="trailing" constant="201" id="q8B-If-aXY"/>
-                            <constraint firstItem="be8-7b-fQz" firstAttribute="leading" secondItem="1KH-in-bfb" secondAttribute="leading" constant="15" id="y7J-ea-Ihj"/>
-                            <constraint firstAttribute="trailing" secondItem="be8-7b-fQz" secondAttribute="trailing" constant="15" id="yih-AH-xXI"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="orN-rb-ZIh" secondAttribute="trailing" constant="201" id="q8B-If-aXY"/>
+                            <constraint firstItem="be8-7b-fQz" firstAttribute="centerX" secondItem="1KH-in-bfb" secondAttribute="centerX" id="rS3-Bp-1Wk"/>
                             <constraint firstItem="be8-7b-fQz" firstAttribute="centerX" secondItem="1KH-in-bfb" secondAttribute="centerX" id="zze-yI-VKP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="92L-ct-N3c"/>
@@ -462,10 +456,10 @@ Repeat for other vitamins.
                                 <rect key="frame" x="0.0" y="20" width="414" height="880"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="cuh-CZ-E2D">
-                                        <rect key="frame" x="20" y="150" width="374" height="630"/>
+                                        <rect key="frame" x="20" y="150" width="374" height="630.66666666666663"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="68.5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jac-Vf-oLu">
-                                        <rect key="frame" x="32" y="50" width="350" height="797"/>
+                                        <rect key="frame" x="32" y="50" width="350" height="797.66666666666663"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXq-4q-gqR" userLabel="Label Views">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="66.666666666666671"/>
@@ -642,7 +636,7 @@ Repeat for other vitamins.
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zab-tb-z02" userLabel="Text Views">
-                                                <rect key="frame" x="0.0" y="135.33333333333337" width="350" height="556"/>
+                                                <rect key="frame" x="0.0" y="135.66666666666663" width="350" height="556"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ilc-Fg-zXQ" userLabel="LowC">
                                                         <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
@@ -791,7 +785,7 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QgY-Wj-49y">
-                                                <rect key="frame" x="0.0" y="760" width="350" height="37"/>
+                                                <rect key="frame" x="0.0" y="760.66666666666663" width="350" height="37"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aus-sz-9Vu">
                                                         <rect key="frame" x="0.0" y="0.0" width="169" height="37"/>
@@ -816,7 +810,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                         <constraints>
                                             <constraint firstItem="QgY-Wj-49y" firstAttribute="centerX" secondItem="jac-Vf-oLu" secondAttribute="centerX" id="1rg-FJ-py4"/>
                                             <constraint firstItem="zab-tb-z02" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="bottom" constant="68.5" id="jaa-iq-ygP"/>
-                                            <constraint firstItem="QgY-Wj-49y" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="bottom" constant="68.5" id="uMG-SI-rtE"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -824,9 +817,11 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                     <constraint firstItem="cuh-CZ-E2D" firstAttribute="centerX" secondItem="qcM-Z5-GT7" secondAttribute="centerX" id="6QP-gC-vP3"/>
                                     <constraint firstItem="cuh-CZ-E2D" firstAttribute="leading" secondItem="qcM-Z5-GT7" secondAttribute="leading" constant="20" id="6Y1-BM-Fud"/>
                                     <constraint firstItem="jac-Vf-oLu" firstAttribute="top" secondItem="qcM-Z5-GT7" secondAttribute="top" constant="50" id="KeU-TC-7Iq"/>
+                                    <constraint firstAttribute="width" constant="414" id="LCy-sH-Pxh"/>
                                     <constraint firstAttribute="bottom" secondItem="jac-Vf-oLu" secondAttribute="bottom" constant="33" id="O17-dV-Fqt"/>
                                     <constraint firstAttribute="trailing" secondItem="cuh-CZ-E2D" secondAttribute="trailing" constant="20" id="ZEX-2Z-ZDu"/>
                                     <constraint firstItem="cuh-CZ-E2D" firstAttribute="top" secondItem="qcM-Z5-GT7" secondAttribute="top" constant="150" id="anV-Yy-0PM"/>
+                                    <constraint firstAttribute="height" constant="880" id="gSA-kY-oni"/>
                                     <constraint firstAttribute="bottom" secondItem="cuh-CZ-E2D" secondAttribute="bottom" constant="100" id="snV-aU-Niq"/>
                                     <constraint firstItem="jac-Vf-oLu" firstAttribute="centerX" secondItem="qcM-Z5-GT7" secondAttribute="centerX" id="ufd-uW-xqh"/>
                                 </constraints>
@@ -834,9 +829,8 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                         </subviews>
                         <color key="backgroundColor" red="0.59779334070000001" green="0.77102732659999995" blue="0.33331587909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="qcM-Z5-GT7" firstAttribute="leading" secondItem="jpj-RT-gTW" secondAttribute="leading" id="0J4-Ls-KzA"/>
                             <constraint firstItem="qcM-Z5-GT7" firstAttribute="top" secondItem="jpj-RT-gTW" secondAttribute="top" id="DOw-jS-IBX"/>
-                            <constraint firstItem="jpj-RT-gTW" firstAttribute="trailing" secondItem="qcM-Z5-GT7" secondAttribute="trailing" id="dkJ-qc-Kxa"/>
+                            <constraint firstItem="qcM-Z5-GT7" firstAttribute="centerX" secondItem="6Ky-na-jto" secondAttribute="centerX" id="TaW-3N-1bi"/>
                             <constraint firstAttribute="bottom" secondItem="qcM-Z5-GT7" secondAttribute="bottom" id="jI7-gD-duy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jpj-RT-gTW"/>
@@ -878,8 +872,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
         </scene>
     </scenes>
     <resources>
-        <image name="Asset 5" width="518" height="365"/>
-        <image name="Asset 6" width="386" height="83"/>
         <image name="AvgA" width="757" height="143"/>
         <image name="AvgC" width="757" height="143"/>
         <image name="AvgD" width="757" height="143"/>
@@ -902,6 +894,7 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
         <image name="LowK2" width="757" height="143"/>
         <image name="Magnesium Button" width="756" height="142"/>
         <image name="Magnesium Label" width="552" height="116"/>
+        <image name="POM Home" width="522" height="364"/>
         <image name="Vitamin A Button" width="756" height="142"/>
         <image name="Vitamin A Label" width="552" height="116"/>
         <image name="Vitamin C Button" width="756" height="142"/>

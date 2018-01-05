@@ -49,7 +49,6 @@ class ViewControllerTransition: UIViewController {
             let l = label.accessibilityLabel!
             labelIdentifier.updateValue(label, forKey: l)
         }
-        
         enterTextField.font = customFont;
         
         determineDidGoBack(sender: self.sender)
