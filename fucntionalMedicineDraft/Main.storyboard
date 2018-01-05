@@ -638,150 +638,140 @@ Repeat for other vitamins.
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zab-tb-z02" userLabel="Text Views">
                                                 <rect key="frame" x="0.0" y="135.66666666666663" width="350" height="556"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ilc-Fg-zXQ" userLabel="LowC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1e-9K-VfD" userLabel="LowC">
+                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="339.33333333333326"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Vitamin C, Low"/>
-                                                        <string key="text">Symptoms for insufficient vitamin C include poor wound healing and fatigue because of vitamin C’s role in collagen production. 
+                                                        <mutableString key="text">Symptoms for insufficient vitamin C include poor wound healing and fatigue because of vitamin C’s role in collagen production. 
 
 Some potential food sources to consider  to increase your vitamin C levels include red peppers, oranges, kiwi, broccoli, and strawberries. There are also non-food supplements that can be used to help manage low vitamin C levels. 
 
 Vitamin C can be combined with iron enriched foods to help with the absorption of iron, but if your iron levels are high, then think about getting more vitamin C from supplements rather than food. 
-</string>
+</mutableString>
                                                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ef6-zG-INe" userLabel="HighC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1EN-nV-kJ8" userLabel="HighC">
+                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="259.66666666666663"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Vitamin C, High"/>
-                                                        <string key="text">
-High doses of vitamin C while on anticoagulants could potentially block the benefits of those types of anticoagulants, so if this describes you, you should contact your physician. 
+                                                        <string key="text">High doses of vitamin C while on anticoagulants could potentially block the benefits of those types of anticoagulants, so if this describes you, you should contact your physician. 
 
-High vitamin C levels can also lead to the formation of kidney stones, severe diarrhea, nausea, and gastritis. Food with high levels of vitamin C include red peppers, oranges, kiwi, broccoli, strawberries, so it important to be aware of your consumption levels, if you already have high vitamin C levels. 
-</string>
-                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="21"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="z67-h5-WeT" userLabel="HighK2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+High vitamin C levels can also lead to the formation of kidney stones, severe diarrhea, nausea, and gastritis. Food with high levels of vitamin C include red peppers, oranges, kiwi, broccoli, strawberries, so it important to be aware of your consumption levels, if you already have high vitamin C levels. </string>
+                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have high levels of K2, there is nothing negative to cite for this. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7C-99-noS" userLabel="HighK2">
+                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Vitamin K2, High"/>
-                                                        <string key="text">You have high levels of K2, there is nothing negative to cite for this. 
-</string>
                                                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eFU-Og-1xn" userLabel="LowK2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynR-Fn-xJX" userLabel="LowK2">
+                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="120"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Vitamin K2, Low"/>
                                                         <string key="text">Some foods to consider adding to your diet include: cheese, poultry liver, pasteurized egg yolks, other organ meats, and sauerkraut. Supplements can also help with low levels, with recommendations of 100 to 1000 mcg/day.</string>
                                                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HEn-Ak-8iW" userLabel="HighD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soA-xj-yyD" userLabel="HighD">
+                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="120"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Vitamin D, High"/>
                                                         <string key="text">High vitamin D can lead to a build up of calcium in your blood. This build up can cause poor appetite, nausea, vomiting, and potential kidney problems. Medicine and intravenous fluid can be taken to counteract these effects. 
 </string>
                                                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0Jq-dc-Czf" userLabel="LowD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1M-TB-dc1" userLabel="LowD">
+                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="179.66666666666666"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Vitamin D, Low"/>
                                                         <string key="text">Low levels of vitamin D can lead to heart attacks, cancer, severe asthma, autoimmune disease, type 2 diabeters, and an increased chance of death from all causes. Food to consider when vitamin D levels are low include cod livers, cod liver oils, fatty fishes, egg yolks, and exposure to sun. Other supplements can be given beyond dietary changes to help increase vitamin D levels. </string>
                                                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zcg-Tg-Zts" userLabel="HighA">
-                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <accessibility key="accessibilityConfiguration" label="Vitamin A, High"/>
-                                                        <string key="text">High levels of vitamin A can lead to headaches, dizziness, nausea, skin irritation, bone and joint pain, liver abnormalities, coma, and death. In order to decrease vitamin A levels, one can reduce consumption levels of vitamin A rich foods. 
-
-</string>
-                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8aJ-NY-1z1" userLabel="LowA">
-                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Koe-Ho-B7I" userLabel="LowA">
+                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="259.66666666666663"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Vitamin A, Low"/>
                                                         <string key="text">Long-term deficiency of vitamin A can lead to blindness, xerophthalmia, chronic diarrhea, and increased mortality from infections. Suboptimal vitamin A levels include poor vision at night, keratosis pilaris, dry skin, dry eyes, infections, acne, eczema, psoriasis, menstrual dysfunctions, hypothyroidism, and autoimmune disease. 
 
-Food sources to raise vitamin A include various types of liver, egg yolks, and orange and yellow vegetables. Fish oil vitamins can also be used as a supplement for vitamin A. 
-
-</string>
+Food sources to raise vitamin A include various types of liver, egg yolks, and orange and yellow vegetables. Fish oil vitamins can also be used as a supplement for vitamin A. </string>
                                                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qQY-IK-gTb" userLabel="HighMag">
-                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6u-7s-TF7" userLabel="HighA">
+                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="120"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin A, High"/>
+                                                        <string key="text">High levels of vitamin A can lead to headaches, dizziness, nausea, skin irritation, bone and joint pain, liver abnormalities, coma, and death. In order to decrease vitamin A levels, one can reduce consumption levels of vitamin A rich foods. </string>
+                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw5-Ww-SWO" userLabel="HighMag">
+                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="159.66666666666666"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Magnesium, High"/>
                                                         <string key="text">High magnesium levels could mean the adrenal gland is not producing enough hormones. Patients could also experience kidney malfunctions if magnesium levels are low.  Other side effects include muscle weakness, low blood pressure, and impaired breathing. 
 </string>
                                                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="loP-2P-HRc" userLabel="LowMag">
-                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="556"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pat-Ca-bZL" userLabel="LowMag">
+                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="275"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Magnesium, Low"/>
-                                                        <string key="text">In order to counteract low magnesium, supplements and food additions are commonly available. Foods include soaked pumpkins seeds, soaked almonds, spinach, chard, molasses, dark chocolate, legumes, and bananas.  
-</string>
-                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
+                                                        <string key="text">In order to counteract low magnesium, supplements and food additions are commonly available. Foods include soaked pumpkins seeds, soaked almonds, spinach, chard, molasses, dark chocolate, legumes, and bananas.  </string>
+                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="26"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="ef6-zG-INe" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="4g0-7e-qG7"/>
-                                                    <constraint firstItem="HEn-Ak-8iW" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="6D5-7W-eja"/>
-                                                    <constraint firstAttribute="bottom" secondItem="ef6-zG-INe" secondAttribute="bottom" id="79E-Lo-x8e"/>
-                                                    <constraint firstItem="8aJ-NY-1z1" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="7LB-Hp-X8c"/>
-                                                    <constraint firstItem="qQY-IK-gTb" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="9mO-Ef-lOT"/>
-                                                    <constraint firstItem="0Jq-dc-Czf" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="Cuj-p1-awC"/>
-                                                    <constraint firstAttribute="bottom" secondItem="eFU-Og-1xn" secondAttribute="bottom" id="DRA-Mo-pqe"/>
-                                                    <constraint firstItem="z67-h5-WeT" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="DmC-5j-xbv"/>
-                                                    <constraint firstAttribute="bottom" secondItem="z67-h5-WeT" secondAttribute="bottom" id="EBj-TN-ZeP"/>
-                                                    <constraint firstItem="eFU-Og-1xn" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="F9s-SQ-RJo"/>
-                                                    <constraint firstItem="loP-2P-HRc" firstAttribute="centerX" secondItem="zab-tb-z02" secondAttribute="centerX" id="HBJ-QA-zGF"/>
-                                                    <constraint firstItem="0Jq-dc-Czf" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="Jaf-Ze-emu"/>
-                                                    <constraint firstItem="z67-h5-WeT" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="K47-Uu-LWP"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ilc-Fg-zXQ" secondAttribute="trailing" id="KRb-ev-VH6"/>
-                                                    <constraint firstItem="loP-2P-HRc" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="M3P-Wb-Pnf"/>
-                                                    <constraint firstAttribute="trailing" secondItem="qQY-IK-gTb" secondAttribute="trailing" id="MpH-Vw-FzU"/>
-                                                    <constraint firstItem="qQY-IK-gTb" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="NAd-GG-A0S"/>
-                                                    <constraint firstAttribute="bottom" secondItem="ilc-Fg-zXQ" secondAttribute="bottom" id="NZz-QV-XLM"/>
-                                                    <constraint firstAttribute="bottom" secondItem="loP-2P-HRc" secondAttribute="bottom" id="PCd-TL-x9G"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ef6-zG-INe" secondAttribute="trailing" id="R55-fP-5q9"/>
-                                                    <constraint firstItem="HEn-Ak-8iW" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="Rom-Dj-cft"/>
-                                                    <constraint firstAttribute="trailing" secondItem="loP-2P-HRc" secondAttribute="trailing" id="S9n-QN-mEo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="soA-xj-yyD" secondAttribute="trailing" id="57Y-oN-83e"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1EN-nV-kJ8" secondAttribute="trailing" id="6PN-ob-xCr"/>
+                                                    <constraint firstItem="x1e-9K-VfD" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="7LM-O5-wOP"/>
+                                                    <constraint firstItem="soA-xj-yyD" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="823-AE-Jc2"/>
+                                                    <constraint firstItem="ynR-Fn-xJX" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="8VA-0q-S4p"/>
+                                                    <constraint firstItem="m6u-7s-TF7" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="9PR-DN-LvN"/>
+                                                    <constraint firstItem="x1e-9K-VfD" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="Axl-PX-98c"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ynR-Fn-xJX" secondAttribute="trailing" id="DBQ-KX-ZLV"/>
+                                                    <constraint firstItem="Pat-Ca-bZL" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="DQU-hF-IHH"/>
+                                                    <constraint firstItem="L7C-99-noS" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="E2A-Mo-ZTC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="o1M-TB-dc1" secondAttribute="trailing" id="EP0-L2-Fy1"/>
+                                                    <constraint firstItem="soA-xj-yyD" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="JVh-Mq-UG6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="m6u-7s-TF7" secondAttribute="trailing" id="TEg-x9-GbV"/>
+                                                    <constraint firstItem="Pat-Ca-bZL" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="Tao-8G-pJT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="L7C-99-noS" secondAttribute="trailing" id="Ty9-Gr-tGD"/>
                                                     <constraint firstAttribute="width" constant="350" id="UZD-ax-8nQ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="zcg-Tg-Zts" secondAttribute="trailing" id="V7O-ac-zF8"/>
-                                                    <constraint firstAttribute="trailing" secondItem="z67-h5-WeT" secondAttribute="trailing" id="VcD-dy-RB6"/>
-                                                    <constraint firstAttribute="bottom" secondItem="HEn-Ak-8iW" secondAttribute="bottom" id="akQ-Uo-ZoF"/>
-                                                    <constraint firstItem="zcg-Tg-Zts" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="arL-Bs-gBi"/>
-                                                    <constraint firstItem="eFU-Og-1xn" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="cAI-Rw-0nM"/>
-                                                    <constraint firstItem="zcg-Tg-Zts" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="coA-yk-X5x"/>
-                                                    <constraint firstAttribute="trailing" secondItem="HEn-Ak-8iW" secondAttribute="trailing" id="d4t-qD-GDH"/>
-                                                    <constraint firstAttribute="bottom" secondItem="zcg-Tg-Zts" secondAttribute="bottom" id="dQU-78-9BH"/>
-                                                    <constraint firstAttribute="bottom" secondItem="qQY-IK-gTb" secondAttribute="bottom" id="ebm-dA-bp7"/>
-                                                    <constraint firstAttribute="trailing" secondItem="eFU-Og-1xn" secondAttribute="trailing" id="ed1-gT-9H3"/>
-                                                    <constraint firstAttribute="trailing" secondItem="8aJ-NY-1z1" secondAttribute="trailing" id="f25-2p-buO"/>
-                                                    <constraint firstItem="8aJ-NY-1z1" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="iba-QO-f75"/>
-                                                    <constraint firstItem="ilc-Fg-zXQ" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="kdH-9i-Pqk"/>
-                                                    <constraint firstAttribute="bottom" secondItem="0Jq-dc-Czf" secondAttribute="bottom" id="nCB-RL-QJc"/>
-                                                    <constraint firstItem="loP-2P-HRc" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="pfg-0C-8Th"/>
-                                                    <constraint firstItem="ilc-Fg-zXQ" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="sIz-oN-S94"/>
-                                                    <constraint firstItem="ef6-zG-INe" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="ybl-PU-q7X"/>
-                                                    <constraint firstAttribute="trailing" secondItem="0Jq-dc-Czf" secondAttribute="trailing" id="zhE-yt-72j"/>
-                                                    <constraint firstAttribute="bottom" secondItem="8aJ-NY-1z1" secondAttribute="bottom" id="zmE-0X-82r"/>
+                                                    <constraint firstItem="Bw5-Ww-SWO" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="VUN-C3-djR"/>
+                                                    <constraint firstItem="Koe-Ho-B7I" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="aih-Qg-tSs"/>
+                                                    <constraint firstItem="1EN-nV-kJ8" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="awP-Se-gYd"/>
+                                                    <constraint firstItem="1EN-nV-kJ8" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="bZv-Md-Fvz"/>
+                                                    <constraint firstItem="Bw5-Ww-SWO" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="f4J-Be-dWt"/>
+                                                    <constraint firstItem="m6u-7s-TF7" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="gEq-Y5-lNB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Pat-Ca-bZL" secondAttribute="trailing" id="hXL-7P-925"/>
+                                                    <constraint firstItem="o1M-TB-dc1" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="izL-ba-ch7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Koe-Ho-B7I" secondAttribute="trailing" id="pFD-Pl-lwL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="x1e-9K-VfD" secondAttribute="trailing" id="rud-Re-7e4"/>
+                                                    <constraint firstItem="L7C-99-noS" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="tpx-rE-6vo"/>
+                                                    <constraint firstItem="ynR-Fn-xJX" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="uyf-Ac-H3y"/>
+                                                    <constraint firstItem="Koe-Ho-B7I" firstAttribute="leading" secondItem="zab-tb-z02" secondAttribute="leading" id="xhh-o5-il4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Bw5-Ww-SWO" secondAttribute="trailing" id="xpu-zA-LdM"/>
+                                                    <constraint firstItem="o1M-TB-dc1" firstAttribute="top" secondItem="zab-tb-z02" secondAttribute="top" id="xyO-xK-cN7"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QgY-Wj-49y">
@@ -852,23 +842,23 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                         <outletCollection property="imageViews" destination="9gL-kh-XI0" collectionClass="NSMutableArray" id="bWE-Rw-zsX"/>
                         <outletCollection property="imageViews" destination="jyL-Mr-ozH" collectionClass="NSMutableArray" id="otm-Uq-Yuw"/>
                         <outletCollection property="imageViews" destination="pLU-wc-Q6u" collectionClass="NSMutableArray" id="WKx-a2-dER"/>
-                        <outletCollection property="textViews" destination="zcg-Tg-Zts" collectionClass="NSMutableArray" id="MMd-jK-HOS"/>
-                        <outletCollection property="textViews" destination="ilc-Fg-zXQ" collectionClass="NSMutableArray" id="eiz-7m-v70"/>
-                        <outletCollection property="textViews" destination="z67-h5-WeT" collectionClass="NSMutableArray" id="TIs-vk-9SX"/>
-                        <outletCollection property="textViews" destination="qQY-IK-gTb" collectionClass="NSMutableArray" id="eyS-RN-3R8"/>
-                        <outletCollection property="textViews" destination="loP-2P-HRc" collectionClass="NSMutableArray" id="yEH-0D-OJc"/>
-                        <outletCollection property="textViews" destination="0Jq-dc-Czf" collectionClass="NSMutableArray" id="NrJ-9K-OWR"/>
-                        <outletCollection property="textViews" destination="ef6-zG-INe" collectionClass="NSMutableArray" id="XZT-IL-HNC"/>
-                        <outletCollection property="textViews" destination="eFU-Og-1xn" collectionClass="NSMutableArray" id="zDR-1c-kyg"/>
-                        <outletCollection property="textViews" destination="8aJ-NY-1z1" collectionClass="NSMutableArray" id="CRT-qs-m0g"/>
-                        <outletCollection property="textViews" destination="HEn-Ak-8iW" collectionClass="NSMutableArray" id="FDH-II-noe"/>
+                        <outletCollection property="textViews" destination="x1e-9K-VfD" collectionClass="NSMutableArray" id="j8Y-DD-g2r"/>
+                        <outletCollection property="textViews" destination="1EN-nV-kJ8" collectionClass="NSMutableArray" id="dPF-Es-Wgz"/>
+                        <outletCollection property="textViews" destination="L7C-99-noS" collectionClass="NSMutableArray" id="DjV-UG-25Q"/>
+                        <outletCollection property="textViews" destination="ynR-Fn-xJX" collectionClass="NSMutableArray" id="Pnd-zm-7i1"/>
+                        <outletCollection property="textViews" destination="soA-xj-yyD" collectionClass="NSMutableArray" id="wCj-Wh-i7j"/>
+                        <outletCollection property="textViews" destination="o1M-TB-dc1" collectionClass="NSMutableArray" id="kl4-Ca-1To"/>
+                        <outletCollection property="textViews" destination="Koe-Ho-B7I" collectionClass="NSMutableArray" id="y2w-yV-mRd"/>
+                        <outletCollection property="textViews" destination="m6u-7s-TF7" collectionClass="NSMutableArray" id="67T-fV-f2G"/>
+                        <outletCollection property="textViews" destination="Bw5-Ww-SWO" collectionClass="NSMutableArray" id="Aqf-mT-3fF"/>
+                        <outletCollection property="textViews" destination="Pat-Ca-bZL" collectionClass="NSMutableArray" id="0bA-po-HAM"/>
                         <segue destination="Kyr-Lu-vKf" kind="unwind" identifier="unwindSegueToVCT" unwindAction="unwindToVCTWithSegue:" id="43x-kg-ZNk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fcs-gX-4yW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Kyr-Lu-vKf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1605.7971014492755" y="710.86956521739137"/>
+            <point key="canvasLocation" x="1604" y="726"/>
         </scene>
     </scenes>
     <resources>

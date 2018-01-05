@@ -10,7 +10,8 @@ import UIKit
 
 class ViewControllerResults: UIViewController {
     
-    @IBOutlet var textViews: [UITextView]!
+
+    @IBOutlet var textViews: [UILabel]!
     @IBOutlet var imageViews: [UIImageView]!
     lazy var supplement: Supplement? = nil
     
@@ -21,7 +22,7 @@ class ViewControllerResults: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        var textToBeDisplayed: UITextView = UITextView()
+        var textToBeDisplayed: UILabel = UILabel()
         var imageToBeDisplayed: UIImageView = UIImageView()
         
         for text in textViews {
