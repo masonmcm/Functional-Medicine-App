@@ -264,6 +264,7 @@ Repeat for other vitamins.
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orN-rb-ZIh">
                                 <rect key="frame" x="32" y="666" width="181" height="37"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="a67-XI-tDL"/>
                                     <constraint firstAttribute="height" constant="37" id="cd2-sP-JAN"/>
                                 </constraints>
                                 <state key="normal" image="Back Button"/>
@@ -378,7 +379,7 @@ Repeat for other vitamins.
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i2-0m-njY">
-                                                <rect key="frame" x="100" y="301" width="184" height="40"/>
+                                                <rect key="frame" x="100.66666666666667" y="301" width="182.66666666666663" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="MIg-Jp-hET"/>
                                                 </constraints>
@@ -389,13 +390,14 @@ Repeat for other vitamins.
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="384" id="3f1-wW-sJf"/>
                                             <constraint firstItem="yUL-Az-RCy" firstAttribute="leading" secondItem="NNu-MY-MnD" secondAttribute="leading" constant="15" id="Cgs-bP-0vg"/>
                                             <constraint firstAttribute="height" constant="366" id="KKB-uq-Cod"/>
                                             <constraint firstAttribute="trailing" secondItem="lOu-XJ-XKw" secondAttribute="trailing" constant="15" id="SNR-7j-m4l"/>
+                                            <constraint firstItem="lOu-XJ-XKw" firstAttribute="top" secondItem="yUL-Az-RCy" secondAttribute="bottom" constant="95" id="aFB-xf-Yot"/>
                                             <constraint firstItem="lOu-XJ-XKw" firstAttribute="leading" secondItem="NNu-MY-MnD" secondAttribute="leading" constant="15" id="dTb-zq-DlY"/>
                                             <constraint firstAttribute="trailing" secondItem="yUL-Az-RCy" secondAttribute="trailing" constant="15" id="iJ9-3w-iHf"/>
                                             <constraint firstAttribute="trailing" secondItem="1i2-0m-njY" secondAttribute="trailing" constant="100" id="jxC-Ti-Zrq"/>
+                                            <constraint firstItem="1i2-0m-njY" firstAttribute="top" secondItem="lOu-XJ-XKw" secondAttribute="bottom" constant="95" id="kw6-cg-uFQ"/>
                                             <constraint firstItem="1i2-0m-njY" firstAttribute="leading" secondItem="NNu-MY-MnD" secondAttribute="leading" constant="100" id="pfa-LG-sbT"/>
                                         </constraints>
                                         <directionalEdgeInsets key="directionalLayoutMargins" top="25" leading="8" bottom="25" trailing="8"/>
@@ -403,14 +405,19 @@ Repeat for other vitamins.
                                 </subviews>
                                 <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstItem="NNu-MY-MnD" firstAttribute="leading" secondItem="be8-7b-fQz" secondAttribute="leading" id="19L-xP-JmO"/>
                                     <constraint firstItem="osx-7m-PGp" firstAttribute="leading" secondItem="be8-7b-fQz" secondAttribute="leading" id="2WE-lG-o94"/>
+                                    <constraint firstAttribute="trailing" secondItem="NNu-MY-MnD" secondAttribute="trailing" id="D2Y-oq-kvq"/>
                                     <constraint firstAttribute="trailing" secondItem="NNu-MY-MnD" secondAttribute="trailing" id="GLb-hL-hFj"/>
                                     <constraint firstItem="osx-7m-PGp" firstAttribute="centerY" secondItem="be8-7b-fQz" secondAttribute="centerY" id="JRs-kb-ZVr"/>
                                     <constraint firstItem="NNu-MY-MnD" firstAttribute="top" secondItem="be8-7b-fQz" secondAttribute="top" id="LqH-JJ-AdI"/>
                                     <constraint firstItem="NNu-MY-MnD" firstAttribute="centerY" secondItem="be8-7b-fQz" secondAttribute="centerY" id="NaB-lk-ZYh"/>
                                     <constraint firstItem="NNu-MY-MnD" firstAttribute="centerX" secondItem="be8-7b-fQz" secondAttribute="centerX" id="QNQ-A2-LHl"/>
                                     <constraint firstItem="osx-7m-PGp" firstAttribute="top" secondItem="be8-7b-fQz" secondAttribute="top" constant="1" id="Tdh-Zl-c2K"/>
+                                    <constraint firstItem="NNu-MY-MnD" firstAttribute="centerX" secondItem="be8-7b-fQz" secondAttribute="centerX" id="W09-pC-ZmW"/>
+                                    <constraint firstAttribute="width" constant="384" id="ZSZ-Iq-o4T"/>
                                     <constraint firstItem="osx-7m-PGp" firstAttribute="centerX" secondItem="be8-7b-fQz" secondAttribute="centerX" id="aSL-hf-3Zj"/>
+                                    <constraint firstAttribute="height" constant="366" id="d5L-q3-W9o"/>
                                     <constraint firstAttribute="bottom" secondItem="NNu-MY-MnD" secondAttribute="bottom" id="h6u-mx-uwg"/>
                                     <constraint firstItem="NNu-MY-MnD" firstAttribute="leading" secondItem="be8-7b-fQz" secondAttribute="leading" id="ndn-hW-w3v"/>
                                     <constraint firstAttribute="trailing" secondItem="osx-7m-PGp" secondAttribute="trailing" id="vpZ-30-o6b"/>
@@ -419,12 +426,13 @@ Repeat for other vitamins.
                         </subviews>
                         <color key="backgroundColor" red="0.58625173568725586" green="0.7549668550491333" blue="0.35685941576957703" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="be8-7b-fQz" firstAttribute="top" secondItem="1KH-in-bfb" secondAttribute="top" constant="170" id="BHL-D5-mCW"/>
-                            <constraint firstItem="orN-rb-ZIh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1KH-in-bfb" secondAttribute="leadingMargin" constant="12" id="OYt-It-LW1"/>
-                            <constraint firstAttribute="bottom" secondItem="be8-7b-fQz" secondAttribute="bottom" constant="200" id="kzg-yr-7aj"/>
-                            <constraint firstItem="orN-rb-ZIh" firstAttribute="top" secondItem="be8-7b-fQz" secondAttribute="bottom" constant="130" id="nKV-lG-wCt"/>
+                            <constraint firstItem="be8-7b-fQz" firstAttribute="centerX" secondItem="1KH-in-bfb" secondAttribute="centerX" id="BYD-fb-uXN"/>
+                            <constraint firstItem="orN-rb-ZIh" firstAttribute="leading" secondItem="1KH-in-bfb" secondAttribute="leadingMargin" constant="12" id="OYt-It-LW1"/>
+                            <constraint firstItem="be8-7b-fQz" firstAttribute="centerX" secondItem="1KH-in-bfb" secondAttribute="centerX" id="Rkn-m5-gTn"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="orN-rb-ZIh" secondAttribute="trailing" constant="201" id="q8B-If-aXY"/>
+                            <constraint firstItem="92L-ct-N3c" firstAttribute="bottom" secondItem="orN-rb-ZIh" secondAttribute="bottom" constant="33" id="qvp-0S-QCL"/>
                             <constraint firstItem="be8-7b-fQz" firstAttribute="centerX" secondItem="1KH-in-bfb" secondAttribute="centerX" id="rS3-Bp-1Wk"/>
+                            <constraint firstItem="be8-7b-fQz" firstAttribute="top" secondItem="92L-ct-N3c" secondAttribute="top" constant="150" id="yvc-FY-Unh"/>
                             <constraint firstItem="be8-7b-fQz" firstAttribute="centerX" secondItem="1KH-in-bfb" secondAttribute="centerX" id="zze-yI-VKP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="92L-ct-N3c"/>
@@ -639,7 +647,7 @@ Repeat for other vitamins.
                                                 <rect key="frame" x="0.0" y="135.66666666666663" width="350" height="556"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1e-9K-VfD" userLabel="LowC">
-                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="339.33333333333326"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="339.33333333333331"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Vitamin C, Low"/>
                                                         <mutableString key="text">Symptoms for insufficient vitamin C include poor wound healing and fatigue because of vitamin C’s role in collagen production. 
@@ -653,7 +661,7 @@ Vitamin C can be combined with iron enriched foods to help with the absorption o
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1EN-nV-kJ8" userLabel="HighC">
-                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="259.66666666666663"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="259.66666666666669"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Vitamin C, High"/>
                                                         <string key="text">High doses of vitamin C while on anticoagulants could potentially block the benefits of those types of anticoagulants, so if this describes you, you should contact your physician. 
@@ -664,7 +672,7 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have high levels of K2, there is nothing negative to cite for this. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7C-99-noS" userLabel="HighK2">
-                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Vitamin K2, High"/>
                                                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
@@ -672,7 +680,7 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynR-Fn-xJX" userLabel="LowK2">
-                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="120"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="120"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Vitamin K2, Low"/>
                                                         <string key="text">Some foods to consider adding to your diet include: cheese, poultry liver, pasteurized egg yolks, other organ meats, and sauerkraut. Supplements can also help with low levels, with recommendations of 100 to 1000 mcg/day.</string>
@@ -681,7 +689,7 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soA-xj-yyD" userLabel="HighD">
-                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="120"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="120"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Vitamin D, High"/>
                                                         <string key="text">High vitamin D can lead to a build up of calcium in your blood. This build up can cause poor appetite, nausea, vomiting, and potential kidney problems. Medicine and intravenous fluid can be taken to counteract these effects. 
@@ -691,7 +699,7 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1M-TB-dc1" userLabel="LowD">
-                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="179.66666666666666"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="179.66666666666666"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Vitamin D, Low"/>
                                                         <string key="text">Low levels of vitamin D can lead to heart attacks, cancer, severe asthma, autoimmune disease, type 2 diabeters, and an increased chance of death from all causes. Food to consider when vitamin D levels are low include cod livers, cod liver oils, fatty fishes, egg yolks, and exposure to sun. Other supplements can be given beyond dietary changes to help increase vitamin D levels. </string>
@@ -700,7 +708,7 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                         <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Koe-Ho-B7I" userLabel="LowA">
-                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="259.66666666666663"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="259.66666666666669"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Vitamin A, Low"/>
                                                         <string key="text">Long-term deficiency of vitamin A can lead to blindness, xerophthalmia, chronic diarrhea, and increased mortality from infections. Suboptimal vitamin A levels include poor vision at night, keratosis pilaris, dry skin, dry eyes, infections, acne, eczema, psoriasis, menstrual dysfunctions, hypothyroidism, and autoimmune disease. 
@@ -711,7 +719,7 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6u-7s-TF7" userLabel="HighA">
-                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="120"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="120"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Vitamin A, High"/>
                                                         <string key="text">High levels of vitamin A can lead to headaches, dizziness, nausea, skin irritation, bone and joint pain, liver abnormalities, coma, and death. In order to decrease vitamin A levels, one can reduce consumption levels of vitamin A rich foods. </string>
@@ -720,7 +728,7 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw5-Ww-SWO" userLabel="HighMag">
-                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="159.66666666666666"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="159.66666666666666"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Magnesium, High"/>
                                                         <string key="text">High magnesium levels could mean the adrenal gland is not producing enough hormones. Patients could also experience kidney malfunctions if magnesium levels are low.  Other side effects include muscle weakness, low blood pressure, and impaired breathing. 
@@ -730,7 +738,7 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                                         <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pat-Ca-bZL" userLabel="LowMag">
-                                                        <rect key="frame" x="0.0" y="-0.66666666666665719" width="350" height="275"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="275"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <accessibility key="accessibilityConfiguration" label="Magnesium, Low"/>
                                                         <string key="text">In order to counteract low magnesium, supplements and food additions are commonly available. Foods include soaked pumpkins seeds, soaked almonds, spinach, chard, molasses, dark chocolate, legumes, and bananas.  </string>
@@ -895,6 +903,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
         <image name="Vitamin K2 Label" width="552" height="116"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mS7-nx-VIg"/>
+        <segue reference="3fz-uh-Hlp"/>
     </inferredMetricsTieBreakers>
 </document>
