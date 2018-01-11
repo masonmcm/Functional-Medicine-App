@@ -441,10 +441,75 @@ Repeat for other vitamins.
                                 <rect key="frame" x="0.0" y="20" width="424" height="730"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xHD-Fh-1Kg">
-                                        <rect key="frame" x="35" y="50" width="354" height="496.5"/>
+                                        <rect key="frame" x="35" y="50" width="354" height="497"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRZ-wu-xPx" userLabel="Average Label Views">
+                                                <rect key="frame" x="15" y="180" width="324" height="67"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgMag" translatesAutoresizingMaskIntoConstraints="NO" id="wbJ-IR-yEF" userLabel="AvgMag Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="324" height="67"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Magnesium, Average">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgA" translatesAutoresizingMaskIntoConstraints="NO" id="ZRG-O3-qf7" userLabel="AvgA Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="324" height="67"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin A, Average">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgK2" translatesAutoresizingMaskIntoConstraints="NO" id="pLU-wc-Q6u" userLabel="AvgK2 Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="324" height="67"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin K2, Average">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgC" translatesAutoresizingMaskIntoConstraints="NO" id="6fl-f1-eaO" userLabel="AvgC Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="324" height="67"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin C, Average">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgD" translatesAutoresizingMaskIntoConstraints="NO" id="faK-dX-feS" userLabel="AvgD Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="324" height="67"/>
+                                                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Vitamin D, Average">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="wbJ-IR-yEF" secondAttribute="bottom" id="1qQ-Vt-lvo"/>
+                                                    <constraint firstItem="6fl-f1-eaO" firstAttribute="trailing" secondItem="pLU-wc-Q6u" secondAttribute="trailing" id="4hF-eY-3AQ"/>
+                                                    <constraint firstAttribute="width" constant="324" id="4ns-bj-6M0"/>
+                                                    <constraint firstItem="wbJ-IR-yEF" firstAttribute="leading" secondItem="GRZ-wu-xPx" secondAttribute="leading" id="8S0-mE-gH6"/>
+                                                    <constraint firstItem="6fl-f1-eaO" firstAttribute="leading" secondItem="wbJ-IR-yEF" secondAttribute="leading" id="BiK-No-mt9"/>
+                                                    <constraint firstItem="ZRG-O3-qf7" firstAttribute="top" secondItem="GRZ-wu-xPx" secondAttribute="top" id="CyU-LX-Ys7"/>
+                                                    <constraint firstItem="6fl-f1-eaO" firstAttribute="leading" secondItem="faK-dX-feS" secondAttribute="leading" id="CzW-Ex-NHv"/>
+                                                    <constraint firstItem="6fl-f1-eaO" firstAttribute="trailing" secondItem="ZRG-O3-qf7" secondAttribute="trailing" id="GTB-ny-WUe"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wbJ-IR-yEF" secondAttribute="trailing" id="Jg2-ZH-A8w"/>
+                                                    <constraint firstAttribute="bottom" secondItem="faK-dX-feS" secondAttribute="bottom" id="KkX-ow-T4a"/>
+                                                    <constraint firstItem="6fl-f1-eaO" firstAttribute="leading" secondItem="pLU-wc-Q6u" secondAttribute="leading" id="Oyd-mc-iZt"/>
+                                                    <constraint firstAttribute="height" constant="66.5" id="Sc3-ch-Uiw"/>
+                                                    <constraint firstItem="pLU-wc-Q6u" firstAttribute="top" secondItem="GRZ-wu-xPx" secondAttribute="top" id="TJg-lf-xdd"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ZRG-O3-qf7" secondAttribute="bottom" id="XMz-Zy-jmd"/>
+                                                    <constraint firstItem="faK-dX-feS" firstAttribute="top" secondItem="GRZ-wu-xPx" secondAttribute="top" id="aGJ-qD-Pix"/>
+                                                    <constraint firstItem="6fl-f1-eaO" firstAttribute="top" secondItem="GRZ-wu-xPx" secondAttribute="top" id="ady-OI-AAn"/>
+                                                    <constraint firstAttribute="bottom" secondItem="6fl-f1-eaO" secondAttribute="bottom" id="avE-Mw-RYv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pLU-wc-Q6u" secondAttribute="bottom" id="lIG-r5-z9N"/>
+                                                    <constraint firstItem="wbJ-IR-yEF" firstAttribute="top" secondItem="GRZ-wu-xPx" secondAttribute="top" id="lVw-KQ-Rcs"/>
+                                                    <constraint firstItem="6fl-f1-eaO" firstAttribute="trailing" secondItem="wbJ-IR-yEF" secondAttribute="trailing" id="nqO-6r-YgI"/>
+                                                    <constraint firstItem="6fl-f1-eaO" firstAttribute="leading" secondItem="ZRG-O3-qf7" secondAttribute="leading" id="qki-j1-xBq"/>
+                                                    <constraint firstItem="6fl-f1-eaO" firstAttribute="trailing" secondItem="faK-dX-feS" secondAttribute="trailing" id="sZx-qb-wH0"/>
+                                                </constraints>
+                                            </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="60" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jac-Vf-oLu">
-                                                <rect key="frame" x="15" y="0.0" width="324" height="496.5"/>
+                                                <rect key="frame" x="15" y="0.0" width="324" height="497"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXq-4q-gqR" userLabel="Label Views">
                                                         <rect key="frame" x="0.0" y="0.0" width="324" height="67"/>
@@ -519,118 +584,62 @@ Repeat for other vitamins.
                                                                     <bool key="isElement" value="YES"/>
                                                                 </accessibility>
                                                             </imageView>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgMag" translatesAutoresizingMaskIntoConstraints="NO" id="wbJ-IR-yEF" userLabel="AvgMag Label">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="67"/>
-                                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <accessibility key="accessibilityConfiguration" label="Magnesium, Average">
-                                                                    <bool key="isElement" value="YES"/>
-                                                                </accessibility>
-                                                            </imageView>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgA" translatesAutoresizingMaskIntoConstraints="NO" id="ZRG-O3-qf7" userLabel="AvgA Label">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="67"/>
-                                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <accessibility key="accessibilityConfiguration" label="Vitamin A, Average">
-                                                                    <bool key="isElement" value="YES"/>
-                                                                </accessibility>
-                                                            </imageView>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgK2" translatesAutoresizingMaskIntoConstraints="NO" id="pLU-wc-Q6u" userLabel="AvgK2 Label">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="67"/>
-                                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <accessibility key="accessibilityConfiguration" label="Vitamin K2, Average">
-                                                                    <bool key="isElement" value="YES"/>
-                                                                </accessibility>
-                                                            </imageView>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgC" translatesAutoresizingMaskIntoConstraints="NO" id="6fl-f1-eaO" userLabel="AvgC Label">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="67"/>
-                                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <accessibility key="accessibilityConfiguration" label="Vitamin C, Average">
-                                                                    <bool key="isElement" value="YES"/>
-                                                                </accessibility>
-                                                            </imageView>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvgD" translatesAutoresizingMaskIntoConstraints="NO" id="faK-dX-feS" userLabel="AvgD Label">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="67"/>
-                                                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <accessibility key="accessibilityConfiguration" label="Vitamin D, Average">
-                                                                    <bool key="isElement" value="YES"/>
-                                                                </accessibility>
-                                                            </imageView>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="9gL-kh-XI0" secondAttribute="trailing" id="07M-8C-XFc"/>
                                                             <constraint firstAttribute="trailing" secondItem="jyL-Mr-ozH" secondAttribute="trailing" id="08p-kr-v2Y"/>
-                                                            <constraint firstItem="ZRG-O3-qf7" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="0Ta-3v-8R7"/>
-                                                            <constraint firstItem="faK-dX-feS" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="1I9-03-yt5"/>
                                                             <constraint firstItem="Rix-a2-nyh" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="1P5-nU-COq"/>
                                                             <constraint firstItem="hFs-6v-zdg" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="3UE-dG-7Y9"/>
                                                             <constraint firstAttribute="height" constant="66.5" id="4CD-Um-aKg"/>
-                                                            <constraint firstAttribute="trailing" secondItem="ZRG-O3-qf7" secondAttribute="trailing" id="5gZ-tj-U2K"/>
                                                             <constraint firstItem="hFs-6v-zdg" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="6mB-NQ-4fh"/>
                                                             <constraint firstItem="9gL-kh-XI0" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="7cu-hi-xib"/>
-                                                            <constraint firstItem="wbJ-IR-yEF" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="847-0y-YXE"/>
                                                             <constraint firstAttribute="trailing" secondItem="JK3-2q-94L" secondAttribute="trailing" id="8EA-5W-Soo"/>
-                                                            <constraint firstAttribute="bottom" secondItem="6fl-f1-eaO" secondAttribute="bottom" id="8TU-z5-HZL"/>
-                                                            <constraint firstAttribute="bottom" secondItem="pLU-wc-Q6u" secondAttribute="bottom" id="Cib-T2-75z"/>
                                                             <constraint firstItem="JK3-2q-94L" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="DRJ-jo-D4i"/>
                                                             <constraint firstAttribute="bottom" secondItem="bqs-XW-pxx" secondAttribute="bottom" id="Dxg-MW-5cj"/>
                                                             <constraint firstAttribute="bottom" secondItem="jyL-Mr-ozH" secondAttribute="bottom" id="E9Z-o4-rpb"/>
                                                             <constraint firstAttribute="bottom" secondItem="Rix-a2-nyh" secondAttribute="bottom" id="Eqc-wS-in7"/>
                                                             <constraint firstAttribute="trailing" secondItem="hFs-6v-zdg" secondAttribute="trailing" id="F8r-cj-Kv4"/>
-                                                            <constraint firstItem="ZRG-O3-qf7" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="GCi-p1-Hk2"/>
                                                             <constraint firstItem="9gL-kh-XI0" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="IBL-2A-G19"/>
                                                             <constraint firstItem="aCR-M6-euC" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="Lqy-qT-xkx"/>
                                                             <constraint firstAttribute="trailing" secondItem="Rix-a2-nyh" secondAttribute="trailing" id="MbS-ba-xeu"/>
                                                             <constraint firstItem="Rix-a2-nyh" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="N8i-uU-db2"/>
                                                             <constraint firstAttribute="bottom" secondItem="ucP-tS-09R" secondAttribute="bottom" id="O8o-JC-9kn"/>
-                                                            <constraint firstItem="6fl-f1-eaO" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="Odr-O0-M1h"/>
                                                             <constraint firstAttribute="bottom" secondItem="9gL-kh-XI0" secondAttribute="bottom" id="Pg2-Dh-Hua"/>
                                                             <constraint firstItem="VO0-fw-LlJ" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="R21-aG-XWZ"/>
                                                             <constraint firstAttribute="bottom" secondItem="hFs-6v-zdg" secondAttribute="bottom" id="Ria-BR-dTi"/>
-                                                            <constraint firstItem="wbJ-IR-yEF" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="StN-hz-GMX"/>
-                                                            <constraint firstAttribute="bottom" secondItem="ZRG-O3-qf7" secondAttribute="bottom" id="TUp-Kl-ca0"/>
-                                                            <constraint firstItem="faK-dX-feS" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="U1c-rD-I0o"/>
                                                             <constraint firstAttribute="bottom" secondItem="VO0-fw-LlJ" secondAttribute="bottom" id="UAZ-TD-bP2"/>
                                                             <constraint firstItem="bqs-XW-pxx" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="UjU-EC-Ier"/>
                                                             <constraint firstAttribute="bottom" secondItem="aCR-M6-euC" secondAttribute="bottom" id="VDM-2o-6F8"/>
-                                                            <constraint firstItem="pLU-wc-Q6u" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="VIr-KL-KEe"/>
                                                             <constraint firstItem="nHG-OW-8ZU" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="X0n-DC-9ew"/>
                                                             <constraint firstAttribute="trailing" secondItem="aCR-M6-euC" secondAttribute="trailing" id="ZSz-qv-lhJ"/>
                                                             <constraint firstItem="nHG-OW-8ZU" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="c3F-rT-9Zk"/>
-                                                            <constraint firstItem="6fl-f1-eaO" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="dxw-Uu-zO7"/>
                                                             <constraint firstItem="aCR-M6-euC" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="e4H-ty-K0s"/>
                                                             <constraint firstAttribute="trailing" secondItem="bqs-XW-pxx" secondAttribute="trailing" id="gaa-rD-M5T"/>
                                                             <constraint firstItem="JK3-2q-94L" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="j4Q-Sh-zjF"/>
                                                             <constraint firstItem="bqs-XW-pxx" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="jKI-Dr-I5Z"/>
-                                                            <constraint firstAttribute="bottom" secondItem="wbJ-IR-yEF" secondAttribute="bottom" id="jvR-vI-6vs"/>
                                                             <constraint firstAttribute="trailing" secondItem="VO0-fw-LlJ" secondAttribute="trailing" id="k9j-d4-Yd9"/>
                                                             <constraint firstAttribute="bottom" secondItem="nHG-OW-8ZU" secondAttribute="bottom" id="kwx-ze-Eea"/>
                                                             <constraint firstItem="ucP-tS-09R" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="mrZ-gr-r3G"/>
                                                             <constraint firstItem="jyL-Mr-ozH" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="pCk-al-sBM"/>
-                                                            <constraint firstAttribute="trailing" secondItem="wbJ-IR-yEF" secondAttribute="trailing" id="pvB-vN-JQx"/>
                                                             <constraint firstAttribute="trailing" secondItem="nHG-OW-8ZU" secondAttribute="trailing" id="qHP-le-Nmr"/>
                                                             <constraint firstItem="VO0-fw-LlJ" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="qJl-xc-WGB"/>
                                                             <constraint firstAttribute="bottom" secondItem="JK3-2q-94L" secondAttribute="bottom" id="rE9-Rh-5RU"/>
-                                                            <constraint firstItem="pLU-wc-Q6u" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="rIi-dk-Nq5"/>
-                                                            <constraint firstAttribute="bottom" secondItem="faK-dX-feS" secondAttribute="bottom" id="rYk-8K-raL"/>
-                                                            <constraint firstAttribute="trailing" secondItem="faK-dX-feS" secondAttribute="trailing" id="rbf-I3-pDF"/>
                                                             <constraint firstItem="jyL-Mr-ozH" firstAttribute="top" secondItem="zXq-4q-gqR" secondAttribute="top" id="rgF-nw-fhw"/>
                                                             <constraint firstAttribute="trailing" secondItem="ucP-tS-09R" secondAttribute="trailing" id="roX-o7-7m4"/>
-                                                            <constraint firstAttribute="trailing" secondItem="pLU-wc-Q6u" secondAttribute="trailing" id="uDD-8Y-Dqa"/>
                                                             <constraint firstItem="ucP-tS-09R" firstAttribute="leading" secondItem="zXq-4q-gqR" secondAttribute="leading" id="wD9-F1-cck"/>
-                                                            <constraint firstAttribute="trailing" secondItem="6fl-f1-eaO" secondAttribute="trailing" id="wNM-L7-3Im"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zab-tb-z02" userLabel="Text Views">
-                                                        <rect key="frame" x="0.0" y="127" width="324" height="369.5"/>
+                                                        <rect key="frame" x="0.0" y="127" width="324" height="370"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSS-IA-9Di" userLabel="LowC">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="369.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="370"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="LqY-zP-uwI">
-                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="369.5"/>
+                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="370"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXI-fe-Qbp" userLabel="LowC Text Label">
-                                                                        <rect key="frame" x="0.0" y="15" width="324" height="339.5"/>
+                                                                        <rect key="frame" x="0.0" y="15" width="324" height="340"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="339.5" id="8b8-W1-vjG"/>
@@ -645,7 +654,6 @@ Vitamin C can be combined with iron enriched foods to help with the absorption o
                                                                         <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <accessibility key="accessibilityConfiguration" label="Vitamin C, Low">
                                                                     <bool key="isElement" value="YES"/>
                                                                 </accessibility>
@@ -661,13 +669,13 @@ Vitamin C can be combined with iron enriched foods to help with the absorption o
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmy-cE-nFp" userLabel="HighC">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="309.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="310"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="FVc-dr-xmU">
-                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="309.5"/>
+                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="310"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foG-6c-MfR" userLabel="HighC Text Label">
-                                                                        <rect key="frame" x="0.0" y="15" width="324" height="279.5"/>
+                                                                        <rect key="frame" x="0.0" y="15" width="324" height="280"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="279.5" id="orz-mv-adC"/>
@@ -680,7 +688,6 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                                         <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <accessibility key="accessibilityConfiguration" label="Vitamin C, High">
                                                                     <bool key="isElement" value="YES"/>
                                                                 </accessibility>
@@ -712,7 +719,6 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                                         <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <accessibility key="accessibilityConfiguration" label="Vitamin K2, High">
                                                                     <bool key="isElement" value="YES"/>
                                                                 </accessibility>
@@ -745,7 +751,6 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                                         <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <accessibility key="accessibilityConfiguration" label="Vitamin K2, Low">
                                                                     <bool key="isElement" value="YES"/>
                                                                 </accessibility>
@@ -778,7 +783,6 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                                         <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <accessibility key="accessibilityConfiguration" label="Vitamin D, High">
                                                                     <bool key="isElement" value="YES"/>
                                                                 </accessibility>
@@ -811,7 +815,6 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                                         <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <accessibility key="accessibilityConfiguration" label="Vitamin D, Low">
                                                                     <bool key="isElement" value="YES"/>
                                                                 </accessibility>
@@ -827,13 +830,13 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vif-2O-zDm" userLabel="LowA">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="349.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="350"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="FhO-tN-JC7">
-                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="349.5"/>
+                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="350"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xs-SY-XnX" userLabel="LowA Text Label">
-                                                                        <rect key="frame" x="0.0" y="15" width="324" height="319.5"/>
+                                                                        <rect key="frame" x="0.0" y="15" width="324" height="320"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="319.5" id="cmu-SN-AB2"/>
@@ -847,7 +850,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                                                         <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <accessibility key="accessibilityConfiguration" label="Vitamin A, Low">
                                                                     <bool key="isElement" value="YES"/>
                                                                 </accessibility>
@@ -882,7 +884,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                                                         <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <accessibility key="accessibilityConfiguration" label="Vitamin A, High">
                                                                     <bool key="isElement" value="YES"/>
                                                                 </accessibility>
@@ -916,7 +917,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                                                         <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <accessibility key="accessibilityConfiguration" label="Magnesium, High">
                                                                     <bool key="isElement" value="YES"/>
                                                                 </accessibility>
@@ -949,7 +949,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <accessibility key="accessibilityConfiguration" label="Magnesium, Low">
                                                                     <bool key="isElement" value="YES"/>
                                                                 </accessibility>
@@ -1010,14 +1009,17 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                             </stackView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="GRZ-wu-xPx" firstAttribute="centerX" secondItem="xHD-Fh-1Kg" secondAttribute="centerX" id="9ln-dc-lm2"/>
                                             <constraint firstItem="jac-Vf-oLu" firstAttribute="top" secondItem="xHD-Fh-1Kg" secondAttribute="top" id="ISb-XT-DG6"/>
                                             <constraint firstAttribute="trailing" secondItem="jac-Vf-oLu" secondAttribute="trailing" constant="15" id="X6p-CR-7oB"/>
+                                            <constraint firstAttribute="trailing" secondItem="GRZ-wu-xPx" secondAttribute="trailing" constant="15" id="fiG-h2-u5e"/>
+                                            <constraint firstItem="GRZ-wu-xPx" firstAttribute="leading" secondItem="xHD-Fh-1Kg" secondAttribute="leading" constant="15" id="pcq-8n-RNT"/>
                                             <constraint firstAttribute="bottom" secondItem="jac-Vf-oLu" secondAttribute="bottom" id="qIG-fL-CJT"/>
                                             <constraint firstItem="jac-Vf-oLu" firstAttribute="leading" secondItem="xHD-Fh-1Kg" secondAttribute="leading" constant="15" id="sgv-ZE-AQU"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aus-sz-9Vu">
-                                        <rect key="frame" x="59" y="596.5" width="150" height="40"/>
+                                        <rect key="frame" x="59" y="597" width="150" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="VMQ-Cz-0ye"/>
                                             <constraint firstAttribute="height" constant="40" id="YLi-Qw-Io0"/>
@@ -1031,6 +1033,7 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                 <constraints>
                                     <constraint firstItem="aus-sz-9Vu" firstAttribute="top" secondItem="qcM-Z5-GT7" secondAttribute="top" constant="596.5" id="4Fc-JF-yey"/>
                                     <constraint firstAttribute="bottom" secondItem="aus-sz-9Vu" secondAttribute="bottom" constant="30" id="5eY-dY-2na"/>
+                                    <constraint firstItem="GRZ-wu-xPx" firstAttribute="bottom" secondItem="aus-sz-9Vu" secondAttribute="top" constant="-300" id="EWM-ES-epf"/>
                                     <constraint firstItem="xHD-Fh-1Kg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qcM-Z5-GT7" secondAttribute="leading" constant="30" id="Jgg-jL-ERv"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xHD-Fh-1Kg" secondAttribute="trailing" constant="30" id="K73-rW-YmV"/>
                                     <constraint firstAttribute="trailing" secondItem="aus-sz-9Vu" secondAttribute="trailing" priority="750" constant="210" id="KQK-uj-m8f"/>
@@ -1054,16 +1057,11 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                     </view>
                     <size key="freeformSize" width="424" height="750"/>
                     <connections>
-                        <outletCollection property="imageViews" destination="6fl-f1-eaO" collectionClass="NSMutableArray" id="KIX-mK-AZI"/>
                         <outletCollection property="imageViews" destination="9gL-kh-XI0" collectionClass="NSMutableArray" id="bWE-Rw-zsX"/>
-                        <outletCollection property="imageViews" destination="ZRG-O3-qf7" collectionClass="NSMutableArray" id="GdX-6m-qzL"/>
                         <outletCollection property="imageViews" destination="VO0-fw-LlJ" collectionClass="NSMutableArray" id="ON8-si-bgf"/>
                         <outletCollection property="imageViews" destination="aCR-M6-euC" collectionClass="NSMutableArray" id="qhO-km-g3C"/>
                         <outletCollection property="imageViews" destination="JK3-2q-94L" collectionClass="NSMutableArray" id="OVq-c2-FTg"/>
                         <outletCollection property="imageViews" destination="nHG-OW-8ZU" collectionClass="NSMutableArray" id="FGZ-Qs-uXr"/>
-                        <outletCollection property="imageViews" destination="wbJ-IR-yEF" collectionClass="NSMutableArray" id="FqM-oe-qp2"/>
-                        <outletCollection property="imageViews" destination="pLU-wc-Q6u" collectionClass="NSMutableArray" id="WKx-a2-dER"/>
-                        <outletCollection property="imageViews" destination="faK-dX-feS" collectionClass="NSMutableArray" id="RtS-e3-W02"/>
                         <outletCollection property="imageViews" destination="hFs-6v-zdg" collectionClass="NSMutableArray" id="ZWS-GB-Gma"/>
                         <outletCollection property="imageViews" destination="Rix-a2-nyh" collectionClass="NSMutableArray" id="B2j-PH-QZH"/>
                         <outletCollection property="imageViews" destination="ucP-tS-09R" collectionClass="NSMutableArray" id="HyT-Ke-ZIi"/>
@@ -1079,6 +1077,11 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                         <outletCollection property="textViews" destination="449-YD-xF7" collectionClass="NSMutableArray" id="MxC-wb-Yqv"/>
                         <outletCollection property="textViews" destination="iyY-8V-oaI" collectionClass="NSMutableArray" id="6cX-lP-baB"/>
                         <outletCollection property="textViews" destination="64q-hK-5cJ" collectionClass="NSMutableArray" id="063-po-vDI"/>
+                        <outletCollection property="imageViews" destination="pLU-wc-Q6u" collectionClass="NSMutableArray" id="WKx-a2-dER"/>
+                        <outletCollection property="imageViews" destination="wbJ-IR-yEF" collectionClass="NSMutableArray" id="FqM-oe-qp2"/>
+                        <outletCollection property="imageViews" destination="ZRG-O3-qf7" collectionClass="NSMutableArray" id="GdX-6m-qzL"/>
+                        <outletCollection property="imageViews" destination="6fl-f1-eaO" collectionClass="NSMutableArray" id="KIX-mK-AZI"/>
+                        <outletCollection property="imageViews" destination="faK-dX-feS" collectionClass="NSMutableArray" id="RtS-e3-W02"/>
                         <segue destination="Kyr-Lu-vKf" kind="unwind" identifier="unwindSegueToVCT" unwindAction="unwindToVCTWithSegue:" id="43x-kg-ZNk"/>
                     </connections>
                 </viewController>
