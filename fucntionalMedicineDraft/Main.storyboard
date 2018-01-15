@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TX3-Yb-b9d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j2j-yn-0iq">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -161,6 +161,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BhO-no-w3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-674.63768115942037" y="723.09782608695662"/>
+        </scene>
+        <!--View Controller Passcode-->
+        <scene sceneID="7Nk-Sb-DFN">
+            <objects>
+                <viewController id="j2j-yn-0iq" customClass="ViewControllerPasscode" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mld-NP-PEG">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VcJ-hk-E36">
+                                <rect key="frame" x="239" y="229" width="121.5" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Passcode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mvX-FT-Je6">
+                                        <rect key="frame" x="0.0" y="0.0" width="121.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P0-I9-JR1">
+                                <rect key="frame" x="231" y="291" width="136" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="enterWasPressed:" destination="j2j-yn-0iq" eventType="touchUpInside" id="1LN-yo-UAr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lgM-wv-aZe"/>
+                    </view>
+                    <connections>
+                        <outlet property="passcodeTextField" destination="mvX-FT-Je6" id="Yqs-s4-Wbh"/>
+                        <segue destination="TX3-Yb-b9d" kind="show" identifier="SegueToMainController" id="cTr-GE-BGb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XnH-OX-Jyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2473.4375" y="774.609375"/>
         </scene>
         <!--View Controller How To Begin-->
         <scene sceneID="vpj-Wu-FAB">
@@ -1125,6 +1166,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
         <image name="Vitamin K2 Label" width="552" height="116"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mS7-nx-VIg"/>
+        <segue reference="cTr-GE-BGb"/>
     </inferredMetricsTieBreakers>
 </document>
