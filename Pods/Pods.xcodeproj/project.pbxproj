@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -103,7 +103,7 @@
 		0EBFAE3C75105602890BD9A047D689EC /* UInt32+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "Sources/CryptoSwift/UInt32+Extension.swift"; sourceTree = "<group>"; };
 		116BE809A8BBF8F709926DDC28236638 /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
 		12A632EE5F16C100C226ABE9D6707071 /* Pods-fucntionalMedicineDraftTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-fucntionalMedicineDraftTests-umbrella.h"; sourceTree = "<group>"; };
-		15A9B118C3E5D07F0D0007C52F185025 /* Pods_fucntionalMedicineDraftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_fucntionalMedicineDraftTests.framework; path = "Pods-fucntionalMedicineDraftTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A9B118C3E5D07F0D0007C52F185025 /* Pods_fucntionalMedicineDraftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fucntionalMedicineDraftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DC4FBA9A15922A3787C35D182E561B /* Pods-fucntionalMedicineDraft-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-fucntionalMedicineDraft-umbrella.h"; sourceTree = "<group>"; };
 		17AF38AABF71297F2FE6B5CD5375A2EA /* Collection+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Extension.swift"; path = "Sources/CryptoSwift/Collection+Extension.swift"; sourceTree = "<group>"; };
 		17EB19E1EF889F2602A6CD4BFA3B9610 /* NoPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoPadding.swift; path = Sources/CryptoSwift/NoPadding.swift; sourceTree = "<group>"; };
@@ -147,11 +147,11 @@
 		75F7B84503F41364555CFC6945B75C53 /* CryptoSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CryptoSwift-dummy.m"; sourceTree = "<group>"; };
 		7645AAADC9596285D997FB050A61029A /* Pods-fucntionalMedicineDraftTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fucntionalMedicineDraftTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7A313DC180F5A42AFDCF5F4D9E6B0E3E /* Digest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Digest.swift; path = Sources/CryptoSwift/Digest.swift; sourceTree = "<group>"; };
-		7DFDB9F1036D0C6CF40DDED093C868D3 /* Pods-fucntionalMedicineDraft.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-fucntionalMedicineDraft.modulemap"; sourceTree = "<group>"; };
+		7DFDB9F1036D0C6CF40DDED093C868D3 /* Pods-fucntionalMedicineDraft.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-fucntionalMedicineDraft.modulemap"; sourceTree = "<group>"; };
 		8D4A0EDED1ACBE8991564D944B5E4552 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DF8E8C5BB3633DA9FD8DA830EE810DF /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CryptoSwift.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF8E8C5BB3633DA9FD8DA830EE810DF /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F42D5916AB8A1FC4FA408997817AE86 /* BatchedCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchedCollection.swift; path = Sources/CryptoSwift/BatchedCollection.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		958C3E35DD866E890E4BA5EB00450218 /* CryptoSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoSwift.xcconfig; sourceTree = "<group>"; };
 		9605A1A7D44A6AFA150179262A998D31 /* OFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OFB.swift; path = Sources/CryptoSwift/BlockMode/OFB.swift; sourceTree = "<group>"; };
 		96D6FB60BC6F343470D28EC52E0FE91A /* Pods-fucntionalMedicineDraft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fucntionalMedicineDraft.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 		C4CC36BFD1E124638BBE348967908C6A /* CTR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CTR.swift; path = Sources/CryptoSwift/BlockMode/CTR.swift; sourceTree = "<group>"; };
 		C4F9E69F3EC6CC5A1B9811A830EDA7FB /* UInt8+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt8+Extension.swift"; path = "Sources/CryptoSwift/UInt8+Extension.swift"; sourceTree = "<group>"; };
 		C6F1188589D59854592C05F347433805 /* Pods-fucntionalMedicineDraft-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fucntionalMedicineDraft-dummy.m"; sourceTree = "<group>"; };
-		CB3EF8E37892DA1555E52583421106FF /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
+		CB3EF8E37892DA1555E52583421106FF /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
 		D034CF51EE8F6519BB0FE897047E1CD8 /* SHA3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA3.swift; path = Sources/CryptoSwift/SHA3.swift; sourceTree = "<group>"; };
 		D048A4807948A5565AA7BFC6EDC8858E /* SHA2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA2.swift; path = Sources/CryptoSwift/SHA2.swift; sourceTree = "<group>"; };
 		DE3239BE51129F9B1A0D69D90B31A0C1 /* RandomBytesSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RandomBytesSequence.swift; path = Sources/CryptoSwift/RandomBytesSequence.swift; sourceTree = "<group>"; };
@@ -179,11 +179,11 @@
 		E236D7F3DE185A040EA09B9BFC56188E /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/CryptoSwift/Utils.swift; sourceTree = "<group>"; };
 		E66AD11BDBEB504D04203F248AC3613E /* Pods-fucntionalMedicineDraft-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-fucntionalMedicineDraft-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E723BB881B28C7F2E108E93FEBE1A46C /* Generics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generics.swift; path = Sources/CryptoSwift/Generics.swift; sourceTree = "<group>"; };
-		E8C5D87489D892463EBDD7635085D8C6 /* Pods-fucntionalMedicineDraftTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-fucntionalMedicineDraftTests.modulemap"; sourceTree = "<group>"; };
+		E8C5D87489D892463EBDD7635085D8C6 /* Pods-fucntionalMedicineDraftTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-fucntionalMedicineDraftTests.modulemap"; sourceTree = "<group>"; };
 		E923A37930CBC57D57B8A58D34037E06 /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/CryptoSwift/SHA1.swift; sourceTree = "<group>"; };
 		EAF4F14E3B549084EED6396285CD9C4A /* UInt16+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt16+Extension.swift"; path = "Sources/CryptoSwift/UInt16+Extension.swift"; sourceTree = "<group>"; };
 		EDCBD9449D07789B54A72629DE09E30C /* Pods-fucntionalMedicineDraftTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fucntionalMedicineDraftTests-frameworks.sh"; sourceTree = "<group>"; };
-		F05BAB134F72981BE89F1F00BA47003C /* Pods_fucntionalMedicineDraft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_fucntionalMedicineDraft.framework; path = "Pods-fucntionalMedicineDraft.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F05BAB134F72981BE89F1F00BA47003C /* Pods_fucntionalMedicineDraft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fucntionalMedicineDraft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A770514358B491E856A8C73934B0E7 /* CBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBC.swift; path = Sources/CryptoSwift/BlockMode/CBC.swift; sourceTree = "<group>"; };
 		F0D87F44520FD278A8382D8DDBCA119C /* ChaCha20+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ChaCha20+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/ChaCha20+Foundation.swift"; sourceTree = "<group>"; };
 		F81032203334F0F82DE8BAD6CDBDA0E5 /* Blowfish+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Blowfish+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Blowfish+Foundation.swift"; sourceTree = "<group>"; };
@@ -391,7 +391,6 @@
 				71E3DED970010B6C6E14D42D39702D05 /* ZeroPadding.swift */,
 				814D532D2DC4AE90FD27DC40EA98CEC3 /* Support Files */,
 			);
-			name = CryptoSwift;
 			path = CryptoSwift;
 			sourceTree = "<group>";
 		};
@@ -484,7 +483,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -720,6 +719,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
