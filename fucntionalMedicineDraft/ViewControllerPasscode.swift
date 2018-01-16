@@ -7,32 +7,38 @@
 //
 
 import UIKit
+import CryptoSwift
 
 class ViewControllerPasscode: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var passcodeTextField: UITextField!
-    let password = "123"
+    let password: [UInt8] = [109, 111, 255, 186, 87, 77, 170, 205, 22, 222, 90, 233, 81, 146, 115, 101]
     
     @IBAction func enterWasPressed(_ sender: Any) {
         
         passcodeTextField.resignFirstResponder()
         
-        if passcodeTextField.text == password {
-            performSegue(withIdentifier: "SegueToMainController", sender: self)
-        }
-        else {
-            UIView.animate(withDuration: 0.1, delay: 0.0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.curveEaseIn, animations: {
-                self.passcodeTextField.center.x += 10
-            }, completion: nil)
-            
-            UIView.animate(withDuration: 0.1, delay: 0.1, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.curveEaseIn, animations: {
-                self.passcodeTextField.center.x -= 20
-            }, completion: nil)
-            
-            UIView.animate(withDuration: 0.1, delay: 0.2, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.curveEaseIn, animations: {
-                self.passcodeTextField.center.x += 10
-            }, completion: nil)
-        }
+        do {
+            let aes = try AES(key: "3VrjNUpHGnAsC2LN", iv: "zPEklHzI5RvT9F7M") // aes128
+            let ciphertext = try aes.encrypt(Array(passcodeTextField.text!.utf8))
+
+            if ciphertext.toBase64()! == password.toBase64()! {
+                performSegue(withIdentifier: "SegueToMainController", sender: self)
+            }
+            else {
+                UIView.animate(withDuration: 0.1, delay: 0.0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+                    self.passcodeTextField.center.x += 10
+                }, completion: nil)
+                
+                UIView.animate(withDuration: 0.1, delay: 0.1, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+                    self.passcodeTextField.center.x -= 20
+                }, completion: nil)
+                
+                UIView.animate(withDuration: 0.1, delay: 0.2, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+                    self.passcodeTextField.center.x += 10
+                }, completion: nil)
+            }
+        }catch { }
         
     }
     
