@@ -271,7 +271,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="NfT-dr-EDN">
-                                        <rect key="frame" x="20" y="138" width="335" height="615"/>
+                                        <rect key="frame" x="20" y="132" width="335" height="500"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="335" id="uZ6-lc-dXe"/>
                                         </constraints>
@@ -280,14 +280,13 @@
                                         <rect key="frame" x="10" y="50" width="355" height="67.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="67.5" id="M7J-1O-0h0"/>
-                                            <constraint firstAttribute="width" constant="355" id="UHN-B9-MZ7"/>
+                                            <constraint firstAttribute="width" constant="355" id="irH-Ww-8gM"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5e-Jp-baI" userLabel="Text Label">
-                                        <rect key="frame" x="25" y="147.5" width="325" height="500"/>
+                                        <rect key="frame" x="35" y="147.5" width="305" height="470"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="500" id="7ag-lr-TOt"/>
-                                            <constraint firstAttribute="width" constant="325" id="TkH-1W-uff"/>
+                                            <constraint firstAttribute="height" constant="470" id="bAM-VA-APu"/>
                                         </constraints>
                                         <string key="text">Have your functional medicine test results in hand. 
 
@@ -299,19 +298,18 @@ Read the feedback on whether that vitamin’s level is low, high, or just right.
 
 Continue reading on what supplements and food options currently exist to help you with levels for that vitamin. 
 
-Repeat for other vitamins. 
-*Disclaimer here about doctor*</string>
+Repeat for other vitamins. </string>
                                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="21"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3L-iA-MyH">
-                                        <rect key="frame" x="52.5" y="693" width="150" height="40"/>
+                                        <rect key="frame" x="52.5" y="652" width="150" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="cFg-GP-0Et"/>
                                             <constraint firstAttribute="width" constant="150" id="xMk-wW-VHo"/>
                                         </constraints>
-                                        <state key="normal" title="Back" image="Inverted Back Button"/>
+                                        <state key="normal" title="Back" image="Back Button"/>
                                         <connections>
                                             <action selector="backButtonPressed:" destination="KJe-vr-i4r" eventType="touchUpInside" id="PcJ-Fu-klC"/>
                                             <segue destination="TX3-Yb-b9d" kind="show" id="mS7-nx-VIg"/>
@@ -319,21 +317,24 @@ Repeat for other vitamins.
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="S5e-Jp-baI" firstAttribute="trailing" secondItem="NfT-dr-EDN" secondAttribute="trailing" constant="-15" id="3nB-O8-NKP"/>
+                                    <constraint firstItem="g7Z-HO-Eaf" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" id="5Gy-Ay-qsJ"/>
                                     <constraint firstItem="v3L-iA-MyH" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" constant="-60" id="5KA-NV-qak"/>
+                                    <constraint firstAttribute="trailing" secondItem="g7Z-HO-Eaf" secondAttribute="trailing" constant="10" id="93s-bw-zOb"/>
                                     <constraint firstAttribute="width" constant="375" id="I6m-Yf-D96"/>
+                                    <constraint firstItem="S5e-Jp-baI" firstAttribute="top" secondItem="NfT-dr-EDN" secondAttribute="top" constant="15" id="Jcp-SV-Obb"/>
                                     <constraint firstItem="NfT-dr-EDN" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" id="Q6W-rB-6ot"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="S5e-Jp-baI" secondAttribute="trailing" constant="25" id="YjM-1M-7pb"/>
+                                    <constraint firstAttribute="bottom" secondItem="v3L-iA-MyH" secondAttribute="bottom" priority="750" constant="30" id="TNP-fa-llz"/>
+                                    <constraint firstItem="S5e-Jp-baI" firstAttribute="leading" secondItem="NfT-dr-EDN" secondAttribute="leading" constant="15" id="aCv-HM-Rea"/>
                                     <constraint firstItem="g7Z-HO-Eaf" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" id="cZH-5v-2bV"/>
-                                    <constraint firstItem="S5e-Jp-baI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5Dk-k6-nvd" secondAttribute="leading" constant="25" id="eKH-BN-Ndg"/>
-                                    <constraint firstItem="v3L-iA-MyH" firstAttribute="bottom" secondItem="NfT-dr-EDN" secondAttribute="bottom" constant="-20" id="eRn-Ic-3sf"/>
-                                    <constraint firstItem="NfT-dr-EDN" firstAttribute="top" secondItem="g7Z-HO-Eaf" secondAttribute="bottom" constant="20" id="eSd-7P-ogv"/>
                                     <constraint firstAttribute="trailing" secondItem="NfT-dr-EDN" secondAttribute="trailing" constant="20" id="eWA-x1-blH"/>
                                     <constraint firstItem="NfT-dr-EDN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5Dk-k6-nvd" secondAttribute="leading" constant="20" id="eee-hb-J7o"/>
                                     <constraint firstItem="S5e-Jp-baI" firstAttribute="top" secondItem="g7Z-HO-Eaf" secondAttribute="bottom" constant="30" id="gzw-RT-pJH"/>
                                     <constraint firstItem="g7Z-HO-Eaf" firstAttribute="top" secondItem="5Dk-k6-nvd" secondAttribute="top" constant="50" id="me2-fm-Kt4"/>
-                                    <constraint firstItem="v3L-iA-MyH" firstAttribute="top" secondItem="S5e-Jp-baI" secondAttribute="bottom" constant="45.5" id="nF5-Rh-wiB"/>
+                                    <constraint firstItem="v3L-iA-MyH" firstAttribute="top" secondItem="NfT-dr-EDN" secondAttribute="bottom" constant="20" id="qmu-Zb-oGj"/>
+                                    <constraint firstItem="g7Z-HO-Eaf" firstAttribute="leading" secondItem="5Dk-k6-nvd" secondAttribute="leading" priority="750" constant="10" id="rQV-fp-VFk"/>
+                                    <constraint firstItem="S5e-Jp-baI" firstAttribute="bottom" secondItem="NfT-dr-EDN" secondAttribute="bottom" constant="-15" id="rl3-ch-Pcl"/>
                                     <constraint firstItem="S5e-Jp-baI" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" id="sZF-yd-sPf"/>
-                                    <constraint firstAttribute="bottom" secondItem="NfT-dr-EDN" secondAttribute="bottom" constant="57" id="soz-mk-T0a"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -352,7 +353,7 @@ Repeat for other vitamins.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOx-vQ-JRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1765" y="709"/>
+            <point key="canvasLocation" x="-1765.3125" y="708.80281690140851"/>
         </scene>
         <!--View Controller Transition-->
         <scene sceneID="4Iz-eo-ohc">
@@ -1203,7 +1204,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
         <image name="HighK2" width="757" height="143"/>
         <image name="HighMag" width="757" height="143"/>
         <image name="How to Use" width="757" height="143"/>
-        <image name="Inverted Back Button" width="281" height="71"/>
         <image name="Inverted Backdrop" width="599" height="479"/>
         <image name="Inverted Passcode" width="757" height="210"/>
         <image name="LowA" width="757" height="143"/>
