@@ -21,7 +21,7 @@ class ViewControllerPasscode: UIViewController, UITextFieldDelegate {
         do {
             let aes = try AES(key: "3VrjNUpHGnAsC2LN", iv: "zPEklHzI5RvT9F7M") // aes128
             let ciphertext = try aes.encrypt(Array(passcodeTextField.text!.utf8))
-
+        
             if ciphertext.toBase64()! == password.toBase64()! {
                 performSegue(withIdentifier: "SegueToMainController", sender: self)
             }

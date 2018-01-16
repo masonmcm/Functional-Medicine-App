@@ -9,50 +9,22 @@
 /* Begin PBXBuildFile section */
 		222D8B47200C463E00362D8C /* ViewControllerPasscode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D8B46200C463E00362D8C /* ViewControllerPasscode.swift */; };
 		228E2C7E1FCB92450009619C /* ViewControllerHowToBegin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E2C7D1FCB92450009619C /* ViewControllerHowToBegin.swift */; };
-		22A3E4E3200DD59200145366 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A3E4D5200DD56200145366 /* CryptoSwift.framework */; };
-		22A3E4E4200DD59200145366 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22A3E4D5200DD56200145366 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		22B41DC11FCC827B00EE4CFE /* Supplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B41DC01FCC827B00EE4CFE /* Supplement.swift */; };
 		22FC0CC21FA654930006EE08 /* ViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC0CC11FA654930006EE08 /* ViewControllerMain.swift */; };
 		34BEF4781F8D65F1009C9F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEF4771F8D65F1009C9F7D /* AppDelegate.swift */; };
 		34BEF47F1F8D65F1009C9F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BEF47E1F8D65F1009C9F7D /* Assets.xcassets */; };
 		34BEF48D1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BEF48C1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift */; };
+		66090D744E02D6B0DA0C2657 /* Pods_fucntionalMedicineDraft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9186390CB6512A4D58189EAF /* Pods_fucntionalMedicineDraft.framework */; };
 		CC4DB0DE1FC62B4000C5405B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4DB0DD1FC62B4000C5405B /* Main.storyboard */; };
 		CC89EE361FD25A2F004ED529 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC89EE351FD25A2E004ED529 /* Raleway-Medium.ttf */; };
 		CC89EE381FD25A5D004ED529 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC89EE371FD25A5C004ED529 /* Raleway-Thin.ttf */; };
 		CC89EE3A1FD25A6C004ED529 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC89EE391FD25A6B004ED529 /* Raleway-Bold.ttf */; };
 		CCEF1DFA1FC62BAB00CCA5AB /* ViewControllerTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEF1DF91FC62BAB00CCA5AB /* ViewControllerTransition.swift */; };
 		CCEF1DFC1FC62BCD00CCA5AB /* ViewControllerResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEF1DFB1FC62BCD00CCA5AB /* ViewControllerResults.swift */; };
+		F74F12B8028DB73BF73001DB /* Pods_fucntionalMedicineDraftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAE1D6879CEFEA977B02963 /* Pods_fucntionalMedicineDraftTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		22A3E4D4200DD56200145366 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22A3E4CF200DD56200145366 /* CryptoSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 754BE45519693E190098E6F3;
-			remoteInfo = CryptoSwift;
-		};
-		22A3E4D6200DD56200145366 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22A3E4CF200DD56200145366 /* CryptoSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 754BE46019693E190098E6F3;
-			remoteInfo = Tests;
-		};
-		22A3E4E1200DD58A00145366 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22A3E4CF200DD56200145366 /* CryptoSwift.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 754BE45419693E190098E6F3;
-			remoteInfo = CryptoSwift;
-		};
-		22A3E4E5200DD59200145366 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22A3E4CF200DD56200145366 /* CryptoSwift.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 754BE45419693E190098E6F3;
-			remoteInfo = CryptoSwift;
-		};
 		34BEF4891F8D65F1009C9F7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 34BEF46C1F8D65F1009C9F7D /* Project object */;
@@ -69,7 +41,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				22A3E4E4200DD59200145366 /* CryptoSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,9 +50,10 @@
 /* Begin PBXFileReference section */
 		222D8B46200C463E00362D8C /* ViewControllerPasscode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPasscode.swift; sourceTree = "<group>"; };
 		228E2C7D1FCB92450009619C /* ViewControllerHowToBegin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHowToBegin.swift; sourceTree = "<group>"; };
-		22A3E4CF200DD56200145366 /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = CryptoSwift/CryptoSwift.xcodeproj; sourceTree = "<group>"; };
 		22B41DC01FCC827B00EE4CFE /* Supplement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supplement.swift; sourceTree = "<group>"; };
 		22FC0CC11FA654930006EE08 /* ViewControllerMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMain.swift; sourceTree = "<group>"; };
+		2490ABDB51D3B015FA579411 /* Pods-fucntionalMedicineDraft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fucntionalMedicineDraft.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fucntionalMedicineDraft/Pods-fucntionalMedicineDraft.debug.xcconfig"; sourceTree = "<group>"; };
+		2E0FF7F1D480845DCCD62636 /* Pods-fucntionalMedicineDraftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fucntionalMedicineDraftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fucntionalMedicineDraftTests/Pods-fucntionalMedicineDraftTests.release.xcconfig"; sourceTree = "<group>"; };
 		34BEF4741F8D65F1009C9F7D /* fucntionalMedicineDraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fucntionalMedicineDraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BEF4771F8D65F1009C9F7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34BEF47E1F8D65F1009C9F7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,12 +61,16 @@
 		34BEF4881F8D65F1009C9F7D /* fucntionalMedicineDraftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fucntionalMedicineDraftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BEF48C1F8D65F1009C9F7D /* fucntionalMedicineDraftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fucntionalMedicineDraftTests.swift; sourceTree = "<group>"; };
 		34BEF48E1F8D65F1009C9F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3699A7798B46664B011790B5 /* Pods-fucntionalMedicineDraft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fucntionalMedicineDraft.release.xcconfig"; path = "Pods/Target Support Files/Pods-fucntionalMedicineDraft/Pods-fucntionalMedicineDraft.release.xcconfig"; sourceTree = "<group>"; };
+		8BAE1D6879CEFEA977B02963 /* Pods_fucntionalMedicineDraftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fucntionalMedicineDraftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9186390CB6512A4D58189EAF /* Pods_fucntionalMedicineDraft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fucntionalMedicineDraft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4DB0DD1FC62B4000C5405B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CC89EE351FD25A2E004ED529 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
 		CC89EE371FD25A5C004ED529 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
 		CC89EE391FD25A6B004ED529 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		CCEF1DF91FC62BAB00CCA5AB /* ViewControllerTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTransition.swift; sourceTree = "<group>"; };
 		CCEF1DFB1FC62BCD00CCA5AB /* ViewControllerResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerResults.swift; sourceTree = "<group>"; };
+		F2ED69518CCB1A9F422F4ACD /* Pods-fucntionalMedicineDraftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fucntionalMedicineDraftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fucntionalMedicineDraftTests/Pods-fucntionalMedicineDraftTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22A3E4E3200DD59200145366 /* CryptoSwift.framework in Frameworks */,
+				66090D744E02D6B0DA0C2657 /* Pods_fucntionalMedicineDraft.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74F12B8028DB73BF73001DB /* Pods_fucntionalMedicineDraftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,27 +96,20 @@
 		22A1B52C200D1EEE00D7A311 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9186390CB6512A4D58189EAF /* Pods_fucntionalMedicineDraft.framework */,
+				8BAE1D6879CEFEA977B02963 /* Pods_fucntionalMedicineDraftTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		22A3E4D0200DD56200145366 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				22A3E4D5200DD56200145366 /* CryptoSwift.framework */,
-				22A3E4D7200DD56200145366 /* Tests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		34BEF46B1F8D65F1009C9F7D = {
 			isa = PBXGroup;
 			children = (
-				22A3E4CF200DD56200145366 /* CryptoSwift.xcodeproj */,
 				34BEF4761F8D65F1009C9F7D /* fucntionalMedicineDraft */,
 				34BEF48B1F8D65F1009C9F7D /* fucntionalMedicineDraftTests */,
 				34BEF4751F8D65F1009C9F7D /* Products */,
 				22A1B52C200D1EEE00D7A311 /* Frameworks */,
+				F316B5D82F131B0314021D13 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,6 +159,17 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		F316B5D82F131B0314021D13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2490ABDB51D3B015FA579411 /* Pods-fucntionalMedicineDraft.debug.xcconfig */,
+				3699A7798B46664B011790B5 /* Pods-fucntionalMedicineDraft.release.xcconfig */,
+				F2ED69518CCB1A9F422F4ACD /* Pods-fucntionalMedicineDraftTests.debug.xcconfig */,
+				2E0FF7F1D480845DCCD62636 /* Pods-fucntionalMedicineDraftTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,16 +177,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34BEF4911F8D65F1009C9F7D /* Build configuration list for PBXNativeTarget "fucntionalMedicineDraft" */;
 			buildPhases = (
+				6CF72BADF5AE3A614AF594DA /* [CP] Check Pods Manifest.lock */,
 				34BEF4701F8D65F1009C9F7D /* Sources */,
 				34BEF4711F8D65F1009C9F7D /* Frameworks */,
 				34BEF4721F8D65F1009C9F7D /* Resources */,
 				22A1B522200D1DA300D7A311 /* Embed Frameworks */,
+				92091BFC5639AA024E247B5E /* [CP] Embed Pods Frameworks */,
+				F3195D417F596A19D5474ADF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				22A3E4E2200DD58A00145366 /* PBXTargetDependency */,
-				22A3E4E6200DD59200145366 /* PBXTargetDependency */,
 			);
 			name = fucntionalMedicineDraft;
 			productName = fucntionalMedicineDraft;
@@ -216,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34BEF4941F8D65F1009C9F7D /* Build configuration list for PBXNativeTarget "fucntionalMedicineDraftTests" */;
 			buildPhases = (
+				74C008B26F89669CEFF2AAF9 /* [CP] Check Pods Manifest.lock */,
 				34BEF4841F8D65F1009C9F7D /* Sources */,
 				34BEF4851F8D65F1009C9F7D /* Frameworks */,
 				34BEF4861F8D65F1009C9F7D /* Resources */,
+				A18DE1189CB34346E271A048 /* [CP] Embed Pods Frameworks */,
+				75A04CE5916DD9AD0C1BA9CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,12 +247,6 @@
 			mainGroup = 34BEF46B1F8D65F1009C9F7D;
 			productRefGroup = 34BEF4751F8D65F1009C9F7D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 22A3E4D0200DD56200145366 /* Products */;
-					ProjectRef = 22A3E4CF200DD56200145366 /* CryptoSwift.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				34BEF4731F8D65F1009C9F7D /* fucntionalMedicineDraft */,
@@ -275,23 +254,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		22A3E4D5200DD56200145366 /* CryptoSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CryptoSwift.framework;
-			remoteRef = 22A3E4D4200DD56200145366 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		22A3E4D7200DD56200145366 /* Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = Tests.xctest;
-			remoteRef = 22A3E4D6200DD56200145366 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		34BEF4721F8D65F1009C9F7D /* Resources */ = {
@@ -314,6 +276,108 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CF72BADF5AE3A614AF594DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fucntionalMedicineDraft-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74C008B26F89669CEFF2AAF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fucntionalMedicineDraftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75A04CE5916DD9AD0C1BA9CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fucntionalMedicineDraftTests/Pods-fucntionalMedicineDraftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92091BFC5639AA024E247B5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fucntionalMedicineDraft/Pods-fucntionalMedicineDraft-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fucntionalMedicineDraft/Pods-fucntionalMedicineDraft-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A18DE1189CB34346E271A048 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fucntionalMedicineDraftTests/Pods-fucntionalMedicineDraftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3195D417F596A19D5474ADF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fucntionalMedicineDraft/Pods-fucntionalMedicineDraft-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		34BEF4701F8D65F1009C9F7D /* Sources */ = {
@@ -341,16 +405,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		22A3E4E2200DD58A00145366 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CryptoSwift;
-			targetProxy = 22A3E4E1200DD58A00145366 /* PBXContainerItemProxy */;
-		};
-		22A3E4E6200DD59200145366 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CryptoSwift;
-			targetProxy = 22A3E4E5200DD59200145366 /* PBXContainerItemProxy */;
-		};
 		34BEF48A1F8D65F1009C9F7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 34BEF4731F8D65F1009C9F7D /* fucntionalMedicineDraft */;
@@ -468,6 +522,7 @@
 		};
 		34BEF4921F8D65F1009C9F7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2490ABDB51D3B015FA579411 /* Pods-fucntionalMedicineDraft.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -483,6 +538,7 @@
 		};
 		34BEF4931F8D65F1009C9F7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3699A7798B46664B011790B5 /* Pods-fucntionalMedicineDraft.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -498,6 +554,7 @@
 		};
 		34BEF4951F8D65F1009C9F7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2ED69518CCB1A9F422F4ACD /* Pods-fucntionalMedicineDraftTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +571,7 @@
 		};
 		34BEF4961F8D65F1009C9F7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0FF7F1D480845DCCD62636 /* Pods-fucntionalMedicineDraftTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
