@@ -12,7 +12,7 @@ import CryptoSwift
 class ViewControllerPasscode: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var passcodeTextField: UITextField!
-    let password: [UInt8] = [109, 111, 255, 186, 87, 77, 170, 205, 22, 222, 90, 233, 81, 146, 115, 101]
+    let password: [UInt8] = [19, 176, 228, 56, 143, 41, 246, 3, 151, 184, 235, 110, 172, 188, 31, 140]
     
     @IBAction func enterWasPressed(_ sender: Any) {
         
