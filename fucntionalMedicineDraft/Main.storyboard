@@ -179,7 +179,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VcJ-hk-E36">
                                         <rect key="frame" x="0.0" y="0.0" width="286" height="194"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Passcode" translatesAutoresizingMaskIntoConstraints="NO" id="twj-cx-79M">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Passcode" translatesAutoresizingMaskIntoConstraints="NO" id="twj-cx-79M">
                                                 <rect key="frame" x="8" y="8" width="270" height="88"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="88" id="HjQ-pd-SCS"/>
@@ -1205,7 +1205,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
         <image name="HighMag" width="757" height="143"/>
         <image name="How to Use" width="757" height="143"/>
         <image name="Inverted Backdrop" width="599" height="479"/>
-        <image name="Inverted Passcode" width="757" height="210"/>
         <image name="LowA" width="757" height="143"/>
         <image name="LowC" width="757" height="143"/>
         <image name="LowD" width="757" height="143"/>
@@ -1213,6 +1212,7 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
         <image name="Magnesium Button" width="756" height="142"/>
         <image name="Magnesium Label" width="552" height="116"/>
         <image name="POM Home" width="522" height="365"/>
+        <image name="Passcode" width="757" height="210"/>
         <image name="Vitamin A Button" width="756" height="142"/>
         <image name="Vitamin A Label" width="552" height="116"/>
         <image name="Vitamin C Button" width="756" height="142"/>
@@ -1223,6 +1223,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
         <image name="Vitamin K2 Label" width="552" height="116"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mS7-nx-VIg"/>
+        <segue reference="cTr-GE-BGb"/>
     </inferredMetricsTieBreakers>
 </document>
