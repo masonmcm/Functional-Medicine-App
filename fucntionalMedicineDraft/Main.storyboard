@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j2j-yn-0iq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TX3-Yb-b9d">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -161,103 +161,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BhO-no-w3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-674.63768115942037" y="723.09782608695662"/>
-        </scene>
-        <!--View Controller Passcode-->
-        <scene sceneID="7Nk-Sb-DFN">
-            <objects>
-                <viewController id="j2j-yn-0iq" customClass="ViewControllerPasscode" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mld-NP-PEG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVc-fG-EKU">
-                                <rect key="frame" x="17" y="83" width="286" height="194"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="dsP-ir-itZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="286" height="194"/>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VcJ-hk-E36">
-                                        <rect key="frame" x="0.0" y="0.0" width="286" height="194"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Passcode" translatesAutoresizingMaskIntoConstraints="NO" id="twj-cx-79M">
-                                                <rect key="frame" x="8" y="8" width="270" height="88"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="88" id="HjQ-pd-SCS"/>
-                                                </constraints>
-                                            </imageView>
-                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Passcode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mvX-FT-Je6">
-                                                <rect key="frame" x="8" y="106" width="270" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="270" id="D7w-be-oHE"/>
-                                                    <constraint firstAttribute="height" constant="30" id="DtX-sS-vQ5"/>
-                                                </constraints>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                            </textField>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCq-dM-uzd">
-                                                <rect key="frame" x="8" y="146" width="270" height="40"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P0-I9-JR1">
-                                                        <rect key="frame" x="60" y="0.0" width="150" height="40"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="cJX-qO-ooy"/>
-                                                            <constraint firstAttribute="width" constant="150" id="yOy-El-ePy"/>
-                                                        </constraints>
-                                                        <state key="normal" image="Go Button 2"/>
-                                                        <connections>
-                                                            <action selector="enterWasPressed:" destination="j2j-yn-0iq" eventType="touchUpInside" id="1LN-yo-UAr"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <color key="backgroundColor" red="0.7614784241" green="0.85028338429999994" blue="0.34504768250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstItem="0P0-I9-JR1" firstAttribute="top" secondItem="gCq-dM-uzd" secondAttribute="top" id="0as-hQ-qfA"/>
-                                                    <constraint firstAttribute="bottom" secondItem="0P0-I9-JR1" secondAttribute="bottom" id="D9s-r5-J8P"/>
-                                                    <constraint firstAttribute="height" constant="40" id="DFS-dR-WwG"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0P0-I9-JR1" secondAttribute="trailing" constant="60" id="DJd-9X-Rm2"/>
-                                                    <constraint firstItem="0P0-I9-JR1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gCq-dM-uzd" secondAttribute="leading" constant="60" id="iOE-gP-lBf"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstItem="VcJ-hk-E36" firstAttribute="leading" secondItem="mVc-fG-EKU" secondAttribute="leading" id="45g-aT-Qa0"/>
-                                    <constraint firstItem="dsP-ir-itZ" firstAttribute="leading" secondItem="mVc-fG-EKU" secondAttribute="leading" id="6DK-u7-t0d"/>
-                                    <constraint firstAttribute="bottom" secondItem="VcJ-hk-E36" secondAttribute="bottom" id="7ka-04-Rxv"/>
-                                    <constraint firstItem="VcJ-hk-E36" firstAttribute="centerY" secondItem="mVc-fG-EKU" secondAttribute="centerY" id="C4w-ID-wKe"/>
-                                    <constraint firstAttribute="bottom" secondItem="dsP-ir-itZ" secondAttribute="bottom" id="Hgw-dd-euN"/>
-                                    <constraint firstAttribute="trailing" secondItem="VcJ-hk-E36" secondAttribute="trailing" id="SwO-yq-CJj"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="fFg-gL-soL"/>
-                                    <constraint firstItem="VcJ-hk-E36" firstAttribute="centerX" secondItem="mVc-fG-EKU" secondAttribute="centerX" id="lDd-vC-ZEc"/>
-                                    <constraint firstItem="dsP-ir-itZ" firstAttribute="top" secondItem="mVc-fG-EKU" secondAttribute="top" id="leG-QD-FCb"/>
-                                    <constraint firstItem="VcJ-hk-E36" firstAttribute="top" secondItem="mVc-fG-EKU" secondAttribute="top" id="p3w-qm-f1j"/>
-                                    <constraint firstAttribute="trailing" secondItem="dsP-ir-itZ" secondAttribute="trailing" id="sVz-3o-zcs"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="xEt-fu-A4J"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="mVc-fG-EKU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="mld-NP-PEG" secondAttribute="top" constant="15" id="I4Y-0c-8MM"/>
-                            <constraint firstItem="mVc-fG-EKU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mld-NP-PEG" secondAttribute="leading" constant="15" id="atd-zN-qv5"/>
-                            <constraint firstItem="mVc-fG-EKU" firstAttribute="centerX" secondItem="mld-NP-PEG" secondAttribute="centerX" id="jYQ-5y-ppO"/>
-                            <constraint firstItem="mVc-fG-EKU" firstAttribute="centerY" secondItem="mld-NP-PEG" secondAttribute="centerY" constant="-104" id="oBc-SB-AwL"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mVc-fG-EKU" secondAttribute="trailing" constant="15" id="xJ7-uO-fKQ"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="lgM-wv-aZe"/>
-                    </view>
-                    <connections>
-                        <outlet property="passcodeTextField" destination="mvX-FT-Je6" id="Yqs-s4-Wbh"/>
-                        <segue destination="TX3-Yb-b9d" kind="show" identifier="SegueToMainController" id="cTr-GE-BGb"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XnH-OX-Jyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-651" y="-565"/>
         </scene>
         <!--View Controller How To Begin-->
         <scene sceneID="vpj-Wu-FAB">
@@ -1212,7 +1115,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
         <image name="Magnesium Button" width="756" height="142"/>
         <image name="Magnesium Label" width="552" height="116"/>
         <image name="POM Home" width="522" height="365"/>
-        <image name="Passcode" width="757" height="210"/>
         <image name="Vitamin A Button" width="756" height="142"/>
         <image name="Vitamin A Label" width="552" height="116"/>
         <image name="Vitamin C Button" width="756" height="142"/>
@@ -1223,6 +1125,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
         <image name="Vitamin K2 Label" width="552" height="116"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cTr-GE-BGb"/>
+        <segue reference="mS7-nx-VIg"/>
     </inferredMetricsTieBreakers>
 </document>
