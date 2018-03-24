@@ -516,7 +516,7 @@ Repeat for other vitamins. </string>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXq-4q-gqR" userLabel="Label Views">
                                                         <rect key="frame" x="0.0" y="0.0" width="324" height="67"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighA" translatesAutoresizingMaskIntoConstraints="NO" id="JK3-2q-94L" userLabel="LowMag Label">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LowMag" translatesAutoresizingMaskIntoConstraints="NO" id="JK3-2q-94L" userLabel="LowMag Label">
                                                                 <rect key="frame" x="0.0" y="0.0" width="324" height="67"/>
                                                                 <color key="backgroundColor" red="0.5862517357" green="0.75496685500000005" blue="0.35685941580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <accessibility key="accessibilityConfiguration" label="Magnesium, Low">
@@ -635,16 +635,16 @@ Repeat for other vitamins. </string>
                                                         <rect key="frame" x="0.0" y="127" width="324" height="370"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSS-IA-9Di" userLabel="LowC">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="369.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="410"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="LqY-zP-uwI">
-                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="369.5"/>
+                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="410"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXI-fe-Qbp" userLabel="LowC Text Label">
-                                                                        <rect key="frame" x="0.0" y="15" width="324" height="339.5"/>
+                                                                        <rect key="frame" x="0.0" y="15" width="324" height="380"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="339.5" id="nJv-tb-Ydq"/>
+                                                                            <constraint firstAttribute="height" constant="380" id="nJv-tb-Ydq"/>
                                                                         </constraints>
                                                                         <string key="text">Symptoms for insufficient vitamin C include poor wound healing and fatigue because of vitamin C’s role in collagen production. 
 
@@ -671,20 +671,20 @@ Vitamin C can be combined with iron enriched foods to help with the absorption o
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmy-cE-nFp" userLabel="HighC">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="312"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="370"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="FVc-dr-xmU">
-                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="312"/>
+                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="370"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foG-6c-MfR" userLabel="HighC Text Label">
-                                                                        <rect key="frame" x="0.0" y="15" width="324" height="282"/>
+                                                                        <rect key="frame" x="0.0" y="15" width="324" height="340"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="282" id="ILb-N1-g5g"/>
+                                                                            <constraint firstAttribute="height" constant="340" id="ILb-N1-g5g"/>
                                                                         </constraints>
                                                                         <string key="text">High doses of vitamin C while on anticoagulants could potentially block the benefits of those types of anticoagulants, so if this describes you, you should contact your physician. 
 
-High vitamin C levels can also lead to the formation of kidney stones, severe diarrhea, nausea, and gastritis. Food with high levels of vitamin C include red peppers, oranges, kiwi, broccoli, strawberries, so it important to be aware of your consumption levels, if you already have high vitamin C levels. </string>
+High vitamin C levels can also lead to the formation of kidney stones, severe diarrhea, nausea, and gastritis. Food with high levels of vitamin C include red peppers, oranges, kiwi, broccoli, strawberries, so it is important to be aware of your consumption levels if you already have high vitamin C levels. </string>
                                                                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
                                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -767,17 +767,81 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                                     <constraint firstItem="60w-Ge-P00" firstAttribute="top" secondItem="glQ-np-ezX" secondAttribute="top" constant="15" id="wRI-ge-w5T"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDY-sz-jzR" userLabel="HighD">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="150"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64q-hK-5cJ" userLabel="LowMag">
+                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="180"/>
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="aRf-ok-azZ">
-                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="150"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="yLr-Su-dXh">
+                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="180"/>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asl-nm-hDo" userLabel="HighD Text Label">
-                                                                        <rect key="frame" x="0.0" y="15" width="324" height="120"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pat-Ca-bZL" userLabel="LowMag Text Label">
+                                                                        <rect key="frame" x="0.0" y="15" width="324" height="150"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="120" id="A0T-AR-JUp"/>
+                                                                            <constraint firstAttribute="height" constant="150" id="CoH-As-nqV"/>
+                                                                        </constraints>
+                                                                        <string key="text">In order to counteract low magnesium, supplements and food additions are commonly available. Foods include soaked pumpkins seeds, soaked almonds, spinach, chard, molasses, dark chocolate, legumes, and bananas.  </string>
+                                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
+                                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <accessibility key="accessibilityConfiguration" label="Magnesium, Low">
+                                                                    <bool key="isElement" value="YES"/>
+                                                                </accessibility>
+                                                                <constraints>
+                                                                    <constraint firstItem="yLr-Su-dXh" firstAttribute="leading" secondItem="64q-hK-5cJ" secondAttribute="leading" constant="-15" id="11V-z0-733"/>
+                                                                    <constraint firstItem="yLr-Su-dXh" firstAttribute="centerY" secondItem="64q-hK-5cJ" secondAttribute="centerY" id="20q-Kj-ByH"/>
+                                                                    <constraint firstItem="Pat-Ca-bZL" firstAttribute="leading" secondItem="64q-hK-5cJ" secondAttribute="leading" id="FeM-Ua-g2b"/>
+                                                                    <constraint firstItem="yLr-Su-dXh" firstAttribute="top" secondItem="64q-hK-5cJ" secondAttribute="top" id="KHm-oU-e0p"/>
+                                                                    <constraint firstItem="Pat-Ca-bZL" firstAttribute="bottom" secondItem="yLr-Su-dXh" secondAttribute="bottom" constant="-15" id="LeD-4a-chJ"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="yLr-Su-dXh" secondAttribute="trailing" constant="-15" id="Pcs-YF-Xza"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Pat-Ca-bZL" secondAttribute="trailing" id="t0h-2w-p3l"/>
+                                                                    <constraint firstItem="Pat-Ca-bZL" firstAttribute="top" secondItem="yLr-Su-dXh" secondAttribute="top" constant="15" id="yed-1I-Odu"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyY-8V-oaI" userLabel="HighMag">
+                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="200"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="ct6-wW-mM2">
+                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="200"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw5-Ww-SWO" userLabel="HighMag Text Label">
+                                                                        <rect key="frame" x="0.0" y="15" width="324" height="170"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="170" id="xjE-M7-Fp0"/>
+                                                                        </constraints>
+                                                                        <string key="text">High magnesium levels could mean the adrenal gland is not producing enough hormones. Patients could also experience kidney malfunctions if magnesium levels are low.  Other side effects include muscle weakness, low blood pressure, and impaired breathing. </string>
+                                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
+                                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <accessibility key="accessibilityConfiguration" label="Magnesium, High">
+                                                                    <bool key="isElement" value="YES"/>
+                                                                </accessibility>
+                                                                <constraints>
+                                                                    <constraint firstItem="ct6-wW-mM2" firstAttribute="centerY" secondItem="iyY-8V-oaI" secondAttribute="centerY" id="1fB-0I-jqR"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Bw5-Ww-SWO" secondAttribute="trailing" id="2e6-9c-zAp"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="ct6-wW-mM2" secondAttribute="trailing" constant="-15" id="5UO-4L-6W4"/>
+                                                                    <constraint firstItem="Bw5-Ww-SWO" firstAttribute="bottom" secondItem="ct6-wW-mM2" secondAttribute="bottom" constant="-15" id="JJm-OS-iQ9"/>
+                                                                    <constraint firstItem="ct6-wW-mM2" firstAttribute="leading" secondItem="iyY-8V-oaI" secondAttribute="leading" constant="-15" id="UWs-uC-yoY"/>
+                                                                    <constraint firstItem="Bw5-Ww-SWO" firstAttribute="top" secondItem="ct6-wW-mM2" secondAttribute="top" constant="15" id="q0n-h9-Kzw"/>
+                                                                    <constraint firstItem="ct6-wW-mM2" firstAttribute="top" secondItem="iyY-8V-oaI" secondAttribute="top" id="qHM-p6-5P9"/>
+                                                                    <constraint firstItem="Bw5-Ww-SWO" firstAttribute="leading" secondItem="iyY-8V-oaI" secondAttribute="leading" id="uyL-zf-bk7"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDY-sz-jzR" userLabel="HighD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="200"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="aRf-ok-azZ">
+                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="200"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asl-nm-hDo" userLabel="HighD Text Label">
+                                                                        <rect key="frame" x="0.0" y="15" width="324" height="170"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="170" id="A0T-AR-JUp"/>
                                                                         </constraints>
                                                                         <string key="text">High vitamin D can lead to a build up of calcium in your blood. This build up can cause poor appetite, nausea, vomiting, and potential kidney problems. Medicine and intravenous fluid can be taken to counteract these effects. </string>
                                                                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
@@ -799,81 +863,17 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                                     <constraint firstItem="aRf-ok-azZ" firstAttribute="centerY" secondItem="LDY-sz-jzR" secondAttribute="centerY" id="xRD-3W-KEn"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzp-HB-TMP" userLabel="LowD">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="230"/>
-                                                                <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="P06-4i-s1v">
-                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="230"/>
-                                                                    </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6M-pn-A5t" userLabel="LowD Text Label">
-                                                                        <rect key="frame" x="0.0" y="15" width="324" height="200"/>
-                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="200" id="wUt-Wx-Elb"/>
-                                                                        </constraints>
-                                                                        <string key="text">Low levels of vitamin D can lead to heart attacks, cancer, severe asthma, autoimmune disease, type 2 diabeters, and an increased chance of death from all causes. Food to consider when vitamin D levels are low include cod livers, cod liver oils, fatty fishes, egg yolks, and exposure to sun. Other supplements can be given beyond dietary changes to help increase vitamin D levels. </string>
-                                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    </label>
-                                                                </subviews>
-                                                                <accessibility key="accessibilityConfiguration" label="Vitamin D, Low">
-                                                                    <bool key="isElement" value="YES"/>
-                                                                </accessibility>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="trailing" secondItem="P06-4i-s1v" secondAttribute="trailing" constant="-15" id="5kd-oB-iNX"/>
-                                                                    <constraint firstItem="u6M-pn-A5t" firstAttribute="bottom" secondItem="P06-4i-s1v" secondAttribute="bottom" constant="-15" id="6n7-CX-cqt"/>
-                                                                    <constraint firstItem="P06-4i-s1v" firstAttribute="centerY" secondItem="vzp-HB-TMP" secondAttribute="centerY" id="CEb-xA-sWa"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="u6M-pn-A5t" secondAttribute="trailing" id="TOq-d1-gaZ"/>
-                                                                    <constraint firstItem="u6M-pn-A5t" firstAttribute="leading" secondItem="vzp-HB-TMP" secondAttribute="leading" id="jJf-BJ-QLd"/>
-                                                                    <constraint firstItem="P06-4i-s1v" firstAttribute="top" secondItem="vzp-HB-TMP" secondAttribute="top" id="ma2-mb-S9L"/>
-                                                                    <constraint firstItem="u6M-pn-A5t" firstAttribute="top" secondItem="P06-4i-s1v" secondAttribute="top" constant="15" id="taD-jn-xgO"/>
-                                                                    <constraint firstItem="P06-4i-s1v" firstAttribute="leading" secondItem="vzp-HB-TMP" secondAttribute="leading" constant="-15" id="uGc-r3-RRz"/>
-                                                                </constraints>
-                                                            </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="449-YD-xF7" userLabel="HighA">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="150"/>
-                                                                <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="vqD-ob-1IQ">
-                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="150"/>
-                                                                    </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6u-1g-CKy" userLabel="HighA Text Label">
-                                                                        <rect key="frame" x="0.0" y="15" width="324" height="120"/>
-                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="120" id="2So-BL-07T"/>
-                                                                        </constraints>
-                                                                        <string key="text">High levels of vitamin A can lead to headaches, dizziness, nausea, skin irritation, bone and joint pain, liver abnormalities, coma, and death. In order to decrease vitamin A levels, one can reduce consumption levels of vitamin A rich foods. </string>
-                                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    </label>
-                                                                </subviews>
-                                                                <accessibility key="accessibilityConfiguration" label="Vitamin A, High">
-                                                                    <bool key="isElement" value="YES"/>
-                                                                </accessibility>
-                                                                <constraints>
-                                                                    <constraint firstItem="vqD-ob-1IQ" firstAttribute="centerY" secondItem="449-YD-xF7" secondAttribute="centerY" id="AdV-6S-gek"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="vqD-ob-1IQ" secondAttribute="trailing" constant="-15" id="Eo7-Vf-cDN"/>
-                                                                    <constraint firstItem="vqD-ob-1IQ" firstAttribute="leading" secondItem="449-YD-xF7" secondAttribute="leading" constant="-15" id="HqX-xc-B0W"/>
-                                                                    <constraint firstItem="k6u-1g-CKy" firstAttribute="bottom" secondItem="vqD-ob-1IQ" secondAttribute="bottom" constant="-15" id="LrY-JI-SZ7"/>
-                                                                    <constraint firstItem="vqD-ob-1IQ" firstAttribute="top" secondItem="449-YD-xF7" secondAttribute="top" id="QV3-gO-CQn"/>
-                                                                    <constraint firstItem="k6u-1g-CKy" firstAttribute="leading" secondItem="449-YD-xF7" secondAttribute="leading" id="Snd-vC-6Fu"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="k6u-1g-CKy" secondAttribute="trailing" id="Vcl-LV-a0X"/>
-                                                                    <constraint firstItem="k6u-1g-CKy" firstAttribute="top" secondItem="vqD-ob-1IQ" secondAttribute="top" constant="15" id="Woq-65-QGf"/>
-                                                                </constraints>
-                                                            </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vif-2O-zDm" userLabel="LowA">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="332"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="390"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="FhO-tN-JC7">
-                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="332"/>
+                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="390"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xs-SY-XnX" userLabel="LowA Text Label">
-                                                                        <rect key="frame" x="0.0" y="15" width="324" height="302"/>
+                                                                        <rect key="frame" x="0.0" y="15" width="324" height="360"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="302" id="yVd-Xv-DYU"/>
+                                                                            <constraint firstAttribute="height" constant="360" id="yVd-Xv-DYU"/>
                                                                         </constraints>
                                                                         <string key="text">Long-term deficiency of vitamin A can lead to blindness, xerophthalmia, chronic diarrhea, and increased mortality from infections. Suboptimal vitamin A levels include poor vision at night, keratosis pilaris, dry skin, dry eyes, infections, acne, eczema, psoriasis, menstrual dysfunctions, hypothyroidism, and autoimmune disease. 
 
@@ -898,68 +898,68 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                                                     <constraint firstItem="FhO-tN-JC7" firstAttribute="centerY" secondItem="vif-2O-zDm" secondAttribute="centerY" id="jWg-Vk-H0i"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64q-hK-5cJ" userLabel="LowMag">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="150"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="449-YD-xF7" userLabel="HighA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="190"/>
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="yLr-Su-dXh">
-                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="150"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="vqD-ob-1IQ">
+                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="190"/>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pat-Ca-bZL" userLabel="LowMag Text Label">
-                                                                        <rect key="frame" x="0.0" y="15" width="324" height="120"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6u-1g-CKy" userLabel="HighA Text Label">
+                                                                        <rect key="frame" x="0.0" y="15" width="324" height="160"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="120" id="CoH-As-nqV"/>
+                                                                            <constraint firstAttribute="height" constant="160" id="2So-BL-07T"/>
                                                                         </constraints>
-                                                                        <string key="text">In order to counteract low magnesium, supplements and food additions are commonly available. Foods include soaked pumpkins seeds, soaked almonds, spinach, chard, molasses, dark chocolate, legumes, and bananas.  </string>
-                                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
-                                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                                <accessibility key="accessibilityConfiguration" label="Magnesium, Low">
-                                                                    <bool key="isElement" value="YES"/>
-                                                                </accessibility>
-                                                                <constraints>
-                                                                    <constraint firstItem="yLr-Su-dXh" firstAttribute="leading" secondItem="64q-hK-5cJ" secondAttribute="leading" constant="-15" id="11V-z0-733"/>
-                                                                    <constraint firstItem="yLr-Su-dXh" firstAttribute="centerY" secondItem="64q-hK-5cJ" secondAttribute="centerY" id="20q-Kj-ByH"/>
-                                                                    <constraint firstItem="Pat-Ca-bZL" firstAttribute="leading" secondItem="64q-hK-5cJ" secondAttribute="leading" id="FeM-Ua-g2b"/>
-                                                                    <constraint firstItem="yLr-Su-dXh" firstAttribute="top" secondItem="64q-hK-5cJ" secondAttribute="top" id="KHm-oU-e0p"/>
-                                                                    <constraint firstItem="Pat-Ca-bZL" firstAttribute="bottom" secondItem="yLr-Su-dXh" secondAttribute="bottom" constant="-15" id="LeD-4a-chJ"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="yLr-Su-dXh" secondAttribute="trailing" constant="-15" id="Pcs-YF-Xza"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="Pat-Ca-bZL" secondAttribute="trailing" id="t0h-2w-p3l"/>
-                                                                    <constraint firstItem="Pat-Ca-bZL" firstAttribute="top" secondItem="yLr-Su-dXh" secondAttribute="top" constant="15" id="yed-1I-Odu"/>
-                                                                </constraints>
-                                                            </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyY-8V-oaI" userLabel="HighMag">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="170"/>
-                                                                <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="ct6-wW-mM2">
-                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="170"/>
-                                                                    </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw5-Ww-SWO" userLabel="HighMag Text Label">
-                                                                        <rect key="frame" x="0.0" y="15" width="324" height="140"/>
-                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="140" id="xjE-M7-Fp0"/>
-                                                                        </constraints>
-                                                                        <string key="text">High magnesium levels could mean the adrenal gland is not producing enough hormones. Patients could also experience kidney malfunctions if magnesium levels are low.  Other side effects include muscle weakness, low blood pressure, and impaired breathing. </string>
+                                                                        <string key="text">High levels of vitamin A can lead to headaches, dizziness, nausea, skin irritation, bone and joint pain, liver abnormalities, coma, and death. In order to decrease vitamin A levels, one can reduce consumption levels of vitamin A rich foods. </string>
                                                                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
                                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <accessibility key="accessibilityConfiguration" label="Magnesium, High">
+                                                                <accessibility key="accessibilityConfiguration" label="Vitamin A, High">
                                                                     <bool key="isElement" value="YES"/>
                                                                 </accessibility>
                                                                 <constraints>
-                                                                    <constraint firstItem="ct6-wW-mM2" firstAttribute="centerY" secondItem="iyY-8V-oaI" secondAttribute="centerY" id="1fB-0I-jqR"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="Bw5-Ww-SWO" secondAttribute="trailing" id="2e6-9c-zAp"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="ct6-wW-mM2" secondAttribute="trailing" constant="-15" id="5UO-4L-6W4"/>
-                                                                    <constraint firstItem="Bw5-Ww-SWO" firstAttribute="bottom" secondItem="ct6-wW-mM2" secondAttribute="bottom" constant="-15" id="JJm-OS-iQ9"/>
-                                                                    <constraint firstItem="ct6-wW-mM2" firstAttribute="leading" secondItem="iyY-8V-oaI" secondAttribute="leading" constant="-15" id="UWs-uC-yoY"/>
-                                                                    <constraint firstItem="Bw5-Ww-SWO" firstAttribute="top" secondItem="ct6-wW-mM2" secondAttribute="top" constant="15" id="q0n-h9-Kzw"/>
-                                                                    <constraint firstItem="ct6-wW-mM2" firstAttribute="top" secondItem="iyY-8V-oaI" secondAttribute="top" id="qHM-p6-5P9"/>
-                                                                    <constraint firstItem="Bw5-Ww-SWO" firstAttribute="leading" secondItem="iyY-8V-oaI" secondAttribute="leading" id="uyL-zf-bk7"/>
+                                                                    <constraint firstItem="vqD-ob-1IQ" firstAttribute="centerY" secondItem="449-YD-xF7" secondAttribute="centerY" id="AdV-6S-gek"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="vqD-ob-1IQ" secondAttribute="trailing" constant="-15" id="Eo7-Vf-cDN"/>
+                                                                    <constraint firstItem="vqD-ob-1IQ" firstAttribute="leading" secondItem="449-YD-xF7" secondAttribute="leading" constant="-15" id="HqX-xc-B0W"/>
+                                                                    <constraint firstItem="k6u-1g-CKy" firstAttribute="bottom" secondItem="vqD-ob-1IQ" secondAttribute="bottom" constant="-15" id="LrY-JI-SZ7"/>
+                                                                    <constraint firstItem="vqD-ob-1IQ" firstAttribute="top" secondItem="449-YD-xF7" secondAttribute="top" id="QV3-gO-CQn"/>
+                                                                    <constraint firstItem="k6u-1g-CKy" firstAttribute="leading" secondItem="449-YD-xF7" secondAttribute="leading" id="Snd-vC-6Fu"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="k6u-1g-CKy" secondAttribute="trailing" id="Vcl-LV-a0X"/>
+                                                                    <constraint firstItem="k6u-1g-CKy" firstAttribute="top" secondItem="vqD-ob-1IQ" secondAttribute="top" constant="15" id="Woq-65-QGf"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzp-HB-TMP" userLabel="LowD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="280"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="P06-4i-s1v">
+                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="280"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6M-pn-A5t" userLabel="LowD Text Label">
+                                                                        <rect key="frame" x="0.0" y="15" width="324" height="250"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="250" id="wUt-Wx-Elb"/>
+                                                                        </constraints>
+                                                                        <string key="text">Low levels of vitamin D can lead to heart attacks, cancer, severe asthma, autoimmune disease, type 2 diabeters, and an increased chance of death from all causes. Food to consider when vitamin D levels are low include cod livers, cod liver oils, fatty fishes, egg yolks, and exposure to sun. Other supplements can be given beyond dietary changes to help increase vitamin D levels. </string>
+                                                                        <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
+                                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <accessibility key="accessibilityConfiguration" label="Vitamin D, Low">
+                                                                    <bool key="isElement" value="YES"/>
+                                                                </accessibility>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="P06-4i-s1v" secondAttribute="trailing" constant="-15" id="5kd-oB-iNX"/>
+                                                                    <constraint firstItem="u6M-pn-A5t" firstAttribute="bottom" secondItem="P06-4i-s1v" secondAttribute="bottom" constant="-15" id="6n7-CX-cqt"/>
+                                                                    <constraint firstItem="P06-4i-s1v" firstAttribute="centerY" secondItem="vzp-HB-TMP" secondAttribute="centerY" id="CEb-xA-sWa"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="u6M-pn-A5t" secondAttribute="trailing" id="TOq-d1-gaZ"/>
+                                                                    <constraint firstItem="u6M-pn-A5t" firstAttribute="leading" secondItem="vzp-HB-TMP" secondAttribute="leading" id="jJf-BJ-QLd"/>
+                                                                    <constraint firstItem="P06-4i-s1v" firstAttribute="top" secondItem="vzp-HB-TMP" secondAttribute="top" id="ma2-mb-S9L"/>
+                                                                    <constraint firstItem="u6M-pn-A5t" firstAttribute="top" secondItem="P06-4i-s1v" secondAttribute="top" constant="15" id="taD-jn-xgO"/>
+                                                                    <constraint firstItem="P06-4i-s1v" firstAttribute="leading" secondItem="vzp-HB-TMP" secondAttribute="leading" constant="-15" id="uGc-r3-RRz"/>
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
@@ -1112,6 +1112,7 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
         <image name="LowC" width="757" height="143"/>
         <image name="LowD" width="757" height="143"/>
         <image name="LowK2" width="757" height="143"/>
+        <image name="LowMag" width="757" height="143"/>
         <image name="Magnesium Button" width="756" height="142"/>
         <image name="Magnesium Label" width="552" height="116"/>
         <image name="POM Home" width="522" height="365"/>
