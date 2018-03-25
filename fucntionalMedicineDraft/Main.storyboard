@@ -167,15 +167,16 @@
             <objects>
                 <viewController id="KJe-vr-i4r" customClass="ViewControllerHowToBegin" customModule="fucntionalMedicineDraft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" id="g2R-n1-j4w">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Dk-k6-nvd">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="NfT-dr-EDN">
-                                        <rect key="frame" x="20" y="132" width="335" height="500"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="How to begin" translatesAutoresizingMaskIntoConstraints="NO" id="NfT-dr-EDN">
+                                        <rect key="frame" x="20" y="132" width="335" height="1081"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="1081" id="k0f-yb-fV4"/>
                                             <constraint firstAttribute="width" constant="335" id="uZ6-lc-dXe"/>
                                         </constraints>
                                     </imageView>
@@ -187,11 +188,8 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5e-Jp-baI" userLabel="Text Label">
-                                        <rect key="frame" x="35" y="147.5" width="305" height="470"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="470" id="bAM-VA-APu"/>
-                                        </constraints>
-                                        <string key="text">Have your functional medicine test results in hand. 
+                                        <rect key="frame" x="35" y="147.5" width="305" height="1035.5"/>
+                                        <mutableString key="text">Have your functional medicine test results in hand. 
 
 Go to the vitamin you want to learn more about. 
 
@@ -201,13 +199,17 @@ Read the feedback on whether that vitamin’s level is low, high, or just right.
 
 Continue reading on what supplements and food options currently exist to help you with levels for that vitamin. 
 
-Repeat for other vitamins. </string>
+Repeat for other vitamins.          
+
+Disclaimer: 
+
+This application is meant for educational purposes only, and is not a substitute for or a component of a comprehensive training in medicine or nutrition, nor does it constitute medical or nutritional advice or act as a substitute for seeking advice from a qualified health professional. You should always ask your doctor about taking any health-related steps and never ignore professional medical advice on the basis of anything contained in this application. As the authors of this application, we are not responsible or liable for the results of your taking any actions on the basis of this information that we have provided. </mutableString>
                                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="21"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3L-iA-MyH">
-                                        <rect key="frame" x="52.5" y="652" width="150" height="40"/>
+                                        <rect key="frame" x="52.5" y="1233" width="150" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="cFg-GP-0Et"/>
                                             <constraint firstAttribute="width" constant="150" id="xMk-wW-VHo"/>
@@ -226,18 +228,17 @@ Repeat for other vitamins. </string>
                                     <constraint firstAttribute="trailing" secondItem="g7Z-HO-Eaf" secondAttribute="trailing" constant="10" id="93s-bw-zOb"/>
                                     <constraint firstAttribute="width" constant="375" id="I6m-Yf-D96"/>
                                     <constraint firstItem="S5e-Jp-baI" firstAttribute="top" secondItem="NfT-dr-EDN" secondAttribute="top" constant="15" id="Jcp-SV-Obb"/>
+                                    <constraint firstItem="v3L-iA-MyH" firstAttribute="top" secondItem="NfT-dr-EDN" secondAttribute="bottom" constant="20" id="MKW-Xk-Nkk"/>
                                     <constraint firstItem="NfT-dr-EDN" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" id="Q6W-rB-6ot"/>
-                                    <constraint firstAttribute="bottom" secondItem="v3L-iA-MyH" secondAttribute="bottom" priority="750" constant="30" id="TNP-fa-llz"/>
                                     <constraint firstItem="S5e-Jp-baI" firstAttribute="leading" secondItem="NfT-dr-EDN" secondAttribute="leading" constant="15" id="aCv-HM-Rea"/>
                                     <constraint firstItem="g7Z-HO-Eaf" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" id="cZH-5v-2bV"/>
                                     <constraint firstAttribute="trailing" secondItem="NfT-dr-EDN" secondAttribute="trailing" constant="20" id="eWA-x1-blH"/>
                                     <constraint firstItem="NfT-dr-EDN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5Dk-k6-nvd" secondAttribute="leading" constant="20" id="eee-hb-J7o"/>
                                     <constraint firstItem="S5e-Jp-baI" firstAttribute="top" secondItem="g7Z-HO-Eaf" secondAttribute="bottom" constant="30" id="gzw-RT-pJH"/>
                                     <constraint firstItem="g7Z-HO-Eaf" firstAttribute="top" secondItem="5Dk-k6-nvd" secondAttribute="top" constant="50" id="me2-fm-Kt4"/>
-                                    <constraint firstItem="v3L-iA-MyH" firstAttribute="top" secondItem="NfT-dr-EDN" secondAttribute="bottom" constant="20" id="qmu-Zb-oGj"/>
                                     <constraint firstItem="g7Z-HO-Eaf" firstAttribute="leading" secondItem="5Dk-k6-nvd" secondAttribute="leading" priority="750" constant="10" id="rQV-fp-VFk"/>
-                                    <constraint firstItem="S5e-Jp-baI" firstAttribute="bottom" secondItem="NfT-dr-EDN" secondAttribute="bottom" constant="-15" id="rl3-ch-Pcl"/>
                                     <constraint firstItem="S5e-Jp-baI" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" id="sZF-yd-sPf"/>
+                                    <constraint firstAttribute="bottom" secondItem="S5e-Jp-baI" secondAttribute="bottom" priority="750" constant="140" id="xy7-Gw-cXj"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -252,7 +253,8 @@ Repeat for other vitamins. </string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pDj-PR-Ru4"/>
                     </view>
-                    <size key="freeformSize" width="375" height="800"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1300"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOx-vQ-JRT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -707,7 +709,7 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeN-Yh-iVW" userLabel="HighK2">
                                                                 <rect key="frame" x="0.0" y="0.0" width="324" height="70"/>
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="iZW-pF-u0i">
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mag Background" translatesAutoresizingMaskIntoConstraints="NO" id="iZW-pF-u0i">
                                                                         <rect key="frame" x="-15" y="0.0" width="354" height="70"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have high levels of K2, there is nothing negative to cite for this. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAY-M2-HIG" userLabel="HighK2 Text Label">
@@ -768,16 +770,16 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64q-hK-5cJ" userLabel="LowMag">
-                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="180"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="324" height="200"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="yLr-Su-dXh">
-                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="180"/>
+                                                                        <rect key="frame" x="-15" y="0.0" width="354" height="200"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pat-Ca-bZL" userLabel="LowMag Text Label">
-                                                                        <rect key="frame" x="0.0" y="15" width="324" height="150"/>
+                                                                        <rect key="frame" x="0.0" y="15" width="324" height="170"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="150" id="CoH-As-nqV"/>
+                                                                            <constraint firstAttribute="height" constant="170" id="CoH-As-nqV"/>
                                                                         </constraints>
                                                                         <string key="text">In order to counteract low magnesium, supplements and food additions are commonly available. Foods include soaked pumpkins seeds, soaked almonds, spinach, chard, molasses, dark chocolate, legumes, and bananas.  </string>
                                                                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="17"/>
@@ -802,7 +804,7 @@ High vitamin C levels can also lead to the formation of kidney stones, severe di
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iyY-8V-oaI" userLabel="HighMag">
                                                                 <rect key="frame" x="0.0" y="0.0" width="324" height="200"/>
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inverted Backdrop" translatesAutoresizingMaskIntoConstraints="NO" id="ct6-wW-mM2">
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mag Background" translatesAutoresizingMaskIntoConstraints="NO" id="ct6-wW-mM2">
                                                                         <rect key="frame" x="-15" y="0.0" width="354" height="200"/>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw5-Ww-SWO" userLabel="HighMag Text Label">
@@ -1107,12 +1109,14 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
         <image name="HighK2" width="757" height="143"/>
         <image name="HighMag" width="757" height="143"/>
         <image name="How to Use" width="757" height="143"/>
+        <image name="How to begin" width="382" height="1703"/>
         <image name="Inverted Backdrop" width="599" height="479"/>
         <image name="LowA" width="757" height="143"/>
         <image name="LowC" width="757" height="143"/>
         <image name="LowD" width="757" height="143"/>
         <image name="LowK2" width="757" height="143"/>
         <image name="LowMag" width="757" height="143"/>
+        <image name="Mag Background" width="382" height="134"/>
         <image name="Magnesium Button" width="756" height="142"/>
         <image name="Magnesium Label" width="552" height="116"/>
         <image name="POM Home" width="522" height="365"/>
