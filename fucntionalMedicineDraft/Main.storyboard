@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7H-1p-SxJ">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7H-1p-SxJ">
                                 <rect key="frame" x="0.0" y="33" width="375" height="1300"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnb-Wb-Xnp">
@@ -170,7 +170,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Dk-k6-nvd">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dk-k6-nvd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="How to begin" translatesAutoresizingMaskIntoConstraints="NO" id="NfT-dr-EDN">
@@ -188,8 +188,8 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5e-Jp-baI" userLabel="Text Label">
-                                        <rect key="frame" x="35" y="147.5" width="305" height="1035.5"/>
-                                        <mutableString key="text">Have your functional medicine test results in hand. 
+                                        <rect key="frame" x="35" y="147.5" width="305" height="1040.5"/>
+                                        <string key="text">Have your functional medicine test results in hand. 
 
 Go to the vitamin you want to learn more about. 
 
@@ -203,7 +203,7 @@ Repeat for other vitamins.
 
 Disclaimer: 
 
-This application is meant for educational purposes only, and is not a substitute for or a component of a comprehensive training in medicine or nutrition, nor does it constitute medical or nutritional advice or act as a substitute for seeking advice from a qualified health professional. You should always ask your doctor about taking any health-related steps and never ignore professional medical advice on the basis of anything contained in this application. As the authors of this application, we are not responsible or liable for the results of your taking any actions on the basis of this information that we have provided. </mutableString>
+This application is meant for educational purposes only, and is not a substitute for or a component of a comprehensive training in medicine or nutrition, nor does it constitute medical or nutritional advice or act as a substitute for seeking advice from a qualified health professional. You should always ask your doctor about taking any health-related steps and never ignore professional medical advice on the basis of anything contained in this application. As the authors of this application, we are not responsible or liable for the results of your taking any actions on the basis of this information that we have provided. </string>
                                         <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway" pointSize="21"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -229,7 +229,9 @@ This application is meant for educational purposes only, and is not a substitute
                                     <constraint firstAttribute="width" constant="375" id="I6m-Yf-D96"/>
                                     <constraint firstItem="S5e-Jp-baI" firstAttribute="top" secondItem="NfT-dr-EDN" secondAttribute="top" constant="15" id="Jcp-SV-Obb"/>
                                     <constraint firstItem="v3L-iA-MyH" firstAttribute="top" secondItem="NfT-dr-EDN" secondAttribute="bottom" constant="20" id="MKW-Xk-Nkk"/>
+                                    <constraint firstAttribute="bottom" secondItem="v3L-iA-MyH" secondAttribute="bottom" constant="27" id="NkG-kH-PMA"/>
                                     <constraint firstItem="NfT-dr-EDN" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" id="Q6W-rB-6ot"/>
+                                    <constraint firstItem="S5e-Jp-baI" firstAttribute="bottom" secondItem="NfT-dr-EDN" secondAttribute="bottom" constant="-25" id="XMU-3g-ZLs"/>
                                     <constraint firstItem="S5e-Jp-baI" firstAttribute="leading" secondItem="NfT-dr-EDN" secondAttribute="leading" constant="15" id="aCv-HM-Rea"/>
                                     <constraint firstItem="g7Z-HO-Eaf" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" id="cZH-5v-2bV"/>
                                     <constraint firstAttribute="trailing" secondItem="NfT-dr-EDN" secondAttribute="trailing" constant="20" id="eWA-x1-blH"/>
@@ -238,7 +240,6 @@ This application is meant for educational purposes only, and is not a substitute
                                     <constraint firstItem="g7Z-HO-Eaf" firstAttribute="top" secondItem="5Dk-k6-nvd" secondAttribute="top" constant="50" id="me2-fm-Kt4"/>
                                     <constraint firstItem="g7Z-HO-Eaf" firstAttribute="leading" secondItem="5Dk-k6-nvd" secondAttribute="leading" priority="750" constant="10" id="rQV-fp-VFk"/>
                                     <constraint firstItem="S5e-Jp-baI" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" id="sZF-yd-sPf"/>
-                                    <constraint firstAttribute="bottom" secondItem="S5e-Jp-baI" secondAttribute="bottom" priority="750" constant="140" id="xy7-Gw-cXj"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -442,11 +443,11 @@ This application is meant for educational purposes only, and is not a substitute
                         <rect key="frame" x="0.0" y="0.0" width="424" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qcM-Z5-GT7">
-                                <rect key="frame" x="0.0" y="20" width="424" height="880"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcM-Z5-GT7">
+                                <rect key="frame" x="35" y="20" width="354" height="880"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xHD-Fh-1Kg">
-                                        <rect key="frame" x="35" y="50" width="354" height="497"/>
+                                        <rect key="frame" x="0.0" y="50" width="354" height="497"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRZ-wu-xPx" userLabel="Average Label Views">
                                                 <rect key="frame" x="15" y="233" width="324" height="67"/>
@@ -1022,7 +1023,7 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aus-sz-9Vu">
-                                        <rect key="frame" x="59" y="650" width="150" height="40"/>
+                                        <rect key="frame" x="24" y="650" width="150" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="VMQ-Cz-0ye"/>
                                             <constraint firstAttribute="height" constant="40" id="YLi-Qw-Io0"/>
@@ -1035,12 +1036,12 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="aus-sz-9Vu" firstAttribute="top" secondItem="qcM-Z5-GT7" secondAttribute="top" priority="750" constant="650" id="4Fc-JF-yey"/>
+                                    <constraint firstAttribute="trailing" secondItem="xHD-Fh-1Kg" secondAttribute="trailing" id="DcR-w1-OE5"/>
                                     <constraint firstItem="GRZ-wu-xPx" firstAttribute="bottom" secondItem="aus-sz-9Vu" secondAttribute="top" priority="750" constant="-300" id="EWM-ES-epf"/>
-                                    <constraint firstItem="xHD-Fh-1Kg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qcM-Z5-GT7" secondAttribute="leading" constant="30" id="Jgg-jL-ERv"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xHD-Fh-1Kg" secondAttribute="trailing" constant="30" id="K73-rW-YmV"/>
                                     <constraint firstAttribute="trailing" secondItem="aus-sz-9Vu" secondAttribute="trailing" priority="750" constant="210" id="KQK-uj-m8f"/>
                                     <constraint firstItem="xHD-Fh-1Kg" firstAttribute="centerX" secondItem="qcM-Z5-GT7" secondAttribute="centerX" id="PDK-0N-Ucn"/>
                                     <constraint firstItem="aus-sz-9Vu" firstAttribute="leading" secondItem="qcM-Z5-GT7" secondAttribute="leading" priority="750" constant="54" id="bHs-BQ-blm"/>
+                                    <constraint firstItem="xHD-Fh-1Kg" firstAttribute="leading" secondItem="qcM-Z5-GT7" secondAttribute="leading" id="dfL-k9-E4t"/>
                                     <constraint firstItem="xHD-Fh-1Kg" firstAttribute="top" secondItem="qcM-Z5-GT7" secondAttribute="top" constant="50" id="ei0-lk-Zt0"/>
                                     <constraint firstItem="aus-sz-9Vu" firstAttribute="centerX" secondItem="qcM-Z5-GT7" secondAttribute="centerX" constant="-78" id="mdq-YW-cYr"/>
                                     <constraint firstAttribute="bottom" secondItem="aus-sz-9Vu" secondAttribute="bottom" constant="30" id="n8L-g7-pta"/>
@@ -1050,8 +1051,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                         <color key="backgroundColor" red="0.59779334070000001" green="0.77102732659999995" blue="0.33331587909999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="qcM-Z5-GT7" firstAttribute="centerX" secondItem="6Ky-na-jto" secondAttribute="centerX" id="4dG-vM-6fb"/>
-                            <constraint firstItem="jpj-RT-gTW" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qcM-Z5-GT7" secondAttribute="trailing" id="IpC-Lf-E5Q"/>
-                            <constraint firstItem="jpj-RT-gTW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qcM-Z5-GT7" secondAttribute="leading" id="OCW-69-PEf"/>
                             <constraint firstItem="qcM-Z5-GT7" firstAttribute="top" secondItem="jpj-RT-gTW" secondAttribute="top" id="gAh-ek-XC3"/>
                             <constraint firstItem="qcM-Z5-GT7" firstAttribute="centerX" secondItem="6Ky-na-jto" secondAttribute="centerX" id="iHw-or-L4w"/>
                             <constraint firstItem="qcM-Z5-GT7" firstAttribute="bottom" secondItem="jpj-RT-gTW" secondAttribute="bottom" id="sJS-7i-8yn"/>
@@ -1091,7 +1090,7 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fcs-gX-4yW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Kyr-Lu-vKf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1601.5999999999999" y="725.03748125937034"/>
+            <point key="canvasLocation" x="1601.25" y="724.64788732394368"/>
         </scene>
     </scenes>
     <resources>
