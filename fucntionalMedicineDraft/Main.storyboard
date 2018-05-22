@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TX3-Yb-b9d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TX3-Yb-b9d">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -407,6 +407,7 @@ This application is meant for educational purposes only, and is not a substitute
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.58625173568725586" green="0.7549668550491333" blue="0.35685941576957703" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="be8-7b-fQz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1KH-in-bfb" secondAttribute="leading" constant="15" id="6lK-R0-RDv"/>
                             <constraint firstItem="orN-rb-ZIh" firstAttribute="top" secondItem="92L-ct-N3c" secondAttribute="top" priority="750" constant="650" id="Epy-To-C3U"/>
@@ -418,6 +419,9 @@ This application is meant for educational purposes only, and is not a substitute
                             <constraint firstItem="orN-rb-ZIh" firstAttribute="centerX" secondItem="1KH-in-bfb" secondAttribute="centerX" constant="-70" id="xve-Z4-lX1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="92L-ct-N3c"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="USu-AD-e9H" appends="YES" id="HRj-Ng-wwr"/>
+                        </connections>
                     </view>
                     <size key="freeformSize" width="375" height="900"/>
                     <connections>
@@ -432,6 +436,11 @@ This application is meant for educational purposes only, and is not a substitute
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6eC-er-VkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="wUn-Hy-Nuk" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="USu-AD-e9H">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="3gp-As-rRT" id="Luf-Ki-mDj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="440.625" y="726.25"/>
         </scene>
@@ -1129,6 +1138,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
         <image name="Vitamin K2 Label" width="552" height="116"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mS7-nx-VIg"/>
+        <segue reference="3fz-uh-Hlp"/>
     </inferredMetricsTieBreakers>
 </document>

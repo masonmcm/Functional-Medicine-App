@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewControllerTransition: UIViewController {
+class ViewControllerTransition: UIViewController, UITextFieldDelegate {
     
     let customFont = UIFont(name: "Raleway-Thin", size: 17)
     @IBOutlet weak var enterTextField: UITextField!
@@ -26,6 +26,19 @@ class ViewControllerTransition: UIViewController {
         }
     }
     
+    @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if enterTextField.text != ""{
+            performSegue(withIdentifier: "segueResults", sender: self)
+            makePlaceholderText()
+        }
+        return true
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "segueResults"){
             if (Double(enterTextField.text!) != nil) {
@@ -43,6 +56,7 @@ class ViewControllerTransition: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        enterTextField.delegate = self
         
         for label in supplementLabels {
             label.isHidden = true
@@ -85,6 +99,7 @@ class ViewControllerTransition: UIViewController {
         
         self.present(alert, animated: true, completion: nil)
     }
+    
     
     
     /*
