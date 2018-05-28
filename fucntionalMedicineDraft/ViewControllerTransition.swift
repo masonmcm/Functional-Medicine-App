@@ -11,14 +11,6 @@ class ViewControllerTransition: UIViewController, UITextFieldDelegate {
     var sender: Any? = nil
     let supplementUnits: [String: String] = ["A": "mcg (micrograms)", "D": "ng (nanograms)", "C": "mg (milligrams)", "K": "ng (nanograms)", "M": "mg (milligrams)"]
     
-    @IBAction func backButtonPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func unwindToVCT(segue:UIStoryboardSegue) {
-        enterTextField.text = nil
-    }
-    
     @IBAction func enter(_ sender: Any) {
         if enterTextField.text != ""{
             performSegue(withIdentifier: "segueResults", sender: self)
@@ -31,7 +23,6 @@ class ViewControllerTransition: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
         if enterTextField.text != ""{
             performSegue(withIdentifier: "segueResults", sender: self)
             makePlaceholderText()

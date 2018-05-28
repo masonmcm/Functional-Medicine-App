@@ -16,10 +16,6 @@ class ViewControllerResults: UIViewController {
     @IBOutlet var imageViews: [UIImageView]!
     lazy var supplement: Supplement? = nil
     
-    @IBAction func backButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "unwindSegueToVCT", sender: self)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
        
