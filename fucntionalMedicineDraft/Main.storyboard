@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o6c-wE-ezo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o6c-wE-ezo">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -268,18 +268,6 @@ This application is meant for educational purposes only, and is not a substitute
                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orN-rb-ZIh">
-                                <rect key="frame" x="42.5" y="830" width="150" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="EQo-Nr-YVs"/>
-                                    <constraint firstAttribute="width" constant="150" id="jze-0h-U56"/>
-                                </constraints>
-                                <state key="normal" image="Back Button"/>
-                                <connections>
-                                    <action selector="backButtonPressed:" destination="3gp-As-rRT" eventType="touchUpInside" id="NDK-qA-WNm"/>
-                                    <action selector="backButtonPressed:" destination="wUn-Hy-Nuk" eventType="touchUpInside" id="Ve3-ua-T2S"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="be8-7b-fQz">
                                 <rect key="frame" x="15" y="202" width="345" height="288"/>
                                 <subviews>
@@ -408,13 +396,10 @@ This application is meant for educational purposes only, and is not a substitute
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="be8-7b-fQz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1KH-in-bfb" secondAttribute="leading" constant="15" id="6lK-R0-RDv"/>
-                            <constraint firstItem="orN-rb-ZIh" firstAttribute="top" secondItem="92L-ct-N3c" secondAttribute="top" priority="750" constant="650" id="Epy-To-C3U"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="be8-7b-fQz" secondAttribute="trailing" constant="15" id="Iow-PM-PaT"/>
-                            <constraint firstItem="92L-ct-N3c" firstAttribute="bottom" secondItem="orN-rb-ZIh" secondAttribute="bottom" constant="30" id="eTI-BJ-hgr"/>
                             <constraint firstItem="be8-7b-fQz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="92L-ct-N3c" secondAttribute="top" constant="15" id="icO-Nj-gH1"/>
                             <constraint firstItem="be8-7b-fQz" firstAttribute="centerY" secondItem="1KH-in-bfb" secondAttribute="centerY" constant="-104" id="izp-Xq-gBO"/>
                             <constraint firstItem="be8-7b-fQz" firstAttribute="centerX" secondItem="1KH-in-bfb" secondAttribute="centerX" id="sek-jx-lKJ"/>
-                            <constraint firstItem="orN-rb-ZIh" firstAttribute="centerX" secondItem="1KH-in-bfb" secondAttribute="centerX" constant="-70" id="xve-Z4-lX1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="92L-ct-N3c"/>
                         <connections>
@@ -433,7 +418,6 @@ This application is meant for educational purposes only, and is not a substitute
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6eC-er-VkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="wUn-Hy-Nuk" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="USu-AD-e9H">
                     <connections>
                         <action selector="dismissKeyboard:" destination="3gp-As-rRT" id="Luf-Ki-mDj"/>
@@ -1029,29 +1013,14 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
                                             <constraint firstItem="jac-Vf-oLu" firstAttribute="leading" secondItem="xHD-Fh-1Kg" secondAttribute="leading" constant="15" id="sgv-ZE-AQU"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aus-sz-9Vu">
-                                        <rect key="frame" x="24" y="650" width="150" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="VMQ-Cz-0ye"/>
-                                            <constraint firstAttribute="height" constant="40" id="YLi-Qw-Io0"/>
-                                        </constraints>
-                                        <state key="normal" image="Back Button"/>
-                                        <connections>
-                                            <action selector="backButtonPressed:" destination="aQf-1Z-HGA" eventType="touchUpInside" id="QO9-Yf-qNg"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="aus-sz-9Vu" firstAttribute="top" secondItem="qcM-Z5-GT7" secondAttribute="top" priority="750" constant="650" id="4Fc-JF-yey"/>
                                     <constraint firstAttribute="trailing" secondItem="xHD-Fh-1Kg" secondAttribute="trailing" id="DcR-w1-OE5"/>
-                                    <constraint firstItem="GRZ-wu-xPx" firstAttribute="bottom" secondItem="aus-sz-9Vu" secondAttribute="top" priority="750" constant="-300" id="EWM-ES-epf"/>
-                                    <constraint firstAttribute="trailing" secondItem="aus-sz-9Vu" secondAttribute="trailing" priority="750" constant="210" id="KQK-uj-m8f"/>
+                                    <constraint firstItem="GRZ-wu-xPx" firstAttribute="bottom" secondItem="jac-Vf-oLu" secondAttribute="top" priority="750" constant="300" id="EWM-ES-epf"/>
                                     <constraint firstItem="xHD-Fh-1Kg" firstAttribute="centerX" secondItem="qcM-Z5-GT7" secondAttribute="centerX" id="PDK-0N-Ucn"/>
-                                    <constraint firstItem="aus-sz-9Vu" firstAttribute="leading" secondItem="qcM-Z5-GT7" secondAttribute="leading" priority="750" constant="54" id="bHs-BQ-blm"/>
                                     <constraint firstItem="xHD-Fh-1Kg" firstAttribute="leading" secondItem="qcM-Z5-GT7" secondAttribute="leading" id="dfL-k9-E4t"/>
                                     <constraint firstItem="xHD-Fh-1Kg" firstAttribute="top" secondItem="qcM-Z5-GT7" secondAttribute="top" constant="50" id="ei0-lk-Zt0"/>
-                                    <constraint firstItem="aus-sz-9Vu" firstAttribute="centerX" secondItem="qcM-Z5-GT7" secondAttribute="centerX" constant="-78" id="mdq-YW-cYr"/>
-                                    <constraint firstAttribute="bottom" secondItem="aus-sz-9Vu" secondAttribute="bottom" constant="30" id="n8L-g7-pta"/>
+                                    <constraint firstAttribute="bottom" secondItem="xHD-Fh-1Kg" secondAttribute="bottom" constant="289" id="ge7-cb-ZHb"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
