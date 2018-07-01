@@ -208,27 +208,14 @@ This application is meant for educational purposes only, and is not a substitute
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3L-iA-MyH">
-                                        <rect key="frame" x="52.5" y="1233" width="150" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="cFg-GP-0Et"/>
-                                            <constraint firstAttribute="width" constant="150" id="xMk-wW-VHo"/>
-                                        </constraints>
-                                        <state key="normal" title="Back" image="Back Button"/>
-                                        <connections>
-                                            <action selector="backButtonPressed:" destination="KJe-vr-i4r" eventType="touchUpInside" id="PcJ-Fu-klC"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="S5e-Jp-baI" firstAttribute="trailing" secondItem="NfT-dr-EDN" secondAttribute="trailing" constant="-15" id="3nB-O8-NKP"/>
                                     <constraint firstItem="g7Z-HO-Eaf" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" id="5Gy-Ay-qsJ"/>
-                                    <constraint firstItem="v3L-iA-MyH" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" constant="-60" id="5KA-NV-qak"/>
                                     <constraint firstAttribute="trailing" secondItem="g7Z-HO-Eaf" secondAttribute="trailing" constant="10" id="93s-bw-zOb"/>
                                     <constraint firstAttribute="width" constant="375" id="I6m-Yf-D96"/>
                                     <constraint firstItem="S5e-Jp-baI" firstAttribute="top" secondItem="NfT-dr-EDN" secondAttribute="top" constant="15" id="Jcp-SV-Obb"/>
-                                    <constraint firstItem="v3L-iA-MyH" firstAttribute="top" secondItem="NfT-dr-EDN" secondAttribute="bottom" constant="20" id="MKW-Xk-Nkk"/>
-                                    <constraint firstAttribute="bottom" secondItem="v3L-iA-MyH" secondAttribute="bottom" constant="27" id="NkG-kH-PMA"/>
+                                    <constraint firstAttribute="bottom" secondItem="NfT-dr-EDN" secondAttribute="bottom" constant="60" id="MKW-Xk-Nkk"/>
                                     <constraint firstItem="NfT-dr-EDN" firstAttribute="centerX" secondItem="5Dk-k6-nvd" secondAttribute="centerX" id="Q6W-rB-6ot"/>
                                     <constraint firstItem="S5e-Jp-baI" firstAttribute="bottom" secondItem="NfT-dr-EDN" secondAttribute="bottom" constant="-25" id="XMU-3g-ZLs"/>
                                     <constraint firstItem="S5e-Jp-baI" firstAttribute="leading" secondItem="NfT-dr-EDN" secondAttribute="leading" constant="15" id="aCv-HM-Rea"/>
@@ -1093,7 +1080,6 @@ Food sources to raise vitamin A include various types of liver, egg yolks, and o
         <image name="AvgD" width="757" height="143"/>
         <image name="AvgK2" width="757" height="143"/>
         <image name="AvgMag" width="757" height="143"/>
-        <image name="Back Button" width="281" height="71"/>
         <image name="Backdrop" width="599" height="479"/>
         <image name="Go Button 2" width="280" height="67"/>
         <image name="HighA" width="757" height="143"/>
