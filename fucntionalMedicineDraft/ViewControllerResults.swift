@@ -19,6 +19,9 @@ class ViewControllerResults: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.supplement = self.supplement
+        
         var textToBeDisplayed: UIView = UIView()
         var imageToBeDisplayed: UIImageView = UIImageView()
         
@@ -28,21 +31,19 @@ class ViewControllerResults: UIViewController {
             var supplementLevelText: String = ""
             var pastComma = false
             for character in text.accessibilityLabel! {
-                if pastComma {
-                    if character == " "{
-                        continue
-                    }
+                if pastComma && character == " " {
+                    continue
                 }
-                    if(character == ","){
-                        pastComma = true
-                    }else if !pastComma{
-                        supplementNameText.append(character)
-                    }else{
-                        supplementLevelText.append(character)
-                    }
-                    if(supplement!.supplementName == supplementNameText &&
-                        supplement!.levelOfTextDisplayed  == supplementLevelText) {
-                        textToBeDisplayed = text
+                if(character == ","){
+                    pastComma = true
+                }else if !pastComma{
+                    supplementNameText.append(character)
+                }else{
+                    supplementLevelText.append(character)
+                }
+                if(supplement!.supplementName == supplementNameText &&
+                    supplement!.levelOfTextDisplayed  == supplementLevelText) {
+                    textToBeDisplayed = text
                 }
             }
         }

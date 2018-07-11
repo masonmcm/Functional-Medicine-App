@@ -27,9 +27,10 @@ class ViewControllerMain: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         for button in buttonArray {
-        let b = button.accessibilityLabel!
-        buttonIdentifier.updateValue(b, forKey: button)
+            let b = button.accessibilityLabel!
+            buttonIdentifier.updateValue(b, forKey: button)
         }
+        
         
     }
     
