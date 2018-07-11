@@ -72,8 +72,6 @@ class HasTableBeenCreated {
 
 class Supplement{
     
-    let supplementRanges: [String: Double] = ["DH": 50, "DL": 25, "AH": 200, "AL": 50, "CH": 0.6, "CL": 0.3,
-                                           "KH": 3.2, "KL": 0.2, "MH": 2.2, "ML": 1.7]
     var supplementName: String
     var supplementLevel: Double
     lazy var levelOfTextDisplayed = chooseTextFromDatabase()
